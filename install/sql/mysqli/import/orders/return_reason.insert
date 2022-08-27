@@ -1,0 +1,6 @@
+INSERT INTO `return_reason` VALUES 
+(1,1,'dead on arrival'),
+(2,1,'received wrong item'),
+(3,1,'order error'),
+(4,1,'faulty, please supply details'),
+(5,1,'other, please supply details');

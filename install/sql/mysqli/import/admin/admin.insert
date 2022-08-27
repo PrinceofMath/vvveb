@@ -1,0 +1,9 @@
+INSERT INTO `admin` (`admin_id`, `user`, `password`, `email`, `url`, `registered`, `activation_key`, `status`, `display_name`, `role_id`) VALUES
+(1, 'admin', '$2y$11$o52ahesifBsklkPV8eTWSeoKbBHJXxaoDZUIDYiFYdAmHQSyfDM3W', 'admin@admin.com', '', '2022-05-01 00:00:00', '', 0, 'Super Admin', 1),
+(2, 'administrator', '$2y$11$o52ahesifBsklkPV8eTWSeoKbBHJXxaoDZUIDYiFYdAmHQSyfDM3W', 'demo@admin.com', '', '2022-05-01 00:00:00', '', 0, 'Administrator', 2),
+(3, 'editor', '$2y$11$o52ahesifBsklkPV8eTWSeoKbBHJXxaoDZUIDYiFYdAmHQSyfDM3W', 'demo@admin.com', '', '2022-05-01 00:00:00', '', 0, 'Editor', 3),
+(4, 'author', '$2y$11$o52ahesifBsklkPV8eTWSeoKbBHJXxaoDZUIDYiFYdAmHQSyfDM3W', 'demo@admin.com', '', '2022-05-01 00:00:00', '', 0, 'Author', 4),
+(5, 'contributor', '$2y$11$o52ahesifBsklkPV8eTWSeoKbBHJXxaoDZUIDYiFYdAmHQSyfDM3W', 'demo@admin.com', '', '2022-05-01 00:00:00', '', 0, 'Contributor', 5),
+(6, 'shop', '$2y$11$o52ahesifBsklkPV8eTWSeoKbBHJXxaoDZUIDYiFYdAmHQSyfDM3W', 'demo@admin.com', '', '2022-05-01 00:00:00', '', 0, 'Shop assistant', 6),
+(7, 'rest', '$2y$11$o52ahesifBsklkPV8eTWSeoKbBHJXxaoDZUIDYiFYdAmHQSyfDM3W', 'demo@admin.com', '', '2022-05-01 00:00:00', '', 0, 'Rest Api', 7),
+(8, 'demo', '$2y$11$o52ahesifBsklkPV8eTWSeoKbBHJXxaoDZUIDYiFYdAmHQSyfDM3W', 'demo@admin.com', '', '2022-05-01 00:00:00', '', 0, 'Demo', 8);

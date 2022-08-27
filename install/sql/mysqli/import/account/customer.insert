@@ -1,0 +1,15 @@
+INSERT INTO `customer` VALUES 
+
+(1,1,0,1,'Kamlesh','Khatt','kamlesh@k3logics.com','9829098290','','$2y$10$7FUwm7fahxqriChWWDdP/.7Dpln2bNMOLwrBmvKdFGwC4Kc.HASsm','','','',0,0,'','103.61.112.49',1,0,'','','2022-05-01 00:00:00'),
+
+(2,1,0,1,'asdasd','asdasd','asdasd@adasd.com','2020212021','','$2y$10$.U/CceaYcRU4fU3REcCQ1.dwRpJaLk1BFaZaqLB0NZ/IgcEO6d9RO','','','',0,0,'','197.61.255.245',1,0,'','','2022-05-01 00:00:00'),
+
+(3,1,0,1,'Sheena','Campling','sheena@euca.co.za','0828498660','','$2y$10$CaB6OUSXWCyn4UF9ddPXuO6CHNedKP1QlI2Jfx6T48qf0QgDFIKBy','','','',0,0,'','197.245.227.221',1,0,'','','2022-05-01 00:00:00'),
+
+(4,1,0,1,'Javier','Sorribas','info@elmmoc.com','+34659648277','','$2y$10$oZTOuGaEP04.YBREmZzbPePDxKpV/snISLr7MTN296z2cxZazeZ2G','','','',0,0,'','83.56.146.54',1,0,'','','2022-05-01 00:00:00'),
+
+(5,1,0,1,'Hoang','Le Xuan','couponsplusdeals.com@gmail.com','962513941','','$2y$10$t2QKzfgLdnJA1nrVqqTb3uGRFQqgS3bLzcQEz8vTHljgrcjAAmGN6','','','',0,0,'','14.248.157.24',1,0,'','','2022-05-01 00:00:00'),
+
+(6,0,0,1,'me','oceaner','me.oceaner@gmail.com','083848262026','','$2y$10$LMJXeXTp5Ju7J0EcFFzTy.ENFmwYregAHvsYu.GMqhYJpgsRKll.i','','','',0,0,'','114.4.216.197',1,0,'','','2022-05-01 00:00:00'),
+
+(7,1,0,1,'ВАМ БОНУС','ВАМ БОНУС','kursov_1979@mail.ru','8183455675','','$2y$10$K/55hwjqzML6yF3KOk4AzOpNreAZBiEEyV9Ni4WioznW6k3PXjb5G','','','',1,0,'','185.171.126.227',1,0,'','','2019-07-18 13:19:54');

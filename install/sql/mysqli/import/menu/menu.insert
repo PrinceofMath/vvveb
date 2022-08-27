@@ -1,0 +1,6 @@
+INSERT INTO `menu` VALUES 
+(1,'Categories'),
+(2,'Tags'),
+(3,'Main Menu'),
+(4,'Categories'),
+(5,'Footer');

@@ -1,0 +1,2 @@
+INSERT INTO `product_review` VALUES 
+(1,1,1,"johndoe", "Cool product!", 5, 1, NOW(), NOW());

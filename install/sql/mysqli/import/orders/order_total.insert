@@ -1,0 +1,41 @@
+INSERT INTO `order_total` VALUES (1,1,'sub_total','Sub-Total',100.0000,1),
+
+(2,1,'shipping','Flat Shipping Rate',5.0000,3),
+
+(3,1,'total','Total',105.0000,9),
+
+(4,2,'sub_total','Sub-Total',200.0000,1),
+
+(5,2,'shipping','Flat Shipping Rate',5.0000,3),
+
+(6,2,'total','Total',205.0000,9),
+
+(7,3,'sub_total','Sub-Total',100.0000,1),
+
+(8,3,'shipping','Flat Shipping Rate',5.0000,3),
+
+(9,3,'total','Total',105.0000,9),
+
+(10,4,'sub_total','Sub-Total',100.0000,1),
+
+(11,4,'shipping','Flat Shipping Rate',5.0000,3),
+
+(12,4,'total','Total',105.0000,9),
+
+(13,5,'sub_total','Sub-Total',100.0000,1),
+
+(14,5,'shipping','Flat Shipping Rate',5.0000,3),
+
+(15,5,'total','Total',105.0000,9),
+
+(16,6,'sub_total','Sub-Total',1000.0000,1),
+
+(17,6,'shipping','Flat Shipping Rate',5.0000,3),
+
+(18,6,'total','Total',1005.0000,9),
+
+(19,7,'sub_total','Sub-Total',100.0000,1),
+
+(20,7,'shipping','Flat Shipping Rate',5.0000,3),
+
+(21,7,'total','Total',105.0000,9);

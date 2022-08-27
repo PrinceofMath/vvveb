@@ -1,0 +1,2 @@
+INSERT INTO `user` (`user_id`, `user`, `password`,  `email`, `url`, `date_added`, `activation_key`, `status`, `display_name`) VALUES
+(1, 'johndoe', '$2y$11$o52ahesifBsklkPV8eTWSeoKbBHJXxaoDZUIDYiFYdAmHQSyfDM3W', 'johndoe@example.com', '', '2022-05-01 00:00:00', '', 1, 'admin');

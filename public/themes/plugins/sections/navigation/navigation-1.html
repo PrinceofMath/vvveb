@@ -1,0 +1,36 @@
+<nav class="navigation-1 clearfix">
+
+  <div class="navbar navbar-expand-md navbar-light container">
+    <a class="navbar-brand" href="/" data-v-url-params='{"host":"www.*.*"}'>
+      <img src="img/logo.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="popular" data-v-menu_id="3">
+      <ul class="navbar-nav ms-auto" data-v-cats>
+        <li class="nav-item" data-v-cat data-v-class-if-dropdown="category.children > 0">
+
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-v-if="category.children > 0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-cat-url data-v-cat-name>Resources</a>
+
+          <a class="nav-link" href="https://themes.vvveb.com" data-v-if="category.children <= 0" data-v-cat-url data-v-cat-name>Themes</a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdown01" data-v-cat-recursive>
+            <div data-v-cat>
+              <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-cat-url data-v-cat-name>User Documentation</a>
+            </div>
+            <div data-v-cat>
+              <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-cat-url data-v-cat-name>Developer Documentation</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item" data-v-cat>
+          <a class="nav-link" href="https://themes.vvveb.com" data-v-cat-url data-v-cat-name>Themes</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</nav>

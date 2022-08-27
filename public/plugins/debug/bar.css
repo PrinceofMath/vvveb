@@ -1,0 +1,148 @@
+#debug-bar {
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	background:#fff;
+	z-index:100000;
+	border-top:1px solid #eee;
+}
+
+.tabs {
+	height:32px;
+}
+
+
+#debug-toggle-label {
+	cursor:pointer;
+	padding:3px 7px;
+	position: absolute;
+	right: 49px;
+	top: 0px;
+	transform:rotate(90deg);	
+}
+
+#debug-toggle-label:hover {
+	background-color:#fff;
+}
+
+
+#debug-toggle {
+	display:none;
+}
+
+#debug-toggle:checked ~ .tabs {
+	height:auto;
+}
+
+#debug-logo {
+	position: absolute;
+	right: 7px;
+	top: 3px;
+}
+
+/**
+ * Tabs
+ */
+#debug-bar .tabs {
+	display: flex;
+	flex-wrap: wrap;
+	background:#eee;
+}
+
+#debug-bar .tabs > label {
+	background:#fff;
+}
+
+#debug-bar .tabs > label {
+	order: 1; // Put the labels first
+	display: block;
+	padding: 0.3rem 2rem;
+	margin-right: 0.1rem;
+	cursor: pointer;
+	background: #eee;
+	transition: background ease 0.2s;
+	font-size:12px;
+}
+#debug-bar .tabs .tab {
+  order: 99; // Put the tabs last
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding-top: 1rem;
+  background: #fff;
+  max-height:300px;
+  min-height:300px;
+  overflow-x:auto;
+}
+#debug-bar .tabs input[type="radio"] {
+	display: none;
+}
+#debug-bar .tabs input[type="radio"]:checked + label {
+	background: #fff;
+}
+#debug-bar .tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+@media (max-width: 45em) {
+  #debug-bar .tabs .tab,
+  #debug-bar .tabs label {
+    order: initial;
+  }
+  #debug-bar .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+
+#debug-bar .tab ul {
+	list-style:none;
+	padding:0.2rem 0.5rem;
+}
+
+#debug-bar .tab > ul {
+	margin:0;
+}
+
+#debug-bar .tab > ul > li {
+	border-bottom:1px solid #ddd;
+}
+
+#debug-bar .tab > ul > li:hover {
+	background:#ffff0022;
+}
+
+
+#debug-bar .tree ol li  div {
+    padding: 1rem;
+    margin-left:1rem;
+    border-bottom:1px solid #eee;
+
+}
+
+/* sql */
+
+#debug-bar .tab.tree.sql ol > li label,
+#debug-bar .tab.tree.sql ol > li div  {
+	display:inline-block;
+}
+
+#debug-bar .tab.tree.sql ol > li label {
+	margin-right:1rem;
+	font-weight:bold;
+}
+
+#debug-bar .tab.tree.sql ol > li div { 
+	margin:0;
+	padding:0;
+	border:none;
+}
+
+#debug-bar .tab.tree.sql > ol > li > ol > li > div {
+	display:block;
+	padding:0.5rem;
+	border-top:1px solid #eee;
+}

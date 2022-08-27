@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <base href="@@path">
+
+  <title>Blog Post Page - Vvveb Default Blog Template</title>
+
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+
+<body data-v-component-post="post" class="post-page">
+
+  <header id="main-header" class="">
+    <nav class="navbar navbar-expand-lg navbar-light p-4">
+      <div class="container-fluid">
+        <div>
+          <span class="d-lg-none d-block">
+            <!-- hidden spacer to center brand on mobile -->
+          </span>
+
+          <a class="navbar-brand d-none d-lg-inline-block pb-0" data-v-url="index/index" href="/"> Vvveb Blog </a>
+          <small class="d-block text-muted">minimal blog template</small>
+
+          <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+            <img src="//placehold.it/40?text=LOGO" alt="logo">
+          </a>
+          <div class="w-100 text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+
+
+
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbar" data-v-component-menu="popular" data-v-menu_id="3">
+          <ul class="navbar-nav ms-auto flex-nowrap" data-v-cats>
+            <li class="nav-item" data-v-cat data-v-class-if-dropdown="category.children > 0">
+
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-v-if="category.children > 0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-cat-url data-v-cat-name>Resources</a>
+
+              <a class="nav-link" href="https://themes.vvveb.com" data-v-if="category.children <= 0" data-v-cat-url data-v-cat-name>Themes</a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdown01" data-v-cat-recursive>
+                <div data-v-cat>
+                  <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki" data-v-cat-url data-v-cat-name>User Documentation</a>
+                </div>
+                <div data-v-cat>
+                  <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki" data-v-cat-url data-v-cat-name>Developer Documentation</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item" data-v-cat>
+              <a class="nav-link" href="https://themes.vvveb.com" data-v-cat-url data-v-cat-name>Themes</a>
+            </li>
+          </ul>
+
+
+          <form class="d-flex">
+
+            <div class="input-group">
+              <!-- input type="text" class="form-control" placeholder="Search for..." -->
+              <span class="input-group-append">
+                <button class="btn btn-light la-flip-horizontal" type="button">
+
+                  <i class="la la-search"></i>
+
+
+                </button>
+              </span>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+
+  <section class="hero">
+    <div class="single-blog-post-thumb post">
+      <div class="title-container">
+        <div class="container">
+          <h1 class="display-3" data-v-post-name>Post title</h1>
+
+
+          <ul class="post-meta">
+
+            <li class="post-author meta-wrapper">
+              <span class="meta-icon">
+                <span class="screen-reader-text">Post author</span>
+                <i class="la la-user"></i>
+              </span>
+              <span class="meta-text">
+                By <a href="#">admin</a>
+              </span>
+            </li>
+
+            <li class="post-date meta-wrapper">
+              <span class="meta-icon">
+                <span class="screen-reader-text">Post date</span>
+
+                <i class="la la-calendar"></i>
+              </span>
+              <span class="meta-text">
+                <a href="/2020/12/31/hello-world/">December 31, 2020</a>
+              </span>
+            </li>
+            <li class="post-comment-link meta-wrapper">
+              <span class="meta-icon">
+                <i class="la la-comment"></i>
+              </span>
+              <span class="meta-text">
+                <a href="/2020/12/31/hello-world/#comments">1 Comment<span class="screen-reader-text"> on Hello world!</span>
+                </a>
+              </span>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+
+
+      <!-- img data-v-post-image src="img/bg-img/bg-7.jpg" alt="" -->
+    </div>
+  </section>
+
+
+
+  <main id="site-content" role="main">
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <img class="img-fluid w-100" src="http://placehold.it/750x300" alt="Card image cap" data-v-post-image data-v-if="post.image">
+
+
+
+
+      <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8 col-lg-9">
+
+          <!-- Blog Post -->
+          <div class="card mb-4  post-archive-item post" data-v-post>
+            <div class="card-header">
+
+
+              <div class="post-meta-wrapper post-meta-single post-meta-single-top">
+
+                <!-- ul class="post-meta">
+
+					<li class="post-author meta-wrapper">
+							<span class="meta-icon">
+								<span class="screen-reader-text">Post author</span>
+									<i class="la la-user"></i>
+								</span>
+							<span class="meta-text">
+								By <a href="#">admin</a>						
+							</span>
+						</li>
+						
+						<li class="post-date meta-wrapper">
+							<span class="meta-icon">
+								<span class="screen-reader-text">Post date</span>
+
+									<i class="la la-calendar"></i>
+								</span>
+							<span class="meta-text">
+								<a href="/2020/12/31/hello-world/">December 31, 2020</a>
+							</span>
+						</li>
+							<li class="post-comment-link meta-wrapper">
+							<span class="meta-icon">
+								<i class="la la-comment"></i>
+							</span>
+							<span class="meta-text">
+								<a href="/2020/12/31/hello-world/#comments">1 Comment<span class="screen-reader-text"> on Hello world!</span></a>						</span>
+						</li>
+						
+				</ul -->
+                <!-- .post-meta -->
+
+              </div>
+
+
+            </div>
+            <div class="card-body">
+
+              <div class="card-text  post-content" data-v-post-content>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!
+              </div>
+
+              <ul class="tags">
+                <li>
+                  <a href="#tag">#tag 1</a>
+                </li>
+                <li>
+                  <a href="#tag">#tag 2</a>
+                </li>
+              </ul>
+
+              <div class="post-comments" data-v-component-comments>
+                <h3 class="comments-title">Comments</h3>
+
+                <ol class="comment-list list-unstyled">
+                  <li class="comment" data-v-comment>
+
+                    <div class="comment-wrap d-flex ">
+
+                      <figure class="comment-author-avatar me-2">
+                        <img src="img/user-1.jpg" alt="user" data-v-comment-avatar>
+                      </figure><!-- .comment-author-avatar -->
+
+                      <div class="comment-author">
+
+                        <div class="comment-author">
+                          <a href="#" data-v-comment-author>Maria Williams</a>
+                        </div>
+
+                        <div class="comment-meta">
+                          <span data-v-comment-date_gmt>Jan 29, 2018</span>
+                        </div><!-- .comment-meta -->
+
+                        <div class="reply">
+                          <a href="#">Reply</a>
+                        </div><!-- .reply -->
+                      </div><!-- .comment-author -->
+
+                    </div><!-- .comment-wrap -->
+
+                    <div>
+                      <p data-v-comment-content>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
+                    </div>
+
+                  </li><!-- .comment -->
+
+                  <li class="comment" data-v-comment>
+                    <div class="comment-body flex justify-content-between">
+                      <figure class="comment-author-avatar">
+                        <img src="img/user-2.jpg" alt="user">
+                      </figure><!-- .comment-author-avatar -->
+
+                      <div class="comment-wrap">
+                        <div class="comment-author flex flex-wrap align-items-center">
+                          <span class="fn">
+                            <a href="#" data-v-comment-author>Maria Williams</a>
+                          </span><!-- .fn -->
+
+                          <span class="comment-meta">
+                            <a href="#" data-v-comment-date_gmt>Jan 29, 2018</a>
+                          </span><!-- .comment-meta -->
+
+                          <div class="reply">
+                            <a href="#">Reply</a>
+                          </div><!-- .reply -->
+                        </div><!-- .comment-author -->
+
+                        <p data-v-comment-content>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
+
+                      </div><!-- .comment-wrap -->
+                    </div><!-- .comment-body -->
+                  </li><!-- .comment -->
+                </ol><!-- .comment-list -->
+              </div>
+
+              <div class="comments-form">
+                <div class="comment-respond">
+                  <h3 class="comment-reply-title">Leave a reply</h3>
+
+                  <form class="comment-form" method="post" action="/module=post&action=postComment" data-v-vvveb-action="addComment" data-v-vvveb-on="submit">
+
+                    <input type="hidden" name="post_id" data-v-post-post_id>
+                    <input type="hidden" name="parent_id" value="0">
+
+
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Name</label>
+                      <input type="text" placeholder="Name" name="author" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Email address</label>
+                      <input type="email" placeholder="Email" name="email" class="form-control" required>
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <textarea name="content" rows="5" cols="4" placeholder="Comment" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+
+                  </form><!-- .comment-form -->
+                </div><!-- .comment-respond -->
+              </div><!-- .comments-form -->
+            </div>
+
+            <div class="card-footer text-muted">
+
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <aside class="col-md-4 col-lg-3 mt-4" role="sidebar">
+
+          <div class="sidebar-sticky">
+            <!-- Search Widget -->
+            <div class="card">
+              <!-- h6 class="card-header">Search</h6 -->
+              <div class="card-body">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-append">
+                    <button class="btn btn-secondary la-flip-horizontal" type="button">
+                      <i class="la la-search"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Categories Widget -->
+            <div class="card categories-widget" data-v-component-content-categories="sidebar">
+              <h6 class="card-header">Categories</h6>
+              <div class="card-body">
+                <ul data-v-cats>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>Web Design</a>
+                  </li>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>HTML</a>
+                  </li>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>Freebies</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+            <!-- Categories Widget -->
+            <div class="card archives-widget" data-v-component-content-archives="sidebar">
+              <h6 class="card-header">Archives</h6>
+              <div class="card-body">
+                <ul data-v-cats>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>January 2021</a>
+                  </li>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>December 2020</a>
+                  </li>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>November 2018</a>
+                  </li>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>October 2018</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- About Widget -->
+            <div class="card">
+              <h6 class="card-header">About</h6>
+              <div class="card-body">
+                Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit.
+              </div>
+            </div>
+          </div>
+
+        </aside>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+  </main>
+
+
+  <script src="js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <!-- Footer -->
+  <footer role="sidebar" id="main-footer">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-6">
+          <p class="mb-1">Copyright &copy; Your Website 2022</p>
+          <p class="text-muted small">Powered by <a href="https://www.vvveb.com">Vvveb</a>
+          </p>
+        </div>
+
+        <div class="col-6 text-end">
+          <a href="#main-header" class="btn btn-outline-secondary">
+            <i class="la la-angle-up"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+-- LOCK TABLES `post_description` WRITE;
+
+INSERT INTO `post_description` VALUES 
+
+            
+            
+(1,1,'Begin each day by telling yourself','hello-world-1',
+'<p>
+	Begin each day by telling yourself:
+</p> 
+
+<blockquote>
+	Today I shall be meeting with interference, ingratitude, insolence, disloyalty, ill-will, and selfishness – all of them due to the offenders’ ignorance of what is good or evil.
+</blockquote>
+
+<p>
+	But for my part I have long perceived the nature of good and its nobility, the nature of evil and its meanness, and also the nature of the culprit himself, who is my brother (not in the physical sense, but as a fellow creature similarly endowed with reason and a share of the divine);
+</p>
+
+<p>
+	therefore none of those things can injure me, for nobody can implicate me in what is degrading. 
+
+
+<p>
+Neither can I be angry with my brother or fall foul of him; for he and I were born to work together, like a man’s two hands, feet or eyelids, or the upper and lower rows of his teeth. 
+</p>
+
+<p>
+	To obstruct each other is against Nature’s law – and what is irritation or aversion but a form of obstruction.
+</p>'
+, 'Welcome to Vvveb'),
+            
+
+
+(2,1,'Confession','hello-world-2',
+'<p>Not finding an explanation in science I began to seek for it in life, hoping to find it among the people around me. And I began to observe how the people around me⁠—people like myself⁠—lived, and what their attitude was to this question which had brought me to despair.</p>
+<p>And this is what I found among people who were in the same position as myself as regards education and manner of life.</p>
+<p>I found that for people of my circle there were four ways out of the terrible position in which we are all placed.</p>
+
+<p>The first was that of ignorance. It consists in not knowing, not understanding, that life is an evil and an absurdity. People of this sort⁠—chiefly women, or very young or very dull people⁠—have not yet understood that question of life which presented itself to Schopenhauer, Solomon, and Buddha. They see neither the dragon that awaits them nor the mice gnawing the shrub by which they are hanging, and they lick the drops of honey, but they lick those drops of honey only for a while: something will turn their attention to the dragon and the mice, and there will be an end to their licking. From them I had nothing to learn⁠—one cannot cease to know what one does know.</p>
+
+<p>The second way out is epicureanism. It consists, while knowing the hopelessness of life, in making use meanwhile of the advantages one has, disregarding the dragon and the mice, and licking the honey in the best way, especially if there is much of it within reach. Solomon expresses this way out thus: “Then I commended mirth, because a man hath no better thing under the sun, than to eat, and to drink, and to be merry: and that this should accompany him in his labour the days of his life, which God giveth him under the sun.</p>
+<blockquote>“Therefore eat thy bread with joy and drink thy wine with a merry heart.⁠ ⁠… Live joyfully with the wife whom thou lovest all the days of the life of thy vanity⁠ ⁠… for this is thy portion in life and in thy labours which thou takest under the sun.⁠ ⁠… Whatsoever thy hand findeth to do, do it with thy might, for there is not work, nor device, nor knowledge, nor wisdom, in the grave, whither thou goest.”</blockquote>
+
+<p>That is the way in which the majority of people of our circle make life possible for themselves. Their circumstances furnish them with more of welfare than of hardship, and their moral dullness makes it possible for them to forget that the advantage of their position is accidental, and that not everyone can have a thousand wives and palaces like Solomon, that for everyone who has a thousand wives there are a thousand without a wife, and that for each palace there are a thousand people who have to build it in the sweat of their brows; and that the accident that has today made me a Solomon may tomorrow make me a Solomon’s slave. The dullness of these people’s imagination enables them to forget the things that gave Buddha no peace⁠—the inevitability of sickness, old age, and death, which today or tomorrow will destroy all these pleasures.</p>
+<p>The third escape is that of strength and energy. It consists in destroying life, when one has understood that it is an evil and an absurdity. A few exceptionally strong and consistent people act so. Having understood the stupidity of the joke that has been played on them, and having understood that it is better to be dead than to be alive, and that it is best of all not to exist, they act accordingly and promptly end this stupid joke, since there are means: a rope round one’s neck, water, a knife to stick into one’s heart, or the trains on the railways; and the number of those of our circle who act in this way becomes greater and greater, and for the most part they act so at the best time of their life, when the strength of their mind is in full bloom and few habits degrading to the mind have as yet been acquired.</p>
+
+<p>The fourth way out is that of weakness. It consists in seeing the truth of the situation and yet clinging to life, knowing in advance that nothing can come of it. People of this kind know that death is better than life, but not having the strength to act rationally⁠—to end the deception quickly and kill themselves⁠—they seem to wait for something. This is the escape of weakness, for if I know what is best and it is within my power, why not yield to what is best?⁠ ⁠… I found myself in that category.</p>
+<p>So people of my class evade the terrible contradiction in four ways. Strain my attention as I would, I saw no way except those four. One way was not to understand that life is senseless, vanity, and an evil, and that it is better not to live. I could not help knowing this, and when I once knew it could not shut my eyes to it. The second way was to use life such as it is without thinking of the future. And I could not do that. I, like Sakya Muni, could not ride out hunting when I knew that old age, suffering, and death exist. My imagination was too vivid. Nor could I rejoice in the momentary accidents that for an instant threw pleasure to my lot. The third way, having understood that life is evil and stupid, was to end it by killing oneself. I understood that, but somehow still did not kill myself. The fourth way was to live like Solomon and Schopenhauer⁠—knowing that life is a stupid joke played upon us, and still to go on living, washing oneself, dressing, dining, talking, and even writing books. This was to me repulsive and tormenting, but I remained in that position.</p>
+<p>I see now that if I did not kill myself it was due to some dim consciousness of the invalidity of my thoughts. However convincing and indubitable appeared to me the sequence of my thoughts and of those of the wise that have brought us to the admission of the senselessness of life, there remained in me a vague doubt of the justice of my conclusion.</p>
+
+<p>It was like this: I, my reason, have acknowledged that life is senseless. If there is nothing higher than reason (and there is not: nothing can prove that there is), then reason is the creator of life for me. If reason did not exist there would be for me no life. How can reason deny life when it is the creator of life? Or to put it the other way: were there no life, my reason would not exist; therefore reason is life’s son. Life is all. Reason is its fruit yet reason rejects life itself! I felt that there was something wrong here.</p>
+', 
+
+
+'Welcome to Vvveb'),
+            
+            
+            
+(3,1,'The work is accomplished, and there is no resting in it','hello-world-3',
+'
+<p>All in the world know the beauty of the beautiful, and in doing this they have (the idea of) what ugliness is; they all know the skill of the skilful, and in doing this they have (the idea of) what the want of skill is.</p>
+
+<p>So it is that existence and nonexistence give birth the one to (the idea of) the other; that difficulty and ease produce the one (the idea of) the other; that length and shortness fashion out the one the figure of the other; that (the ideas of) height and lowness arise from the contrast of the one with the other; that the musical notes and tones become harmonious through the relation of one with another; and that being before and behind give the idea of one following another.</p>
+
+<p>Therefore the sage manages affairs without doing anything, and conveys his instructions without the use of speech.</p>
+
+<p>All things spring up, and there is not one which declines to show itself; they grow, and there is no claim made for their ownership; they go through their processes, and there is no expectation (of a reward for the results). The work is accomplished, and there is no resting in it (as an achievement).</p>
+
+<blockquote>
+	<span>The work is done, but how no one can see;</span>
+	<br />
+	<span>’Tis this that makes the power not cease to be.</span>
+</blockquote>
+
+', 'Welcome to Vvveb'),
+            
+            
+(4,1,'Etiam leo nibh, consectetur nec orci et, tempus tempus ex','hello-world-4','
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perferendis rem accusantium ducimus animi nesciunt expedita omnis aut quas molestias!</h2>
+                <p>Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin. Praesent at tempus lectus, eleifend blandit felis. Fusce augue arcu, consequat a nisl aliquet, consectetur elementum turpis. Donec iaculis lobortis nisl, et viverra risus imperdiet eu. Etiam mollis posuere elit non sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis arcu a magna sodales venenatis. Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit.</p>
+
+                <blockquote>
+                    Quisque sagittis non ex eget vestibulum. Sed nec ultrices dui. Cras et sagittis erat. Maecenas pulvinar, turpis in dictum tincidunt, dolor nibh lacinia lacus.
+                </blockquote>
+
+                <p>Praesent ac magna sed massa euismod congue vitae vitae risus. Nulla lorem augue, mollis non est et, eleifend elementum ante. Nunc id pharetra magna. Praesent vel orci ornare, blandit mi sed, aliquet nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>', 'Welcome to Vvveb'),
+            
+            
+(5,1,'Sed viverra pellentesque dictum. Aenean ligula justo, viverra in lacus porttitor','hello-world-5','
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perferendis rem accusantium ducimus animi nesciunt expedita omnis aut quas molestias!</h2>
+                <p>Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin. Praesent at tempus lectus, eleifend blandit felis. Fusce augue arcu, consequat a nisl aliquet, consectetur elementum turpis. Donec iaculis lobortis nisl, et viverra risus imperdiet eu. Etiam mollis posuere elit non sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis arcu a magna sodales venenatis. Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit.</p>
+
+                <blockquote>
+                    Quisque sagittis non ex eget vestibulum. Sed nec ultrices dui. Cras et sagittis erat. Maecenas pulvinar, turpis in dictum tincidunt, dolor nibh lacinia lacus.
+                    
+                </blockquote>
+
+                <p>Praesent ac magna sed massa euismod congue vitae vitae risus. Nulla lorem augue, mollis non est et, eleifend elementum ante. Nunc id pharetra magna. Praesent vel orci ornare, blandit mi sed, aliquet nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>', 'Et ut aliquid blanditiis id sit et. Est ea ut tenetur veritatis recusandae est voluptatem. Harum iste ut et voluptatem sequi Illo velit architecto eos ipsa non recusandae ea Voluptatem nobis Porro qui quo Et ratione Aut sint nostrum velit non aut Aut nemo voluptatem velit quo. Earum maxime qui quis voluptatem consequatur pariatur labore '),
+            
+            
+(6,1,'Mauris viverra cursus ante laoreet eleifend','hello-world-6','
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perferendis rem accusantium ducimus animi nesciunt expedita omnis aut quas molestias!</h2>
+                <p>Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin. Praesent at tempus lectus, eleifend blandit felis. Fusce augue arcu, consequat a nisl aliquet, consectetur elementum turpis. Donec iaculis lobortis nisl, et viverra risus imperdiet eu. Etiam mollis posuere elit non sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis arcu a magna sodales venenatis. Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit.</p>
+
+                <blockquote>
+                    Quisque sagittis non ex eget vestibulum. Sed nec ultrices dui. Cras et sagittis erat. Maecenas pulvinar, turpis in dictum tincidunt, dolor nibh lacinia lacus.
+                </blockquote>
+
+                <p>Praesent ac magna sed massa euismod congue vitae vitae risus. Nulla lorem augue, mollis non est et, eleifend elementum ante. Nunc id pharetra magna. Praesent vel orci ornare, blandit mi sed, aliquet nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>', 
+				'Et et saepe suscipit debitis a accusamus nulla in amet molestiae voluptates dolor autem vitae optio ipsa mollitia voluptatem vitae hic ut dolores possimus fuga molestias cumque aut aut nulla quia aut quo accusamus ad dolores error consequuntur qui aperiam veritatis sed sunt suscipit sunt sequi porro enim magni molestias voluptatibus perferendis neque suscipit maxime optio tempora repellendus cum porro doloremque omnis voluptas ut aliquam enim unde molestias eius consequatur architecto molestias aut repellat qui qui odit alias accusantium exercitationem qui occaecati consectetur eum consectetur et occaecati nisi aut.'),
+
+
+            
+(7,1,'Contact','contact','
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perferendis rem accusantium ducimus animi nesciunt expedita omnis aut quas molestias!</h2>
+                <p>Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin. Praesent at tempus lectus, eleifend blandit felis. Fusce augue arcu, consequat a nisl aliquet, consectetur elementum turpis. Donec iaculis lobortis nisl, et viverra risus imperdiet eu. Etiam mollis posuere elit non sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis arcu a magna sodales venenatis. Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit.</p>
+
+                <blockquote>
+                    Quisque sagittis non ex eget vestibulum. Sed nec ultrices dui. Cras et sagittis erat. Maecenas pulvinar, turpis in dictum tincidunt, dolor nibh lacinia lacus.
+                </blockquote>
+
+                <p>Praesent ac magna sed massa euismod congue vitae vitae risus. Nulla lorem augue, mollis non est et, eleifend elementum ante. Nunc id pharetra magna. Praesent vel orci ornare, blandit mi sed, aliquet nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>', ''),
+            
+(8,1,'Shipping &amp; Delivery','shipping-delivery','
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perferendis rem accusantium ducimus animi nesciunt expedita omnis aut quas molestias!</h2>
+                <p>Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin. Praesent at tempus lectus, eleifend blandit felis. Fusce augue arcu, consequat a nisl aliquet, consectetur elementum turpis. Donec iaculis lobortis nisl, et viverra risus imperdiet eu. Etiam mollis posuere elit non sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis arcu a magna sodales venenatis. Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit.</p>
+
+                <blockquote>
+                    Quisque sagittis non ex eget vestibulum. Sed nec ultrices dui. Cras et sagittis erat. Maecenas pulvinar, turpis in dictum tincidunt, dolor nibh lacinia lacus.
+                </blockquote>
+
+                <p>Praesent ac magna sed massa euismod congue vitae vitae risus. Nulla lorem augue, mollis non est et, eleifend elementum ante. Nunc id pharetra magna. Praesent vel orci ornare, blandit mi sed, aliquet nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>', '')
+
+-- UNLOCK TABLES

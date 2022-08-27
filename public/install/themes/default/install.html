@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,600,700|Open+Sans:300,400,600,700|Roboto:300,400,600|Poppins:300,400,600" rel="stylesheet" type="text/css">
+    
+    <link rel="icon" href="../../favicon.ico">
+    <base href="">
+    <title>Vvveb install</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/install.css" rel="stylesheet">
+    <style>
+    
+    </style>
+  </head>
+  <script>
+
+
+  </script>
+
+  <body class="h-100">
+
+
+    <div id="container" class="container h-100">
+							
+			<div class="row align-items-center h-100">
+				<div class="col-12 mx-auto">
+
+								
+
+								<div class="card border-danger mb-3 d-none">
+									<h5 class="card-header bg-danger text-white">Minimum requirements not met</h5>
+								
+								  <div class="card-body">
+									  
+										<div><span class="text-danger"> &#10006; </span> Recommended PHP version at least 7.0 (You have 5.4) </div>
+										<div><span class="text-danger"> &#10006; </span> Recommended Mysql version at least 7.0 (You have 5.4) </div>
+								  </div>
+								</div>
+								
+								<img id="logo" src="../../../admin/themes/default/img/logom.png">
+
+								<div class="card">
+								  
+								  <div class="card-body">
+									
+									<p class="card-text" style="color:#777">These can be later changed from admin.</p>
+									
+										<form method="post">
+										 <div class="mb-3 row">
+											<label for="inputEmail3" class="col-sm-3 col-form-label">Website name</label>
+											<div class="col-sm-9">
+											  <input type="text" class="form-control" id="inputEmail3" placeholder="Website name" name="settings[site-title]" value="" required>
+											</div>
+										  </div>
+										  <div class="mb-3 row">
+											<label for="inputPassword3" class="col-sm-3 col-form-label">Email</label>
+											<div class="col-sm-9">
+											  <input type="email" class="form-control" id="inputPassword3" placeholder="email" name="admin[email]" value="" required>
+											</div>
+										  </div>
+										  <div class="mb-3 row">
+											<label for="inputPassword3" class="col-sm-3 col-form-label">User</label>
+											<div class="col-sm-9">
+											  <input type="text" class="form-control" id="user" placeholder="User" name="admin[user]" value="admin" required>
+											</div>
+										  </div>
+										  <div class="mb-3 row">
+											<label for="display_name" class="col-sm-3 col-form-label">User name</label>
+											<div class="col-sm-9">
+											  <input type="text" class="form-control" id="display_name" placeholder="Username" name="admin[display_name]" value="Super Admin" required>
+											</div>
+										  </div>
+										  <div class="mb-3 row">
+											<label for="inputPassword3" class="col-sm-3 col-form-label">Password<br/><span class="small text-muted">Store your password in a safe place</span></label>
+											<div class="col-sm-9">
+
+
+												<div class="input-group mb-3">
+												  <input type="text" class="form-control"  id="password" placeholder="User password" name="admin[password]" value="" aria-label="User password">
+	 											  <button class="btn btn-light btn-sm py-0 btn-toggle" type="button" onclick="togglePasswordInput(this)">Toggle visibility &#x1F512;</button>
+												</div>
+											
+
+											</div>
+										  </div>
+
+										  
+										  <div class="row align-items-center">
+											  <div class="col-md-8">
+												  <!-- div class="form-check custom-control custom-checkbox float-start">
+													<input type="checkbox" class="form-check-input btn-check" id="exampleCheck1" name="license" required>
+													<label class="form-check-label custom-control-label" for="exampleCheck1">Show advanced options</label>
+												  </div -->
+											  </div>
+
+											<div class="col-md-4">												  
+												  <button type="submit" class="btn btn-primary mt-4 float-end">Finish Install &#10140;</button>
+												  </div>
+											  </div>
+										  </div>
+										  
+										  
+										  </form>
+									
+								  </div>
+								</div>
+						
+				
+				</div>
+			</div>
+	
+		
+
+		
+		
+    </div>					
+    <script>
+	function togglePasswordInput(element)
+	{
+		var password = document.getElementById("password");
+		if (password.type == "password") {
+			password.type = "text"; 
+			element.innerHTML = "&#x1F513;";
+		} else {
+			password.type = "password";
+			element.innerHTML = "&#x1F512;";
+		}
+	}	
+		
+		
+ 	function randomPassword(length) {
+		var chars = "abcdefghijklmnopqrstuvwxyz!@#$%^&*()-+<>ABCDEFGHIJKLMNOP1234567890";
+		var pass = "";
+		for (var x = 0; x < length; x++) {
+			var i = Math.floor(Math.random() * chars.length);
+			pass += chars.charAt(i);
+		}
+		return pass;
+	}
+
+	document.getElementById("password").value = randomPassword(24);   
+    
+    </script>
+    		
+  </body>
+</html>
+
+
+
+
+
+
+

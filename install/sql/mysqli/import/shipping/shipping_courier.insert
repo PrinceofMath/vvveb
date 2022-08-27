@@ -1,0 +1,8 @@
+INSERT INTO `shipping_courier` VALUES 
+(1,'dhl','DHL'),
+(2,'fedex','Fedex'),
+(3,'ups','UPS'),
+(4,'royal-mail','Royal Mail'),
+(5,'usps','United States Postal Service'),
+(6,'auspost','Australia Post'),
+(7,'citylink','Citylink');

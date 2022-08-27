@@ -1,0 +1,9 @@
+Bootstrap scrollspy needs a patch to work with links containing the url of the page
+
+this
+
+const queries = SELECTOR_LINK_ITEMS.split(',').map(selector => `${selector}[data-bs-target="${target}"],${selector}[href="${target}"]`);
+
+needs to be changed to
+
+const queries = SELECTOR_LINK_ITEMS.split(',').map(selector => `${selector}[data-bs-target="${target}"],${selector}[href*="${target}"]`);

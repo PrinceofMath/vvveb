@@ -1,0 +1,8 @@
+INSERT INTO `role` (`role_id`, `name`, `display_name`) VALUES
+(1, 'super_admin', 'Super Administrator'),
+(2, 'admin', 'Administrator'),
+(3, 'editor', 'Editor'),
+(4, 'author', 'Author'),
+(5, 'contributor', 'Contributor'),
+(6, 'shop', 'Shop'),
+(7, 'demo', 'Demo');

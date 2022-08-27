@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <base href="@@path">
+
+  <title>Blog Home - Vvveb Default Blog Template</title>
+
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+
+<body class="home-page">
+
+  <header id="main-header" class="">
+    <nav class="navbar navbar-expand-lg navbar-light p-4">
+      <div class="container-fluid">
+        <div>
+          <span class="d-lg-none d-block">
+            <!-- hidden spacer to center brand on mobile -->
+          </span>
+
+          <a class="navbar-brand d-none d-lg-inline-block pb-0" data-v-url="index/index" href="/"> Vvveb Blog </a>
+          <small class="d-block text-muted">minimal blog template</small>
+
+          <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+            <img src="//placehold.it/40?text=LOGO" alt="logo">
+          </a>
+          <div class="w-100 text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+
+
+
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbar" data-v-component-menu="popular" data-v-menu_id="3">
+          <ul class="navbar-nav ms-auto flex-nowrap" data-v-cats>
+            <li class="nav-item" data-v-cat data-v-class-if-dropdown="category.children > 0">
+
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-v-if="category.children > 0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-cat-url data-v-cat-name>Resources</a>
+
+              <a class="nav-link" href="https://themes.vvveb.com" data-v-if="category.children <= 0" data-v-cat-url data-v-cat-name>Themes</a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdown01" data-v-cat-recursive>
+                <div data-v-cat>
+                  <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki" data-v-cat-url data-v-cat-name>User Documentation</a>
+                </div>
+                <div data-v-cat>
+                  <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki" data-v-cat-url data-v-cat-name>Developer Documentation</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item" data-v-cat>
+              <a class="nav-link" href="https://themes.vvveb.com" data-v-cat-url data-v-cat-name>Themes</a>
+            </li>
+          </ul>
+
+
+          <form class="d-flex">
+
+            <div class="input-group">
+              <!-- input type="text" class="form-control" placeholder="Search for..." -->
+              <span class="input-group-append">
+                <button class="btn btn-light la-flip-horizontal" type="button">
+
+                  <i class="la la-search"></i>
+
+
+                </button>
+              </span>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+  <main id="site-content" role="main">
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-7 col-lg-8 col-xl-9" data-v-component-posts="popular" data-v-limit="10">
+
+          <!-- Blog Post -->
+
+          <div data-v-if="posts.count < 1">
+            <h3 class="text-center">No posts to display!</h3>
+          </div>
+
+          <div class="card  post-archive-item post" data-v-post data-v-if="posts.count > 0">
+            <div class="card-header">
+
+              <a class="post-title" href="#" data-v-post-url>
+                <h2 class="card-title display-4 text-center" data-v-post-name>Post Title</h2>
+              </a>
+
+
+              <div class="post-meta-wrapper post-meta-single post-meta-single-top">
+
+                <ul class="post-meta">
+
+                  <li class="post-author meta-wrapper">
+                    <span class="meta-icon">
+                      <span class="screen-reader-text">Post author</span>
+                      <i class="la la-user"></i>
+                    </span>
+                    <span class="meta-text">
+                      By <a href="#">admin</a>
+                    </span>
+                  </li>
+
+                  <li class="post-date meta-wrapper">
+                    <span class="meta-icon">
+                      <span class="screen-reader-text">Post date</span>
+
+                      <i class="la la-calendar"></i>
+                    </span>
+                    <span class="meta-text">
+                      <a href="#">December 31, 2020</a>
+                    </span>
+                  </li>
+                  <li class="post-comment-link meta-wrapper">
+                    <span class="meta-icon">
+                      <i class="la la-comment"></i>
+                    </span>
+                    <span class="meta-text">
+                      <a href="#"> on Hello world!
+                    </span>
+                    </a>
+                    </span>
+                  </li>
+
+                </ul><!-- .post-meta -->
+
+              </div>
+            </div>
+
+
+            <img class="img-fluid" src="http://placehold.it/750x300" alt="Card image cap" data-v-post-image data-v-if="post.image">
+
+            <div class="card-body">
+
+              <div class="card-text post-content" data-v-post-content>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!
+              </div>
+
+            </div>
+
+            <div class="card-footer text-muted">
+
+              <ul class="tags float-start">
+                <li>#winter</li>
+                <li>#tag</li>
+              </ul>
+
+              <!--
+		<a class="float-end" href="#" data-v-post-url><span>Read More </span></a>
+		-->
+            </div>
+
+          </div>
+
+
+          <div data-pagination data-v-parent-component="posts" data-v-parent-index="0">
+
+            <nav data-v-if="max_pages > 1">
+              <ul class="pagination">
+
+                <!--
+			<li class="page-item pager-first" data-first>
+				<a class="page-link" title="First page" href="#" data-page-url>
+					<span aria-hidden="true" class="la la-angle-double-left"></span>
+					<span class="sr-only">First</span>
+				</a>
+			</li>
+			-->
+
+                <li class="page-item pager-prev" data-prev>
+
+                  <a class="page-link" href="#" aria-label="Previous" title="Previous page" data-page-url data-v-if="current_page > 1">
+                    <span aria-hidden="true" class="la la-angle-left la-lg"></span>
+                    <span>Newer Posts</span>
+                  </a>
+
+                </li>
+
+
+
+                <li class="page-item" data-page>
+                  <a class="page-link" href="#" data-page-no data-page-url>1</a>
+                </li>
+                <li class="page-item" data-page>
+                  <a class="page-link" href="#" data-page-no data-page-url>2</a>
+                </li>
+                <li class="page-item" data-page>
+                  <a class="page-link" href="#" data-page-no data-page-url>3</a>
+                </li>
+                <li class="page-item" data-page>
+                  <a class="page-link" href="#" data-page-no data-page-url>4</a>
+                </li>
+                <li class="page-item" data-page>
+                  <a class="page-link" href="#" data-page-no data-page-url>5</a>
+                </li>
+
+                <li class="page-item pager-next" data-next>
+                  <a class="page-link" href="#" aria-label="Next" title="Next page" data-page-url data-v-if="current_page < max_pages">
+                    <span>Older Posts</span>
+                    <span aria-hidden="true" class="la la-angle-right la-lg"></span>
+                  </a>
+                </li>
+
+                <!--
+			<li class="page-item pager-last" data-last>
+			<a class="page-link" title="Last page" href="#" data-page-url>
+				<span aria-hidden="true" class="la la-angle-double-right"></span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+			-->
+
+              </ul>
+            </nav>
+          </div>
+
+
+
+          <!-- Pagination -->
+          <!--
+<ul class="pagination justify-content-center mb-4" data-pagination data-v-parent-component="posts" data-v-parent-index="0">
+  <li class="page-item" data-prev>
+	<a class="page-link" href="#" data-page-url>Older</a>
+  </li>
+  <li class="page-item" data-next>
+	<a class="page-link" href="#" data-page-url>Newer</a>
+  </li>
+</ul>
+-->
+
+
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <aside class="col-md-5 col-lg-4 col-xl-3" role="sidebar">
+
+          <div class="sidebar-sticky">
+            <!-- Search Widget -->
+            <div class="card">
+              <!-- h6 class="card-header">Search</h6 -->
+              <div class="card-body">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-append">
+                    <button class="btn btn-secondary la-flip-horizontal" type="button">
+                      <i class="la la-search"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Categories Widget -->
+            <div class="card categories-widget" data-v-component-content-categories="sidebar">
+              <h6 class="card-header">Categories</h6>
+              <div class="card-body">
+                <ul data-v-cats>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>Web Design</a>
+                  </li>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>HTML</a>
+                  </li>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>Freebies</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+            <!-- Categories Widget -->
+            <div class="card archives-widget" data-v-component-content-archives="sidebar">
+              <h6 class="card-header">Archives</h6>
+              <div class="card-body">
+                <ul data-v-cats>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>January 2021</a>
+                  </li>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>December 2020</a>
+                  </li>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>November 2018</a>
+                  </li>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>October 2018</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- About Widget -->
+            <div class="card">
+              <h6 class="card-header">About</h6>
+              <div class="card-body">
+                Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit.
+              </div>
+            </div>
+          </div>
+
+        </aside>
+
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+  </main>
+
+  <script src="js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <!-- Footer -->
+  <footer role="sidebar" id="main-footer">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-6">
+          <p class="mb-1">Copyright &copy; Your Website 2022</p>
+          <p class="text-muted small">Powered by <a href="https://www.vvveb.com">Vvveb</a>
+          </p>
+        </div>
+
+        <div class="col-6 text-end">
+          <a href="#main-header" class="btn btn-outline-secondary">
+            <i class="la la-angle-up"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+
+</body>
+
+</html>

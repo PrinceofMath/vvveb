@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Manrope:300,400,600,600" rel="stylesheet" type="text/css">
+
+  <base href="">
+
+  <title>Vvveb - Markdown Plugin</title>
+
+  <link href="css/admin.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <div id="container">
+
+    <div class="sidebar" data-v-copy-from="index.html,.sidebar"></div>
+
+
+    <div class="main">
+
+      <div class="clearfix top-header" data-v-copy-from="index.html,.top-header"></div>
+
+      <form id="settings-form" action="" method="post" class="needs-validation" novalidate>
+        
+        <input type="hidden" name="action" id="action" value="import">
+        
+        <div class="actions text-start">
+          <div>
+            <h4 class="text-muted mt-2">
+              <i class="ion-ios-pricetag-outline" data-v-menu-item-icon=""></i>&ensp;
+              Markdown plugin
+            </h4>
+          </div>
+        </div>
+        <div>
+          <div id="main-content">
+
+            <div class="validation-errors" data-v-validation-errors>
+              <div class="alert alert-danger alert-dismissable" role="alert" data-v-validation-error>
+                <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">
+                    <i class="la la-times"></i>
+                  </span>
+                </button>
+                <div>
+                  <i class="la la-lg la-exclamation-triangle"></i>
+                  <span data-v-validation-error-text>Validation error</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="notifications" data-v-copy-from="index.html,.notifications"></div>
+           
+            <div class="content clearfix settings">
+				
+				<div class="mb-3 row">
+                    <label for="input-site-title" class="col-sm-2 col-form-label">Import markdown path</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="input-site-title" placeholder="Path" name="settings[path]" value="/docs">
+                    </div>
+                  </div>
+                  <div class="mb-3 text-end">
+						<button class="btn btn-primary btn-icon"><i class="la la-lg la-file-import"></i>&nbsp; Import</button>
+                  </div>
+
+            </div>
+
+            </div>
+      </form>
+
+    </div>
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="module" src="../../../js/admin.js"></script>
+
+  <script data-v-validator-json=""></script>
+  <script src="js/validator.js"></script>
+
+</body>
+</html>

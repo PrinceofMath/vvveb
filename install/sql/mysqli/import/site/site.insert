@@ -1,0 +1,8 @@
+INSERT INTO `site` (`site_id`, `key`, `name`, `host`, `theme`, `home_template`) VALUES 
+(1, 'default','Default','*.*.*', 'landing', ''),
+(2, 'themes *','Themes','themes.*.*', 'themes', ''),
+(3, 'plugins','Plugins','plugins.*.*', 'plugins', ''),
+(4, 'blog *','Blog','blog.*.*', 'blog-default', ''),
+(5, 'docs *','Docs','docs.*.*', 'docs', ''),
+(6, 'dev *','Dev','dev.*.*', 'docs', ''),
+(7, 'shop *','Shop','shop.*.*', 'essence', '');

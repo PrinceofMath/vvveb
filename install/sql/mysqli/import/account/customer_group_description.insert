@@ -1,0 +1,1 @@
+INSERT INTO `user_group_description` VALUES (1,1,'Default','test');

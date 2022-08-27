@@ -1,0 +1,45 @@
+<footer class="footer-1">
+  <div class="container" data-v-component-menu="footer" data-v-menu_id="5">
+
+
+    <div class="row" data-v-cats>
+
+      <div class="col-md-3">
+        <img class="logo" src="img/logo.png">
+      </div>
+
+      <div class="col-md-3" data-v-cat data-v-if="category.children > 0">
+        <h6 data-v-cat-name>Vvveb</h6>
+        <nav data-v-cat-recursive>
+          <div data-v-cat data-v-if="category.children == 0">
+            <a href="https://themes.vvveb.com/" data-v-cat-url data-v-cat-name>Themes</a>
+          </div>
+          <div data-v-cat data-v-if="category.children == 0">
+            <a href="https://plugins.vvveb.com/" data-v-cat-url data-v-cat-name>Plugins</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-md-3" data-v-cat data-v-if="category.children > 0">
+        <h6 data-v-cat-name>Resources</h6>
+        <nav data-v-cat-recursive>
+          <div data-v-cat data-v-if="category.children == 0">
+            <a href="https://github.com/givanz/VvvebJs/wiki" data-v-cat-url data-v-cat-name>User documentation</a>
+          </div>
+          <div data-v-cat data-v-if="category.children == 0">
+            <a href="https://github.com/givanz/VvvebJs/wiki" data-v-cat-url data-v-cat-name>Developer documentation</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-md-3" data-v-cat data-v-if="category.children > 0">
+        <h6 data-v-cat-name>Contact</h6>
+        <nav data-v-cat-recursive>
+          <div data-v-cat data-v-if="category.children == 0">
+            <a href="" target="contact.html">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>

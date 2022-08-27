@@ -1,0 +1,4 @@
+INSERT INTO `return_status` VALUES 
+(1,1,'pending'),
+(3,1,'complete'),
+(2,1,'awaiting products');

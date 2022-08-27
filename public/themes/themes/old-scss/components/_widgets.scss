@@ -1,0 +1,234 @@
+//
+// widgets
+//
+//
+
+
+
+// tags
+.tags {
+  margin: -.25rem;
+  overflow: hidden;
+
+  a {
+    float: left;
+    display: block;
+    margin: .25rem;
+    padding: .5rem .75rem;
+    font-size: $font-size-sm;
+    color: $gray-700;
+    border-radius: $border-radius;
+
+    &:hover {
+      //@extend boxed;
+      border: 0;
+    }
+  }
+}
+
+
+// numbers
+.number {
+  text-align: center;
+
+  span {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  p {
+    font-size: $font-size-sm;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: $card-spacer-x;
+    padding-bottom: $card-spacer-x;
+  }
+}
+
+
+// type component
+.type {  
+  //@extend %equal;
+
+  > * { 
+    padding: $card-spacer-x; 
+
+    @include media-breakpoint-down(sm) {
+      padding: $card-spacer-y;
+    }
+  }
+
+  .badge {
+    position: absolute;
+    top: $card-spacer-y;
+    right: -$card-spacer-y;
+  }
+}
+
+.type-title {
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-sm;
+  color: $body-color;
+}
+
+.type-example {
+  position: absolute;
+  left: $card-spacer-x;
+  bottom: $card-spacer-x;
+
+  @include media-breakpoint-down(sm) {
+    left: $card-spacer-y;
+    bottom: $card-spacer-y;
+  }
+
+  span {
+    font-size: 3.125rem;
+    line-height: 1em;
+    color: $black;
+  }
+}
+
+
+// color component
+.color {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10rem;
+
+  .color-example {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+
+  .color-info {
+    flex: 1;
+
+    span {
+      font-size: $font-size-sm;
+      color: $gray-600;
+      text-transform: uppercase;
+    }
+  }
+
+  .color-title {
+    font-family: $font-family-sans-serif;
+    font-size: $font-size-lg;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+}
+
+
+// page meta
+.page-meta-stat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  b {
+    color: $white;
+    margin-right: .625rem;
+    font-weight: 700;
+  }
+
+  span {
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing;
+    color: rgba($white, .75);
+  }
+}
+
+
+// file tree
+.file-tree {
+  margin-bottom: 0;
+  padding-left: 20px;
+  list-style: none;
+  overflow: hidden;
+
+  ul {
+    list-style: none;
+    display: none;
+    padding-left: $card-spacer-x;
+  }
+  
+  li {
+    position: relative;
+    padding: 5px 0;
+    border-radius: $border-radius;
+    cursor: auto;
+    white-space: nowrap;
+    font-size: $font-size-sm;
+    font-weight: 600;
+
+    &::before {
+      content: "\f15b";
+      display: inline-block;
+      text-align: center;
+      width: $card-spacer-x;
+      margin-right: .25rem;
+      vertical-align: middle;
+      font-family: 'icomoon' !important;
+      font-size: 1rem;
+      color: $secondary;
+    }
+
+    span {
+      color: $gray-600;
+      font-weight: $font-weight-normal;
+      font-size: .75rem;
+    }
+  }
+
+  .file-tree-folder {
+    @include transition;
+    cursor: pointer;
+
+    &::before {
+      content: "\f07b";
+      font-size: 1.25rem;
+    }
+
+    &.open {
+      &::after {
+      }
+
+      > ul {
+        display: block;
+      }
+    }
+
+    &::after {
+      @include transition;
+      position: absolute;
+      top: .8rem;
+      left: -1em;
+      content: "\ebfa";
+      display: block;
+      text-align: center;
+      width: 1em;
+      line-height: 1em;
+      font-family: 'icomoon' !important;
+      font-size: 1rem;
+      color: $secondary;
+    }
+
+    &.open {
+      &::before { content: "\f07c"; }
+    }
+
+    &.empty {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+

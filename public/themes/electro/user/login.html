@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Vvveb">
+  <!-- base href="/app/public/themes/default/" -->
+  <base href="../">
+  <link rel="icon" href="favicon.ico">
+
+  <title>Electro - Cart</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+
+<body>
+  <section id="top-nav" class="bg-light smaller-font-size text-muted">
+    <nav class="navbar-expand-md container px-3">
+      <button class="navbar-toggler navbar-toggler-end navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsToggle" aria-controls="navbarsToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse clearfix" id="navbarsToggle">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-muted" href="/wishlist" data-v-url="user/wishlist/index">
+              <i class="la la-heart"></i>
+              <span class="hidden-xs hidden-sm hidden-md">Wish List (0)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="/cart" data-v-url="cart/cart/index">
+              <i class="la la-shopping-cart"></i>
+              <span class="hidden-xs hidden-sm hidden-md">Shopping Cart</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="/checkout" data-v-url="checkout/checkout/index">
+              <i class="la la-share"></i>
+              <span class="hidden-xs hidden-sm hidden-md">Checkout</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav float-end">
+          <li class="nav-item dropdown float-end" data-v-component-currency>
+
+            <a class="nav-link dropdown-toggle text-muted" href="#" id="dropdownCurrency" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-current-currency>
+              <span data-v-currency-symbol>$</span>
+              <span data-v-currency-name>USD</span>
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownCurrency">
+              <a href="EUR" class="dropdown-item" data-v-currency>
+                <span data-v-currency-symbol>€</span>
+                <span data-v-currency-name>Euro</span>
+              </a>
+              <a href="USD" class="dropdown-item" data-v-currency>
+                <span data-v-currency-symbol>$</span>
+                <span data-v-currency-name>US Dollar</span>
+              </a>
+              <a href="GBP" class="dropdown-item" data-v-currency>
+                <span data-v-currency-symbol>£</span>
+                <span data-v-currency-name>Pound Sterling</span>
+              </a>
+            </div>
+
+          </li>
+
+          <li class="nav-item dropdown float-end" data-v-component-language>
+
+            <a class="nav-link dropdown-toggle text-muted" href="#" id="dropdownlanguage" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-current-language>
+              <i class="la la-flag"></i>
+              <img src="" data-v-language-flag>
+              <span data-v-language-name>English</span>
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownlanguage">
+              <a href="EUR" class="dropdown-item" data-v-language>
+                <img src="" data-v-language-flag>
+                <span data-v-language-name>English</span>
+              </a>
+              <a href="USD" class="dropdown-item" data-v-language>
+                <img src="" data-v-language-flag>
+                <span data-v-language-name>French</span>
+              </a>
+              <a href="GBP" class="dropdown-item" data-v-language>
+                <img src="" data-v-language-flag>
+                <span data-v-language-name>Italian</span>
+              </a>
+            </div>
+
+          </li>
+
+
+        </ul>
+      </div>
+
+    </nav>
+  </section>
+
+
+
+  <header class="container mt-5" id="global-header">
+
+    <div class="row">
+
+      <div class="col-md-3">
+        <a href="index.html" class="logo">
+          <!-- img src="img/logo.png"-->
+          <h1 class="text-dark">
+            <i class="text-secondary la la-plug"></i>
+            <span>electr<span class="text-secondary">o.</span>
+            </span>
+          </h1>
+          <small class="text-dark">electronics shopping mall</small>
+
+        </a>
+      </div>
+
+      <div class="col-md-5 search-col">
+
+        <form action="/search" method="get" data-v-action="/search">
+
+          <div class="input-group input-group-lg" id="search-box" data-v-component-category>
+            <input type="hidden" name="route" value="search">
+
+            <input type="search" name="search" id="headerSearch" class="form-control default-font-size" placeholder="Search product" aria-label="Search product" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
+
+            <select class="form-select  form-control-lg no-border-x default-font-size">
+              <option selected="">All categories</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="submit">
+                <i class="la la-search"></i>
+              </button>
+            </div>
+          </div>
+
+
+          <div id="search-panel">
+
+            <div class="container-fluid" data-v-component-search>
+
+              <div data-v-if-not="search.query">
+                <!-- h3 class="text-muted mt-4 text-center">Enter text to search!</h3 -->
+              </div>
+
+              <div data-v-if="search.query">
+
+                <div class="row" data-v-component-posts="popular" data-v-limit="4" data-v-search="url">
+
+
+                  <div class="col-12 col-md-12 col-lg-12" data-v-if-not="posts.count">
+                    <h3>No posts found!</h3>
+                  </div>
+
+                  <!-- Single Blog Area -->
+                  <div class="col-6 col-md-4 col-lg-3" data-v-post="">
+                    <div class="single-blog-area mb-50">
+                      <a href="/hello-world-1" data-v-post-url="" class="row" title="">
+                        <div class="col-4">
+                          <img src="/public/media/posts/1.jpg" alt="" data-v-post-img="">
+                        </div>
+                        <!-- Post Title -->
+                        <div class="post-title col-8">
+                          <span data-v-post-name="">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3" data-v-post="">
+                    <div class="single-blog-area mb-50">
+                      <a href="/hello-world-2" data-v-post-url="" class="row" title="">
+                        <div class="col-4">
+                          <img src="/public/media/posts/2.jpg" alt="" data-v-post-img="">
+                        </div>
+                        <!-- Post Title -->
+                        <div class="post-title col-8">
+                          <span data-v-post-name="">Cras lobortis nisl nec libero pulvinar lacinia. Nunc sed ullamcorper massa</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3" data-v-post="">
+                    <div class="single-blog-area mb-50">
+                      <a href="/hello-world-3" data-v-post-url="" class="row" title="">
+                        <div class="col-4">
+                          <img src="/public/media/posts/3.jpg" alt="" data-v-post-img="">
+                        </div>
+                        <!-- Post Title -->
+                        <div class="post-title col-8">
+                          <span data-v-post-name="">Fusce tincidunt nulla magna, ac euismod quam viverra id. Fusce eget metus feugiat</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3" data-v-post="">
+                    <div class="single-blog-area mb-50">
+                      <a href="/hello-world-4" data-v-post-url="" class="row" title="">
+                        <div class="col-4">
+                          <img src="/public/media/posts/4.jpg" alt="" data-v-post-img="">
+                        </div>
+                        <!-- Post Title -->
+                        <div class="post-title col-8">
+                          <span data-v-post-name="">Etiam leo nibh, consectetur nec orci et, tempus tempus ex</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row" data-v-component-products="search" data-v-page="url" data-v-taxonomy_id="url" data-v-limit="4" data-v-parent="category.0" data-v-search="url">
+
+                  <div class="col-12 col-md-12 col-lg-12" data-v-if-not="products.count">
+                    <h3>No products found!</h3>
+                  </div>
+
+
+
+
+
+                  <div class="col-6 col-md-4 col-lg-3" data-v-product="">
+
+                    <article class="product">
+
+                      <a href="product/product.html" data-v-product-url>
+                        <img src="img/products/2.jpg" class="img-fluid" data-v-product-img>
+                      </a>
+
+                      <h3>
+                        <a href="product/product.html" data-v-product-name>Apple cinema</a>
+                      </h3>
+
+                      <span class="description" data-v-product-description>
+                        Lorem ipsum
+                      </span>
+
+                      <div class="price-group">
+                        <div class="old-price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>385</span>
+                        </div>
+
+                        <div class="price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>315</span>
+                        </div>
+                      </div>
+
+                      <div class="btn-group">
+
+                        <div class="add-to-cart-btn ">
+                          <input type="hidden" name="product_id" value="" data-v-product-product_id="">
+                          <a href="" class="btn btn-secondary" data-v-product-cart-url="" data-v-vvveb-action="addToCart" data-product_id="1">
+
+                            <span class="loading d-none">
+                              <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                              </span>
+                              <span data-translate="">Add to cart</span>...
+                            </span>
+
+
+                            <span class="button-text" data-translate="">
+                              <i class="la la-shopping-cart"></i> Add to cart
+                            </span>
+
+
+                          </a>
+                        </div>
+
+
+
+                        <button type="button" class="btn  btn-link" title="Add to favorites" data-v-product-fav-url>
+                          <i class="la la-heart"></i>
+                        </button>
+
+                        <button type="button" class="btn  btn-link" title="Add to compare" data-v-product-compare-url>
+                          <i class="la la-exchange"></i>
+                        </button>
+
+                      </div>
+
+                    </article>
+
+                    <!-- product -->
+
+                  </div> <!-- col-md -->
+
+
+
+                  <div class="col-6 col-md-4 col-lg-3" data-v-product="">
+
+                    <article class="product">
+
+                      <a href="product/product.html" data-v-product-url>
+                        <img src="img/products/2.jpg" class="img-fluid" data-v-product-img>
+                      </a>
+
+                      <h3>
+                        <a href="product/product.html" data-v-product-name>Apple cinema</a>
+                      </h3>
+
+                      <span class="description" data-v-product-description>
+                        Lorem ipsum
+                      </span>
+
+                      <div class="price-group">
+                        <div class="old-price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>385</span>
+                        </div>
+
+                        <div class="price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>315</span>
+                        </div>
+                      </div>
+
+                      <div class="btn-group">
+
+                        <div class="add-to-cart-btn ">
+                          <input type="hidden" name="product_id" value="" data-v-product-product_id="">
+                          <a href="" class="btn btn-secondary" data-v-product-cart-url="" data-v-vvveb-action="addToCart" data-product_id="1">
+
+                            <span class="loading d-none">
+                              <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                              </span>
+                              <span data-translate="">Add to cart</span>...
+                            </span>
+
+
+                            <span class="button-text" data-translate="">
+                              <i class="la la-shopping-cart"></i> Add to cart
+                            </span>
+
+
+                          </a>
+                        </div>
+
+
+
+                        <button type="button" class="btn  btn-link" title="Add to favorites" data-v-product-fav-url>
+                          <i class="la la-heart"></i>
+                        </button>
+
+                        <button type="button" class="btn  btn-link" title="Add to compare" data-v-product-compare-url>
+                          <i class="la la-exchange"></i>
+                        </button>
+
+                      </div>
+
+                    </article>
+
+                    <!-- product -->
+
+                  </div> <!-- col-md -->
+
+
+
+                  <div class="col-6 col-md-4 col-lg-3" data-v-product="">
+
+                    <article class="product">
+
+                      <a href="product/product.html" data-v-product-url>
+                        <img src="img/products/2.jpg" class="img-fluid" data-v-product-img>
+                      </a>
+
+                      <h3>
+                        <a href="product/product.html" data-v-product-name>Apple cinema</a>
+                      </h3>
+
+                      <span class="description" data-v-product-description>
+                        Lorem ipsum
+                      </span>
+
+                      <div class="price-group">
+                        <div class="old-price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>385</span>
+                        </div>
+
+                        <div class="price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>315</span>
+                        </div>
+                      </div>
+
+                      <div class="btn-group">
+
+                        <div class="add-to-cart-btn ">
+                          <input type="hidden" name="product_id" value="" data-v-product-product_id="">
+                          <a href="" class="btn btn-secondary" data-v-product-cart-url="" data-v-vvveb-action="addToCart" data-product_id="1">
+
+                            <span class="loading d-none">
+                              <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                              </span>
+                              <span data-translate="">Add to cart</span>...
+                            </span>
+
+
+                            <span class="button-text" data-translate="">
+                              <i class="la la-shopping-cart"></i> Add to cart
+                            </span>
+
+
+                          </a>
+                        </div>
+
+
+
+                        <button type="button" class="btn  btn-link" title="Add to favorites" data-v-product-fav-url>
+                          <i class="la la-heart"></i>
+                        </button>
+
+                        <button type="button" class="btn  btn-link" title="Add to compare" data-v-product-compare-url>
+                          <i class="la la-exchange"></i>
+                        </button>
+
+                      </div>
+
+                    </article>
+
+                    <!-- product -->
+
+                  </div> <!-- col-md -->
+
+
+
+                  <div class="col-6 col-md-4 col-lg-3" data-v-product="">
+
+                    <article class="product">
+
+                      <a href="product/product.html" data-v-product-url>
+                        <img src="img/products/2.jpg" class="img-fluid" data-v-product-img>
+                      </a>
+
+                      <h3>
+                        <a href="product/product.html" data-v-product-name>Apple cinema</a>
+                      </h3>
+
+                      <span class="description" data-v-product-description>
+                        Lorem ipsum
+                      </span>
+
+                      <div class="price-group">
+                        <div class="old-price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>385</span>
+                        </div>
+
+                        <div class="price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>315</span>
+                        </div>
+                      </div>
+
+                      <div class="btn-group">
+
+                        <div class="add-to-cart-btn ">
+                          <input type="hidden" name="product_id" value="" data-v-product-product_id="">
+                          <a href="" class="btn btn-secondary" data-v-product-cart-url="" data-v-vvveb-action="addToCart" data-product_id="1">
+
+                            <span class="loading d-none">
+                              <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                              </span>
+                              <span data-translate="">Add to cart</span>...
+                            </span>
+
+
+                            <span class="button-text" data-translate="">
+                              <i class="la la-shopping-cart"></i> Add to cart
+                            </span>
+
+
+                          </a>
+                        </div>
+
+
+
+                        <button type="button" class="btn  btn-link" title="Add to favorites" data-v-product-fav-url>
+                          <i class="la la-heart"></i>
+                        </button>
+
+                        <button type="button" class="btn  btn-link" title="Add to compare" data-v-product-compare-url>
+                          <i class="la la-exchange"></i>
+                        </button>
+
+                      </div>
+
+                    </article>
+
+                    <!-- product -->
+
+                  </div> <!-- col-md -->
+
+
+
+                  <div class="col-6 col-md-4 col-lg-3" data-v-product="">
+
+                    <article class="product">
+
+                      <a href="product/product.html" data-v-product-url>
+                        <img src="img/products/2.jpg" class="img-fluid" data-v-product-img>
+                      </a>
+
+                      <h3>
+                        <a href="product/product.html" data-v-product-name>Apple cinema</a>
+                      </h3>
+
+                      <span class="description" data-v-product-description>
+                        Lorem ipsum
+                      </span>
+
+                      <div class="price-group">
+                        <div class="old-price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>385</span>
+                        </div>
+
+                        <div class="price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>315</span>
+                        </div>
+                      </div>
+
+                      <div class="btn-group">
+
+                        <div class="add-to-cart-btn ">
+                          <input type="hidden" name="product_id" value="" data-v-product-product_id="">
+                          <a href="" class="btn btn-secondary" data-v-product-cart-url="" data-v-vvveb-action="addToCart" data-product_id="1">
+
+                            <span class="loading d-none">
+                              <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                              </span>
+                              <span data-translate="">Add to cart</span>...
+                            </span>
+
+
+                            <span class="button-text" data-translate="">
+                              <i class="la la-shopping-cart"></i> Add to cart
+                            </span>
+
+
+                          </a>
+                        </div>
+
+
+
+                        <button type="button" class="btn  btn-link" title="Add to favorites" data-v-product-fav-url>
+                          <i class="la la-heart"></i>
+                        </button>
+
+                        <button type="button" class="btn  btn-link" title="Add to compare" data-v-product-compare-url>
+                          <i class="la la-exchange"></i>
+                        </button>
+
+                      </div>
+
+                    </article>
+
+                    <!-- product -->
+
+                  </div> <!-- col-md -->
+
+
+
+                  <div class="col-6 col-md-4 col-lg-3" data-v-product="">
+
+                    <article class="product">
+
+                      <a href="product/product.html" data-v-product-url>
+                        <img src="img/products/2.jpg" class="img-fluid" data-v-product-img>
+                      </a>
+
+                      <h3>
+                        <a href="product/product.html" data-v-product-name>Apple cinema</a>
+                      </h3>
+
+                      <span class="description" data-v-product-description>
+                        Lorem ipsum
+                      </span>
+
+                      <div class="price-group">
+                        <div class="old-price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>385</span>
+                        </div>
+
+                        <div class="price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>315</span>
+                        </div>
+                      </div>
+
+                      <div class="btn-group">
+
+                        <div class="add-to-cart-btn ">
+                          <input type="hidden" name="product_id" value="" data-v-product-product_id="">
+                          <a href="" class="btn btn-secondary" data-v-product-cart-url="" data-v-vvveb-action="addToCart" data-product_id="1">
+
+                            <span class="loading d-none">
+                              <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                              </span>
+                              <span data-translate="">Add to cart</span>...
+                            </span>
+
+
+                            <span class="button-text" data-translate="">
+                              <i class="la la-shopping-cart"></i> Add to cart
+                            </span>
+
+
+                          </a>
+                        </div>
+
+
+
+                        <button type="button" class="btn  btn-link" title="Add to favorites" data-v-product-fav-url>
+                          <i class="la la-heart"></i>
+                        </button>
+
+                        <button type="button" class="btn  btn-link" title="Add to compare" data-v-product-compare-url>
+                          <i class="la la-exchange"></i>
+                        </button>
+
+                      </div>
+
+                    </article>
+
+                    <!-- product -->
+
+                  </div> <!-- col-md -->
+
+
+
+                  <div class="col-6 col-md-4 col-lg-3" data-v-product="">
+
+                    <article class="product">
+
+                      <a href="product/product.html" data-v-product-url>
+                        <img src="img/products/2.jpg" class="img-fluid" data-v-product-img>
+                      </a>
+
+                      <h3>
+                        <a href="product/product.html" data-v-product-name>Apple cinema</a>
+                      </h3>
+
+                      <span class="description" data-v-product-description>
+                        Lorem ipsum
+                      </span>
+
+                      <div class="price-group">
+                        <div class="old-price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>385</span>
+                        </div>
+
+                        <div class="price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>315</span>
+                        </div>
+                      </div>
+
+                      <div class="btn-group">
+
+                        <div class="add-to-cart-btn ">
+                          <input type="hidden" name="product_id" value="" data-v-product-product_id="">
+                          <a href="" class="btn btn-secondary" data-v-product-cart-url="" data-v-vvveb-action="addToCart" data-product_id="1">
+
+                            <span class="loading d-none">
+                              <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                              </span>
+                              <span data-translate="">Add to cart</span>...
+                            </span>
+
+
+                            <span class="button-text" data-translate="">
+                              <i class="la la-shopping-cart"></i> Add to cart
+                            </span>
+
+
+                          </a>
+                        </div>
+
+
+
+                        <button type="button" class="btn  btn-link" title="Add to favorites" data-v-product-fav-url>
+                          <i class="la la-heart"></i>
+                        </button>
+
+                        <button type="button" class="btn  btn-link" title="Add to compare" data-v-product-compare-url>
+                          <i class="la la-exchange"></i>
+                        </button>
+
+                      </div>
+
+                    </article>
+
+                    <!-- product -->
+
+                  </div> <!-- col-md -->
+
+
+
+                  <div class="col-6 col-md-4 col-lg-3" data-v-product="">
+
+                    <article class="product">
+
+                      <a href="product/product.html" data-v-product-url>
+                        <img src="img/products/2.jpg" class="img-fluid" data-v-product-img>
+                      </a>
+
+                      <h3>
+                        <a href="product/product.html" data-v-product-name>Apple cinema</a>
+                      </h3>
+
+                      <span class="description" data-v-product-description>
+                        Lorem ipsum
+                      </span>
+
+                      <div class="price-group">
+                        <div class="old-price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>385</span>
+                        </div>
+
+                        <div class="price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>315</span>
+                        </div>
+                      </div>
+
+                      <div class="btn-group">
+
+                        <div class="add-to-cart-btn ">
+                          <input type="hidden" name="product_id" value="" data-v-product-product_id="">
+                          <a href="" class="btn btn-secondary" data-v-product-cart-url="" data-v-vvveb-action="addToCart" data-product_id="1">
+
+                            <span class="loading d-none">
+                              <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                              </span>
+                              <span data-translate="">Add to cart</span>...
+                            </span>
+
+
+                            <span class="button-text" data-translate="">
+                              <i class="la la-shopping-cart"></i> Add to cart
+                            </span>
+
+
+                          </a>
+                        </div>
+
+
+
+                        <button type="button" class="btn  btn-link" title="Add to favorites" data-v-product-fav-url>
+                          <i class="la la-heart"></i>
+                        </button>
+
+                        <button type="button" class="btn  btn-link" title="Add to compare" data-v-product-compare-url>
+                          <i class="la la-exchange"></i>
+                        </button>
+
+                      </div>
+
+                    </article>
+
+                    <!-- product -->
+
+                  </div> <!-- col-md -->
+
+
+
+                  <div class="col-6 col-md-4 col-lg-3" data-v-product="">
+
+                    <article class="product">
+
+                      <a href="product/product.html" data-v-product-url>
+                        <img src="img/products/2.jpg" class="img-fluid" data-v-product-img>
+                      </a>
+
+                      <h3>
+                        <a href="product/product.html" data-v-product-name>Apple cinema</a>
+                      </h3>
+
+                      <span class="description" data-v-product-description>
+                        Lorem ipsum
+                      </span>
+
+                      <div class="price-group">
+                        <div class="old-price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>385</span>
+                        </div>
+
+                        <div class="price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>315</span>
+                        </div>
+                      </div>
+
+                      <div class="btn-group">
+
+                        <div class="add-to-cart-btn ">
+                          <input type="hidden" name="product_id" value="" data-v-product-product_id="">
+                          <a href="" class="btn btn-secondary" data-v-product-cart-url="" data-v-vvveb-action="addToCart" data-product_id="1">
+
+                            <span class="loading d-none">
+                              <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                              </span>
+                              <span data-translate="">Add to cart</span>...
+                            </span>
+
+
+                            <span class="button-text" data-translate="">
+                              <i class="la la-shopping-cart"></i> Add to cart
+                            </span>
+
+
+                          </a>
+                        </div>
+
+
+
+                        <button type="button" class="btn  btn-link" title="Add to favorites" data-v-product-fav-url>
+                          <i class="la la-heart"></i>
+                        </button>
+
+                        <button type="button" class="btn  btn-link" title="Add to compare" data-v-product-compare-url>
+                          <i class="la la-exchange"></i>
+                        </button>
+
+                      </div>
+
+                    </article>
+
+                    <!-- product -->
+
+                  </div> <!-- col-md -->
+
+
+
+                  <div class="col-6 col-md-4 col-lg-3" data-v-product="">
+
+                    <article class="product">
+
+                      <a href="product/product.html" data-v-product-url>
+                        <img src="img/products/2.jpg" class="img-fluid" data-v-product-img>
+                      </a>
+
+                      <h3>
+                        <a href="product/product.html" data-v-product-name>Apple cinema</a>
+                      </h3>
+
+                      <span class="description" data-v-product-description>
+                        Lorem ipsum
+                      </span>
+
+                      <div class="price-group">
+                        <div class="old-price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>385</span>
+                        </div>
+
+                        <div class="price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>315</span>
+                        </div>
+                      </div>
+
+                      <div class="btn-group">
+
+                        <div class="add-to-cart-btn ">
+                          <input type="hidden" name="product_id" value="" data-v-product-product_id="">
+                          <a href="" class="btn btn-secondary" data-v-product-cart-url="" data-v-vvveb-action="addToCart" data-product_id="1">
+
+                            <span class="loading d-none">
+                              <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                              </span>
+                              <span data-translate="">Add to cart</span>...
+                            </span>
+
+
+                            <span class="button-text" data-translate="">
+                              <i class="la la-shopping-cart"></i> Add to cart
+                            </span>
+
+
+                          </a>
+                        </div>
+
+
+
+                        <button type="button" class="btn  btn-link" title="Add to favorites" data-v-product-fav-url>
+                          <i class="la la-heart"></i>
+                        </button>
+
+                        <button type="button" class="btn  btn-link" title="Add to compare" data-v-product-compare-url>
+                          <i class="la la-exchange"></i>
+                        </button>
+
+                      </div>
+
+                    </article>
+
+                    <!-- product -->
+
+                  </div> <!-- col-md -->
+
+
+
+                  <div class="col-6 col-md-4 col-lg-3" data-v-product="">
+
+                    <article class="product">
+
+                      <a href="product/product.html" data-v-product-url>
+                        <img src="img/products/2.jpg" class="img-fluid" data-v-product-img>
+                      </a>
+
+                      <h3>
+                        <a href="product/product.html" data-v-product-name>Apple cinema</a>
+                      </h3>
+
+                      <span class="description" data-v-product-description>
+                        Lorem ipsum
+                      </span>
+
+                      <div class="price-group">
+                        <div class="old-price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>385</span>
+                        </div>
+
+                        <div class="price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>315</span>
+                        </div>
+                      </div>
+
+                      <div class="btn-group">
+
+                        <div class="add-to-cart-btn ">
+                          <input type="hidden" name="product_id" value="" data-v-product-product_id="">
+                          <a href="" class="btn btn-secondary" data-v-product-cart-url="" data-v-vvveb-action="addToCart" data-product_id="1">
+
+                            <span class="loading d-none">
+                              <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                              </span>
+                              <span data-translate="">Add to cart</span>...
+                            </span>
+
+
+                            <span class="button-text" data-translate="">
+                              <i class="la la-shopping-cart"></i> Add to cart
+                            </span>
+
+
+                          </a>
+                        </div>
+
+
+
+                        <button type="button" class="btn  btn-link" title="Add to favorites" data-v-product-fav-url>
+                          <i class="la la-heart"></i>
+                        </button>
+
+                        <button type="button" class="btn  btn-link" title="Add to compare" data-v-product-compare-url>
+                          <i class="la la-exchange"></i>
+                        </button>
+
+                      </div>
+
+                    </article>
+
+                    <!-- product -->
+
+                  </div> <!-- col-md -->
+
+
+
+                  <div class="col-6 col-md-4 col-lg-3" data-v-product="">
+
+                    <article class="product">
+
+                      <a href="product/product.html" data-v-product-url>
+                        <img src="img/products/2.jpg" class="img-fluid" data-v-product-img>
+                      </a>
+
+                      <h3>
+                        <a href="product/product.html" data-v-product-name>Apple cinema</a>
+                      </h3>
+
+                      <span class="description" data-v-product-description>
+                        Lorem ipsum
+                      </span>
+
+                      <div class="price-group">
+                        <div class="old-price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>385</span>
+                        </div>
+
+                        <div class="price">
+                          <span class="currency" data-v-product-currency>$</span>
+                          <span data-v-product-price>315</span>
+                        </div>
+                      </div>
+
+                      <div class="btn-group">
+
+                        <div class="add-to-cart-btn ">
+                          <input type="hidden" name="product_id" value="" data-v-product-product_id="">
+                          <a href="" class="btn btn-secondary" data-v-product-cart-url="" data-v-vvveb-action="addToCart" data-product_id="1">
+
+                            <span class="loading d-none">
+                              <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                              </span>
+                              <span data-translate="">Add to cart</span>...
+                            </span>
+
+
+                            <span class="button-text" data-translate="">
+                              <i class="la la-shopping-cart"></i> Add to cart
+                            </span>
+
+
+                          </a>
+                        </div>
+
+
+
+                        <button type="button" class="btn  btn-link" title="Add to favorites" data-v-product-fav-url>
+                          <i class="la la-heart"></i>
+                        </button>
+
+                        <button type="button" class="btn  btn-link" title="Add to compare" data-v-product-compare-url>
+                          <i class="la la-exchange"></i>
+                        </button>
+
+                      </div>
+
+                    </article>
+
+                    <!-- product -->
+
+                  </div> <!-- col-md -->
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </form>
+
+
+
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="dropdown float-end" id="mini-cart" data-v-component-cart>
+          <a class="btn btn-link dropdown-toggle bg-faded p-0 chevron-big" href="#" id="dropdownMiniCart" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="la la-shopping-cart d-inline-block" style="font-size: 42px;">
+              <span class="cart-items" data-v-total-items>3</span>
+            </i>
+            &ensp;
+
+            <div class="d-inline-block text-dark">
+              <span class="small d-block text-start">
+                Your cart
+              </span>
+              <strong class="font-weight-bold" data-v-total>$3500.05</strong>
+            </div>
+          </a>
+
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMiniCart">
+
+            <div class="" data-v-if-not="cart.total_items">
+              <h6 class="my-3 text-center">Cart is empty!</h6>
+            </div>
+
+            <div class="" data-v-if="cart.total_items">
+              <table class="table table-sm table-striped">
+                <tbody>
+                  <tr data-v-cart-product>
+                    <td class="text-center">
+                      <a href="#" data-v-cart-product-url>
+                        <img src="" alt="iPhone" title="iPhone" class="img-thumbnail" data-v-cart-product-img />
+                      </a>
+                    </td>
+
+                    <td class="text-start">
+                      <a href="#" data-v-cart-product-url data-v-cart-product-name>iPhone</a>
+                      <br />
+
+                      x <span data-v-cart-product-quantity>1</span>
+                      <br />
+
+                      <span data-v-cart-product-price>$123.20</span>
+
+                      <button type="button" data-bs-toggle="tooltip" title="" class="btn-remove" data-bs-original-title="Remove" data-v-vvveb-action="removeFromCart" data-product_id="1">
+                        <i class="la la-times"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+                <tr data-v-if-not="this.count > 1">
+                  <td colspan="100">
+                    <div class="text-center">
+                      <h6>No posts to display!</h6>
+                    </div>
+                  </td>
+                </tr>
+
+              </table>
+
+              <div>
+                <table class="table table-sm table-bordered">
+                  <tbody>
+                    <tr>
+                      <td class="text-end">
+                        <strong>Sub-Total</strong>
+                      </td>
+                      <td class="text-end">$681.00</td>
+                    </tr>
+                    <tr>
+                      <td class="text-end">
+                        <strong>Eco Tax (-2.00)</strong>
+                      </td>
+                      <td class="text-end">$6.00</td>
+                    </tr>
+                    <tr>
+                      <td class="text-end">
+                        <strong>VAT (20%)</strong>
+                      </td>
+                      <td class="text-end">$136.20</td>
+                    </tr>
+                    <tr>
+                      <td class="text-end">
+                        <strong>Total</strong>
+                      </td>
+                      <td class="text-end">$823.20</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="text-end">
+                  <a href="/cart" data-v-url="cart/cart/index">
+                    <strong>
+                      <i class="la la-shopping-cart"></i> View Cart
+                    </strong>
+                  </a>
+                  &nbsp;&nbsp;&nbsp;
+                  <a href="/checkout" data-v-url="checkout/checkout/index">
+                    <strong>
+                      <i class="la la-share"></i> Checkout
+                    </strong>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown float-end" id="mini-user" data-v-component-user>
+          <a class="btn btn-link dropdown-toggle bg-faded p-0 chevron-big" href="#" id="dropdownUser" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="la la-user d-inline-block" style="font-size: 42px;"></i>&ensp;
+
+            <div class="d-inline-block text-dark" data-bs-if="login">
+              <span class="small d-block text-start">My account</span>
+
+              <strong class="font-weight-bold" data-v-if-not="user.user_id">Login/Register</strong>
+
+              <strong class="font-weight-bold" data-v-if="user.user_id" data-v-display_name>John Doe</strong>
+            </div>
+          </a>
+
+          <div class="dropdown-menu login-box" aria-labelledby="dropdownUser">
+            <div>
+              <div class="card border-danger mb-3" id="errors" data-v-errors>
+                <div class="card-body">
+                  <div data-v-error>
+                    <span class="text-danger"> &#10006; </span>
+                    <span data-v-error-text> Can't connect to database </span>
+                  </div>
+                </div>
+              </div>
+
+              <form action="" method="post" enctype="multipart/form-data" data-v-url="user/login/index" data-v-vvveb-action="login" data-v-vvveb-on="submit">
+                <input type="hidden" name="csrf" data-v-csrf />
+
+                <div class="login-form" data-v-if-not="component.user_id">
+                  <div class="mb-3">
+                    <label class="control-label" for="input-email">E-Mail Address</label>
+                    <input type="email" name="email" value="" placeholder="E-Mail Address" id="input-email" class="form-control" required />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="control-label" for="input-password">Password</label>
+                    <input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control" required />
+                  </div>
+
+                  <button type="submit" value="Login" class="btn btn-primary w-100 mb-3">
+                    <span class="loading d-none">
+                      <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
+                      <span data-translate>Authenticating</span>...
+                    </span>
+
+                    <span class="button-text" data-translate>
+                      Login
+                    </span>
+                  </button>
+
+                  <br />
+                  <a href="/user/recover" data-v-url="user/recover/index" class="my-2">Forgotten Password</a>
+
+                  <br />
+                  <a href="#">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square fa-stack-2x"></i>
+                      <i class="fa fa-google fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                  <a href="#">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-square fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                  <hr />
+                  <h6>New Customer</h6>
+                  <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
+                </div>
+
+                <div class="user-form" data-v-if="component.user_id">
+                  <!-- div class="mb-2">Welcome <b data-v-display_name>John Doe</b></div -->
+
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <a href="/user/comments" data-v-url="user/comments">Comments</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="/user/comments" data-v-url="user/comments">Orders</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="/user/comments" data-v-url="user/comments">Downloads</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="/user/comments" data-v-url="user/comments">Profile</a>
+                    </li>
+                    <li class="list-group-item">
+                      <button type="submit" value="logout" class="btn btn-primary w-100">
+                        <span class="loading d-none">
+                          <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
+                          <span data-translate>Loading ...</span>...
+                        </span>
+
+                        <span class="button-text" data-translate>
+                          Logout
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+
+                  <input type="hidden" name="logout" />
+
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <nav class="navbar navbar-light bg-white  rounded navbar-expand-md mt-4">
+      <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="containerNavbar">
+        <ul class="navbar-nav me-auto">
+
+          <li class="nav-item dropdown categories-dropdown" data-v-component-categories="menu">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="la la-bars"></i>&ensp;Categories <i class="la la-angle-down float-end"></i>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdown02" data-v-cats>
+              <div data-v-cat>
+                <a class="dropdown-item" href="/shop/Mac" data-v-cat-url data-v-cat-name>Category 1</a>
+              </div>
+              <div data-v-cat>
+                <a class="dropdown-item" href="/shop/Mac" data-v-cat-url data-v-cat-name>Category 2</a>
+              </div>
+              <div data-v-cat>
+                <a class="dropdown-item" href="/shop/Mac" data-v-cat-url data-v-cat-name>Category 3</a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+
+
+          <li class="nav-item dropdown dropdown--canvas dropdown--canvas--start dropdown--canvas--sm">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Store Location
+            </a>
+            <div class="dropdown-menu">
+              Hello!
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Delivery Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+              <a class="dropdown-item" href="#">FAQ</a>
+              <a class="dropdown-item" href="#">Our Story</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+  </header>
+
+
+
+
+  <!-- ##### Blog Wrapper Area Start ##### -->
+  <div class="single-blog-wrapper">
+
+    <!-- Single Blog Post Thumb -->
+    <div class="single-blog-post-thumb">
+      <img src="img/bg-img/bg-8.jpg" alt="">
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <div class="regular-page-content-wrapper section-padding-80">
+            <div class="regular-page-text">
+
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">New Customer</h5>
+                      <p>
+                        <strong>Register Account</strong>
+                      </p>
+                      <p data-bs-translate>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
+                      <a href="" class="btn btn-primary" data-v-url="user/signup/index" data-bs-translate>Continue</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Returning Customer</h5>
+                      <p>
+                        <strong>I am a returning customer</strong>
+                      </p>
+
+
+                      <div class="card border-danger mb-3" id="errors" data-v-errors>
+                        <div class="card-body">
+
+                          <div data-v-error>
+                            <span class="text-danger"> &#10006; </span>
+                            <span data-v-error-text> Can't connect to database </span>
+                          </div>
+
+                        </div>
+                      </div>
+
+
+                      <div class="card border-success mb-3" id="messages" data-v-messages>
+                        <div class="card-body">
+
+                          <div data-v-message>
+                            <span class="text-success"> &#10006; </span>
+                            <span data-v-message-text> Login succesfull! </span>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <form action="" method="post" enctype="multipart/form-data" data-v-url="user/index/login">
+                        <input type="hidden" name="csrf" data-v-csrf>
+                        <div class="mb-3">
+                          <label class="control-label" for="input-email">E-Mail Address</label>
+                          <input type="email" name="email" value="" placeholder="E-Mail Address" id="input-email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                          <label class="control-label" for="input-password">Password</label>
+                          <input type="password" name="password" value="" placeholder="Password" id="input-password" class="form-control" required>
+                          <a href="#recover" data-v-url="user/recover/index" data-bs-translate>Recover Password</a>
+                        </div>
+                        <button type="submit" value="Login" class="btn btn-primary" data-bs-translate>Login</button>
+                        <input type="hidden" name="redirect" value="">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ##### Blog Wrapper Area End ##### -->
+
+    <footer class="bg-faded text-muted py-5 mt-5" id="global-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h5>Information</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Delivery Information</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Terms &amp; Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h5>Customer Service</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Returns</a>
+              </li>
+              <li>
+                <a href="#">Site Map</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h5>Extras</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">Brands</a>
+              </li>
+              <li>
+                <a href="#">Gift Certificates</a>
+              </li>
+              <li>
+                <a href="#">Affiliate</a>
+              </li>
+              <li>
+                <a href="#">Specials</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h5>My Account</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#">My Account</a>
+              </li>
+              <li>
+                <a href="#">Order History</a>
+              </li>
+              <li>
+                <a href="#">Wish List</a>
+              </li>
+              <li>
+                <a href="#">Newsletter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="float-end">
+          <a href="#">Back to top</a>
+        </p>
+      </div>
+    </footer>
+
+
+
+    <div class="alert alert-light alert-dismissible fade alert-top" role="alert" style="display:none">
+      <div class="container">
+
+        <div class="message">
+          Product was added to cart.
+        </div>
+
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+
+    <!-- script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script -->
+    <script src="js/jquery.min.js"></script>
+    <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="../../js/app.js"></script>
+
+    <script>
+		$('.owl-carousel').owlCarousel({
+			loop:true,
+			navRewind:true,
+			margin:10,
+			nav:true,
+			dots:false,
+			navText: ['<i class="la la-angle-left"></i>','<i class="la la-angle-right"></i> '],
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:3
+				},
+				1000:{
+					items:5
+				}
+			}
+		})    
+    </script>
+
+
+
+</body>
+
+</html>

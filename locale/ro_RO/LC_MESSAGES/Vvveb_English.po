@@ -1,0 +1,2218 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: Vvveb\n"
+"Language: ro_RO\n"
+
+#: public/plugins/seo/plugin.php:46 plugins/test/plugin.php:48
+msgid "Test plugin"
+msgstr "Testează pluginul"
+
+#: admin/validate/settings.php:29 admin/validate/settings.php:36
+#: admin/validate/settings.php:43 app/validate/checkout_shipping.php:29
+#: app/validate/checkout_shipping.php:36 app/validate/checkout_shipping.php:43
+#: app/validate/checkout_shipping.php:50 app/validate/checkout_shipping.php:57
+#: app/validate/checkout_shipping.php:64 app/validate/checkout_shipping.php:71
+#: app/validate/checkout_shipping.php:78 app/validate/checkout_shipping.php:85
+#: app/validate/checkout_shipping.php:92 app/validate/checkout_shipping.php:99
+#: app/validate/checkout_shipping.php:106
+#: app/validate/checkout_shipping.php:113
+#: app/validate/checkout_shipping.php:120 app/validate/checkout.php:29
+#: app/validate/checkout.php:36 app/validate/checkout.php:43
+#: app/validate/checkout.php:50 app/validate/checkout_payment.php:29
+#: app/validate/checkout_payment.php:36 app/validate/checkout_payment.php:43
+#: app/validate/checkout_payment.php:50 app/validate/checkout_payment.php:57
+#: app/validate/checkout_payment.php:64 app/validate/checkout_payment.php:71
+#: app/validate/checkout_payment.php:78 app/validate/checkout_payment.php:85
+#: app/validate/checkout_payment.php:92 app/validate/checkout_payment.php:99
+#: app/validate/checkout_payment.php:106 app/validate/checkout_payment.php:113
+#: app/validate/checkout_payment.php:120
+msgid "%s must not be greater than 100"
+msgstr "%s nu trebuie să fie mai mare de 100"
+
+#: admin/controller/product/product.php:149
+msgid "Product saved!"
+msgstr "Produs salvat!"
+
+#: admin/controller/user/login.php:75 app/controller/user/login.php:42
+msgid "Login successful!"
+msgstr "Autentificare reușită!"
+
+#: admin/controller/user/login.php:85 app/controller/user/login.php:46
+msgid "Authentication failed, wrong email or password!"
+msgstr "Autentificarea eșuată, e-mail sau parolă greșită!"
+
+#: admin/controller/tools/errorlog.php:41
+msgid "empty file"
+msgstr "dosar gol"
+
+#: admin/controller/tools/errorlog.php:46
+msgid "PHP error log not readable, make sure that your log is properly configured and that is readable."
+msgstr "Jurnalul de erori PHP nu poate fi citit, asigurați-vă că jurnalul dvs. este configurat corect și că este lizibil."
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:16
+msgid "Vvveb - Edit product"
+msgstr "Vvveb - Editați produsul"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:133
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:140
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:133
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:134
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:133
+msgid "Edit Profile"
+msgstr "Editează profilul"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:144
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:151
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:144
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:278
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:145
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:144
+msgid "Loading ..."
+msgstr "Se încarcă ..."
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:144
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:151
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:144
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:220
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:278
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:469
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:639
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:145
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:144
+msgid "..."
+msgstr "..."
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:148
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:155
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:148
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:282
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:149
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:148
+msgid "Logout"
+msgstr "Deconectare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:163
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:170
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:163
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:164
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:163
+msgid "View live website"
+msgstr "Vezi site-ul live"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:204
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:265
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:211
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:272
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:204
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:265
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:205
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:266
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:204
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:265
+#: config/custom-post-menu.php:40 config/admin-menu.php:405
+#: config/admin-menu.php:649
+msgid "Add new"
+msgstr "Adăuga nou"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:215
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:223
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:222
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:230
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:215
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:223
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:216
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:224
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:215
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:223
+msgid "Live"
+msgstr "Trăi"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:229
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:236
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:229
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:230
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:229
+msgid "Maintenance"
+msgstr "întreținere"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:235
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:242
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:235
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:236
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:235
+msgid "Coming soon"
+msgstr "In curand"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:278
+msgid "&ensp;\n"
+" Product"
+msgstr "&ensp;\n"
+" Produs"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:288
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:288
+msgid "&nbsp; Preview"
+msgstr "&nbsp; previzualizare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:289
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:292
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:289
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:285
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:413
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:442
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:287
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:430
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:462
+msgid "&nbsp;"
+msgstr "&nbsp;"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:291
+msgid "&nbsp; Save draft"
+msgstr "&nbsp; Salveaza schita"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:294
+msgid "&nbsp; Save product"
+msgstr "&nbsp; Salvați produsul"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:352
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:349
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:928
+msgid "&times;"
+msgstr "&times;"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:367
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:364
+#: config/custom-post-menu.php:65
+msgid "General"
+msgstr "General"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:370
+msgid "Data"
+msgstr "Date"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:373
+msgid "Links"
+msgstr "Legături"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:381
+msgid "Image"
+msgstr "Imagine"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:408
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:312
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:314
+msgid "Product Name"
+msgstr "numele produsului"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:415
+msgid "Product Url"
+msgstr "Url produs"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:421
+msgid "Product Slug"
+msgstr "Produs Slug"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:429
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:418
+msgid "Description"
+msgstr "Descriere"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:432
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:421
+msgid "&nbsp; Design content"
+msgstr "&nbsp; Conținut de proiectare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:442
+msgid "Product tags"
+msgstr "Etichete de produs"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:455
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:333
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:335
+msgid "Model"
+msgstr "Model"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:460
+msgid "SKU"
+msgstr "SKU"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:468
+msgid "UPC"
+msgstr "UPC"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:474
+msgid "EAN"
+msgstr "EAN"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:482
+msgid "JAN"
+msgstr "IAN"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:488
+msgid "ISBN"
+msgstr "ISBN"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:496
+msgid "MPN"
+msgstr "MPN"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:501
+msgid "Location"
+msgstr "Locație"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:507
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:821
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1065
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1327
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1665
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1818
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:356
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:358
+msgid "Price"
+msgstr "Preț"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:511
+msgid "Tax Class"
+msgstr "Clasa de impozitare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:521
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:819
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1063
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1325
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1663
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:735
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:360
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:362
+msgid "Quantity"
+msgstr "Cantitate"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:526
+msgid "Minimum Quantity"
+msgstr "Cantitate minima"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:533
+msgid "Subtract\n"
+" Stock"
+msgstr "Scădea\n"
+" Stoc"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:537
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:560
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:809
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:845
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:894
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:943
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:992
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1053
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1088
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1136
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1184
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1232
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1293
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1315
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1349
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1396
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1443
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1503
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1525
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1554
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1576
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1605
+msgid "Yes"
+msgstr "da"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:538
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:565
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:810
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:847
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:896
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:945
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:994
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1054
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1090
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1137
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1185
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1234
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1294
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1316
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1351
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1398
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1445
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1504
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1526
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1555
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1577
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1606
+msgid "No"
+msgstr "Nu"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:542
+msgid "Out Of Stock Status"
+msgstr "Stare epuizată"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:554
+msgid "Requires Shipping"
+msgstr "Necesită livrare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:572
+msgid "SEO URL"
+msgstr "URL SEO"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:579
+msgid "Date\n"
+" Available"
+msgstr "Data\n"
+" Disponibil"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:593
+msgid "Dimensions (L x W x\n"
+" H)"
+msgstr "Dimensiuni (L x l x\n"
+" H)"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:608
+msgid "Length\n"
+" Class"
+msgstr "Lungime\n"
+" Clasă"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:612
+msgid "Centimeter"
+msgstr "Centimetru"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:613
+msgid "Millimeter"
+msgstr "Milimetru"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:614
+msgid "Inch"
+msgstr "inch"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:619
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:823
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1067
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1329
+msgid "Weight"
+msgstr "Greutate"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:624
+msgid "Weight\n"
+" Class"
+msgstr "Greutate\n"
+" Clasă"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:636
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:2020
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:670
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:482
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:572
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:366
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:368
+msgid "Status"
+msgstr "stare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:639
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:369
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:371
+msgid "Enabled"
+msgstr "Activat"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:640
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:370
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:372
+msgid "Disabled"
+msgstr "Dezactivat"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:643
+msgid "Sort Order"
+msgstr "Ordinea de sortare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:654
+msgid "Manufacturer"
+msgstr "Producător"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:663
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:236
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:52
+#: config/custom-post-menu.php:51 config/admin-menu.php:273
+#: config/admin-menu.php:488
+msgid "Categories"
+msgstr "Categorii"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:676
+msgid "Related Products"
+msgstr "produse asemanatoare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:693
+msgid "Attribute"
+msgstr "Atribut"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:694
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:765
+msgid "Text"
+msgstr "Text"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:710
+msgid "100mhz"
+msgstr "100 MHz"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:741
+msgid "Checkbox"
+msgstr "Caseta de bifat"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:747
+msgid "Select"
+msgstr "Selectați"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:753
+msgid "Textarea"
+msgstr "Textarea"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:759
+msgid "Radio"
+msgstr "Radio"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:771
+msgid "Date"
+msgstr "Data"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:777
+#: storage/compiled-templates/app_www.vvveb.net_landing_error500.html:73
+msgid "File"
+msgstr "Fişier"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:783
+msgid "Time"
+msgstr "Timp"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:789
+msgid "Date & Time"
+msgstr "Data și ora"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:806
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1050
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1290
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1312
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1500
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1522
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1551
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1573
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1602
+msgid "Required"
+msgstr "Necesar"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:818
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1062
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1324
+msgid "Option Value"
+msgstr "Valoarea opțiunii"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:820
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1064
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1326
+msgid "Subtract Stock"
+msgstr "Scăderea stocului"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:822
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1066
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1328
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1924
+msgid "Points"
+msgstr "Puncte"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:831
+msgid "Checkbox\n"
+" 1"
+msgstr "Caseta de bifat\n"
+" 1"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:834
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:930
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:979
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1039
+msgid "Checkbox 2"
+msgstr "Caseta de selectare 2"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:835
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:884
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:980
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1040
+msgid "Checkbox 3"
+msgstr "Caseta de selectare 3"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:836
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:885
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:934
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1041
+msgid "Checkbox 4"
+msgstr "Caseta de selectare 4"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:852
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:859
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:866
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:901
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:908
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:915
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:950
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:957
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:964
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:999
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1006
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1013
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1095
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1102
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1109
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1143
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1150
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1157
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1191
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1198
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1205
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1239
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1246
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1253
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1356
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1363
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1370
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1403
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1410
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1417
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1450
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1457
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1464
+msgid "+"
+msgstr "+"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:853
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:860
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:867
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:902
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:909
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:916
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:951
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:958
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:965
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1000
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1007
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1014
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1096
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1103
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1110
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1144
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1151
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1158
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1192
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1199
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1206
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1240
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1247
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1254
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1357
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1364
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1371
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1404
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1411
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1418
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1451
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1458
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1465
+msgid "-"
+msgstr "-"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:880
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:929
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:978
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1038
+msgid "Checkbox 1"
+msgstr "Caseta de selectare 1"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:881
+msgid "Checkbox\n"
+" 2"
+msgstr "Caseta de bifat\n"
+" 2"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:931
+msgid "Checkbox\n"
+" 3"
+msgstr "Caseta de bifat\n"
+" 3"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:981
+msgid "Checkbox\n"
+" 4"
+msgstr "Caseta de bifat\n"
+" 4"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1075
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1123
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1171
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1219
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1278
+msgid "Red"
+msgstr "roșu"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1077
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1124
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1172
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1220
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1279
+msgid "Blue"
+msgstr "Albastru"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1078
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1126
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1173
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1221
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1280
+msgid "Green"
+msgstr "Verde"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1079
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1127
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1175
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1222
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1281
+msgid "Yellow"
+msgstr "Galben"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1299
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1509
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1531
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1560
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1582
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1611
+msgid "Option\n"
+" Value"
+msgstr "Opțiune\n"
+" Valoare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1337
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1384
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1431
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1489
+msgid "Small"
+msgstr "Mic"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1339
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1385
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1432
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1490
+msgid "Medium"
+msgstr "Mediu"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1340
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1387
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1433
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1491
+msgid "Large"
+msgstr "Mare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1635
+msgid "Recurring Profile"
+msgstr "Profil recurent"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1636
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1662
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1816
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1934
+msgid "Customer Group"
+msgstr "Grup de clienți"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1664
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1817
+msgid "Priority"
+msgstr "Prioritate"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1666
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1819
+msgid "Date Start"
+msgstr "Data începerii"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1667
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1820
+msgid "Date End"
+msgstr "Data Sfârșitului"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1675
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1716
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1757
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1828
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1940
+msgid "Default"
+msgstr "Mod implicit"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1890
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:460
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:483
+msgid "Edit"
+msgstr "Editați | ×"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1893
+msgid "Clear"
+msgstr "clar"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1935
+msgid "Reward Points"
+msgstr "puncte de recompensa"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1958
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:445
+msgid "Featured Media"
+msgstr "Media recomandate"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1971
+msgid "Set featured image"
+msgstr "Setați imaginea prezentată"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1979
+msgid "&ensp;Categories"
+msgstr "&ensp;Categorii"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1990
+msgid "Fashion"
+msgstr "Modă"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:1997
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:860
+msgid "News"
+msgstr "Știri"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:2004
+msgid "Uncategorized"
+msgstr "Necategorizat"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_product.html:2013
+msgid "Product options"
+msgstr "Opțiuni de produs"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:16
+msgid "Vvveb - Dasboard"
+msgstr "Vvveb - Dasboard"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:297
+msgid "Total new orders"
+msgstr "Total comenzi noi"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:306
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:342
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:377
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:382
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:412
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:505
+msgid "0"
+msgstr "0"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:306
+msgid "Refunds"
+msgstr "Rambursări"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:311
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:347
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:678
+msgid "1"
+msgstr "1"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:311
+#: config/admin-menu.php:239 config/admin-menu.php:571
+msgid "Returns"
+msgstr "Se intoarce"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:333
+msgid "Total customers"
+msgstr "Total clienți"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:342
+msgid "this month"
+msgstr "luna aceasta"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:347
+msgid "this year"
+msgstr "anul acesta"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:368
+msgid "Total Comments"
+msgstr "Total comentarii"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:377
+msgid "total"
+msgstr "total"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:382
+msgid "spam"
+msgstr "spam"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:403
+msgid "Total reviews"
+msgstr "Total recenzii"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:406
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:417
+msgid "5"
+msgstr "5"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:412
+msgid "unapproved"
+msgstr "neaprobat"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:417
+msgid "approved"
+msgstr "aprobat"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:432
+msgid "Bar chart"
+msgstr "Diagramă cu bare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:545
+msgid "Line chart"
+msgstr "Diagramă cu linii"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:657
+msgid "Latest orders"
+msgstr "Ultimele comenzi"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:668
+msgid "#"
+msgstr "#"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:669
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:773
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:823
+msgid "Customer"
+msgstr "Client"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:671
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:824
+msgid "Date added"
+msgstr "Data adaugata"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:672
+msgid "Total"
+msgstr "Total"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:673
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:775
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:826
+msgid "Action"
+msgstr "Acțiune"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:704
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:94
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:527
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:553
+msgid "No posts to display!"
+msgstr "Nu există postări de afișat!"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:722
+msgid "Top products sales"
+msgstr "Top vânzări de produse"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:733
+msgid "Product"
+msgstr "Produs"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:734
+msgid "Thumb"
+msgstr "Deget mare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:736
+msgid "Trend"
+msgstr "Tendinţă"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:746
+msgid "31/05/2018"
+msgstr "31.05.2018"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:762
+msgid "New customers"
+msgstr "Clienti noi"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:774
+msgid "Date joined"
+msgstr "Data înscrierii"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:812
+msgid "New comments"
+msgstr "Comentarii noi"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:825
+msgid "Comment"
+msgstr "cometariu"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:920
+msgid "Widgets"
+msgstr "Widgeturi"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:930
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:487
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:577
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:602
+msgid "Published"
+msgstr "Publicat"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:931
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:489
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:579
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:604
+msgid "Draft"
+msgstr "Proiect"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:932
+msgid "Pending preview"
+msgstr "Previzualizare în așteptare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:937
+msgid "Close"
+msgstr "Închide"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_index.html:938
+msgid "Add widget"
+msgstr "Adăugați widget"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:16
+msgid "Vvveb - Edit post"
+msgstr "Vvveb - Editează postarea"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:278
+msgid "&ensp;\n"
+" Post"
+msgstr "&ensp;\n"
+" Post"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:292
+msgid "&nbsp; Save post"
+msgstr "&nbsp; Salvați postarea"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:400
+msgid "Title"
+msgstr "Titlu"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:406
+msgid "Post Url"
+msgstr "Adresa URL a postării"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:411
+msgid "Slug"
+msgstr "Melc"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:458
+msgid "Set featured media"
+msgstr "Setați media recomandate"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:464
+msgid "Post options"
+msgstr "Opțiuni de postare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:471
+msgid "Publish date"
+msgstr "Data publicării"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:488
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:578
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:603
+msgid "Pending"
+msgstr "In asteptarea"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:490
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:501
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:580
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:605
+msgid "Private"
+msgstr "Privat"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:495
+msgid "Visibillity"
+msgstr "Vizibilitate"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:500
+msgid "Public"
+msgstr "Public"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:565
+#: config/custom-post-menu.php:58 config/admin-menu.php:495
+msgid "Tags"
+msgstr "Etichete"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:590
+msgid "Attributes"
+msgstr "Atribute"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_post.html:597
+msgid "Template"
+msgstr "Șablon"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_user_login.html:16
+msgid "Vvveb - Login"
+msgstr "Vvveb - Autentificare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_user_login.html:53
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:191
+msgid "&#10006;"
+msgstr "&#10006;"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_user_login.html:60
+msgid "Username or email"
+msgstr "Nume de utilizator sau email"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_user_login.html:65
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:211
+msgid "Password"
+msgstr "Parola"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_user_login.html:70
+msgid "&#128274;"
+msgstr "&#128274;"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_user_login.html:84
+msgid "Sign In &nbsp;"
+msgstr "Conectați-vă &nbsp;"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_user_login.html:95
+msgid "Remember me"
+msgstr "Amintește-ți de mine"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_user_login.html:99
+msgid "Forgot your password?"
+msgstr "Ti-ai uitat parola?"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:13
+msgid "Blog Home - Vvveb Default Blog Template"
+msgstr "Pagina principală a blogului - Șablon implicit de blog Vvveb"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:30
+msgid "Vvveb Blog"
+msgstr "Vvveb Blog"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:31
+msgid "minimal blog template"
+msgstr "șablon minim de blog"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:45
+msgid "Our Solution"
+msgstr "Soluția noastră"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:48
+msgid "How We Help"
+msgstr "Cum Ajutăm"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:51
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:110
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:116
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:808
+msgid "Blog"
+msgstr "Blog"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:54
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:141
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:151
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:813
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:124
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:369
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:371
+msgid "Contact"
+msgstr "a lua legatura"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:111
+msgid "Post author"
+msgstr "Autorul postului"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:115
+msgid "By"
+msgstr "De"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:115
+msgid "admin"
+msgstr "admin"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:121
+msgid "Post date"
+msgstr "Data postării"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:126
+msgid "December 31, 2020"
+msgstr "31 decembrie 2020"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:134
+msgid "on Hello world!"
+msgstr "pe Bună lume!"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:157
+msgid "#winter"
+msgstr "#iarnă"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:158
+msgid "#tag"
+msgstr "#etichetă"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:178
+msgid "Newer Posts"
+msgstr "Articole mai noi"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:195
+msgid "Older Posts"
+msgstr "Postari mai vechi"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:251
+msgid "Archives"
+msgstr "Arhive"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:255
+msgid "January 2021"
+msgstr "ianuarie 2021"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:258
+msgid "December 2020"
+msgstr "decembrie 2020"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:261
+msgid "November 2018"
+msgstr "noiembrie 2018"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:264
+msgid "October 2018"
+msgstr "octombrie 2018"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:272
+msgid "About"
+msgstr "Despre"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:274
+msgid "Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit."
+msgstr "Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit."
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:299
+msgid "Copyright &copy; Your Website 2021"
+msgstr "Drepturi de autor &copy; Site-ul dvs. 2021"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:300
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:908
+msgid "Powered by"
+msgstr "Cu sprijinul"
+
+#: storage/compiled-templates/app_blog.vvveb.net_blog-default_index.html:300
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:908
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:354
+msgid "Vvveb"
+msgstr "Vvveb"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:10
+msgid "Essence - Homepage"
+msgstr "Essence - Pagina de pornire"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:57
+msgid "Popular"
+msgstr "Popular"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:70
+msgid "Newest"
+msgstr "Cel mai nou"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:85
+msgid "Bestsellers"
+msgstr "Cele mai vandute"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:107
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:805
+msgid "Shop"
+msgstr "Magazin"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:113
+#: config/admin-menu.php:124 config/admin-menu.php:133
+msgid "Pages"
+msgstr "Pagini"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:121
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:841
+msgid "Guides"
+msgstr "Ghiduri"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:126
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:826
+msgid "Order status"
+msgstr "Starea comenzii"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:131
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:836
+msgid "Shipping & Delivery"
+msgstr "Expediere și Livrare"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:136
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:831
+msgid "Payment options"
+msgstr "Optiuni de plata"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:206
+msgid "E-Mail Address"
+msgstr "Adresa de e-mail"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:220
+msgid "Authenticating"
+msgstr "Autentificare"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:224
+msgid "Login"
+msgstr "Autentificare"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:229
+msgid "Forgotten Password"
+msgstr "parola uitata"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:245
+msgid "New Customer"
+msgstr "Client nou"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:246
+msgid "Register Account"
+msgstr "Înregistrare Cont"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:252
+msgid "Welcome"
+msgstr "Bine ati venit"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:252
+msgid "John Doe"
+msgstr "John Doe"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:257
+#: config/custom-post-menu.php:70
+msgid "Comments"
+msgstr "Comentarii"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:260
+#: config/admin-menu.php:225
+msgid "Orders"
+msgstr "Comenzi"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:263
+msgid "Downloads"
+msgstr "Descărcări"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:266
+msgid "Profile"
+msgstr "Profil"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:328
+msgid "Mango"
+msgstr "Mango"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:330
+msgid "Size: S"
+msgstr "Marime: S"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:331
+msgid "Color: Red"
+msgstr "Culoarea rosie"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:354
+msgid "Summary"
+msgstr "rezumat"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:357
+msgid "subtotal:"
+msgstr "subtotal:"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:358
+msgid "$274.00"
+msgstr "274,00 USD"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:361
+msgid "delivery:"
+msgstr "livrare:"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:362
+msgid "Free"
+msgstr "Liber"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:365
+msgid "discount:"
+msgstr "reducere:"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:366
+msgid "-15%"
+msgstr "-15%"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:369
+msgid "total:"
+msgstr "total:"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:374
+msgid "VIEW CART"
+msgstr "VIZUALIZARE COȘ"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:375
+msgid "check out"
+msgstr "verifică"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:392
+msgid "Enter text to search!"
+msgstr "Introdu textul pentru a căuta!"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:401
+msgid "No posts found!"
+msgstr "Nu au fost găsite postări!"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:426
+msgid "No products found!"
+msgstr "Nu s-au găsit produse!"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:469
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:474
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:639
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:643
+msgid "Add to cart"
+msgstr "Adaugă în coș"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:513
+msgid "asoss"
+msgstr "asoss"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:514
+msgid "New Collection"
+msgstr "Colecție nouă"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:515
+msgid "view collection"
+msgstr "vizualiza colecția"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:532
+msgid "Clothing"
+msgstr "Îmbrăcăminte"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:542
+msgid "Shoes"
+msgstr "Pantofi"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:552
+msgid "Accessories"
+msgstr "Accesorii"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:570
+msgid "-60%"
+msgstr "-60%"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:571
+msgid "Global Sale"
+msgstr "Vânzare globală"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:572
+msgid "Buy Now"
+msgstr "Cumpără acum"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:588
+msgid "Popular Products"
+msgstr "Produse populare"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:712
+msgid "Latest Posts"
+msgstr "Ultimele postări"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:742
+msgid "Continue reading"
+msgstr "Continuați lectură"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:846
+msgid "Term of use"
+msgstr "Termeni de folosire"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:851
+msgid "Privacy Policy"
+msgstr "Politica de confidențialitate"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:863
+msgid "Subscribe"
+msgstr "Abonati-va"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:904
+msgid "Copyright &copy;"
+msgstr "Drepturi de autor &copy;"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:905
+msgid "All rights reserved | This template is made with"
+msgstr "Toate drepturile rezervate | Acest șablon este realizat cu"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:905
+msgid "by"
+msgstr "de"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:905
+msgid "Colorlib"
+msgstr "Colorlib"
+
+#: storage/compiled-templates/app_demo.vvveb.net_essence_index.html:923
+msgid "Product was added to cart."
+msgstr "Produsul a fost adăugat în coș."
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_error500.html:15
+msgid "Vvveb - Server Under Load"
+msgstr "Vvveb - Server sub încărcare"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_error500.html:60
+msgid "Internal server error, please try again later."
+msgstr "Eroare internă de server, vă rugăm să încercați din nou mai târziu."
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_error500.html:64
+msgid "Refresh page"
+msgstr "Reîmprospătare pagină"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_error500.html:67
+msgid "Error"
+msgstr "Eroare"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_error500.html:81
+msgid "Code"
+msgstr "Cod"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_error500.html:91
+msgid "Trace"
+msgstr "Urmă"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:16
+msgid "Vvveb - Products"
+msgstr "Vvveb - Produse"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:279
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:499
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:505
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:514
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:545
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:281
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:526
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:532
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:541
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:573
+msgid "&ensp;"
+msgstr "&ensp;"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:280
+#: config/admin-menu.php:249 config/admin-menu.php:256
+msgid "Products"
+msgstr "Produse"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:300
+msgid "&nbsp; Add product"
+msgstr "&nbsp; Adăugați produsul"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:316
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:318
+msgid "Apple Cinema 30\" 23"
+msgstr "Apple Cinema 30\" 23"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:319
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:321
+msgid "Canon EOS 5D"
+msgstr "Canon EOS 5D"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:322
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:324
+msgid "HP LP3065"
+msgstr "HP LP3065"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:325
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:327
+msgid "HTC Touch HD"
+msgstr "HTC Touch HD"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:328
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:330
+msgid "iMac"
+msgstr "iMac"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:337
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:339
+msgid "Product 15"
+msgstr "Produsul 15"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:340
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:342
+msgid "Product 3"
+msgstr "Produsul 3"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:343
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:345
+msgid "Product 21"
+msgstr "Produsul 21"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:346
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:348
+msgid "Product 1"
+msgstr "Produsul 1"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:349
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:351
+msgid "Product 14"
+msgstr "Produsul 14"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:374
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:376
+msgid "Filter"
+msgstr "Filtru"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:383
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:385
+msgid "Check this custom checkbox"
+msgstr "Bifați această casetă de selectare personalizată"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:389
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:391
+msgid "Toggle this custom radio"
+msgstr "Comutați acest radio personalizat"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:394
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:396
+msgid "Or toggle this other custom radio"
+msgstr "Sau comutați acest alt radio personalizat"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:420
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:437
+msgid "&ensp;Thumbnail"
+msgstr "&ensp;Minatură"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:423
+msgid "&ensp;Product"
+msgstr "&ensp;Produs"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:426
+msgid "&ensp;Price"
+msgstr "&ensp;Preț"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:429
+msgid "&ensp;Stock"
+msgstr "&ensp;Stoc"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:432
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:452
+msgid "&ensp;Actions"
+msgstr "&ensp;Acțiuni"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:465
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:506
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:489
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:533
+msgid "Design"
+msgstr "Proiecta"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:470
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:500
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:494
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:527
+msgid "View"
+msgstr "Vedere"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:480
+msgid "10"
+msgstr "10"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:489
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:516
+msgid "&ensp;Edit"
+msgstr "&ensp;Editare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:493
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:520
+msgid "Toggle primary"
+msgstr "Comutați primar"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:496
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:523
+#: config/admin-menu.php:302
+msgid "Options"
+msgstr "Opțiuni"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:515
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:542
+msgid "Delete"
+msgstr "Șterge"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:543
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:571
+msgid "items, page"
+msgstr "articole, pagina"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:545
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:573
+msgid "of"
+msgstr "de"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:554
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:582
+msgid "First"
+msgstr "Primul"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:561
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:589
+msgid "Previous"
+msgstr "Anterior"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:578
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:606
+msgid "Next"
+msgstr "Următorul"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_product_products.html:585
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:613
+msgid "Last"
+msgstr "Ultimul"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_error404.html:15
+msgid "Vvveb - Page not found"
+msgstr "Vvveb - Pagina nu a fost găsită"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_error404.html:60
+msgid "Page not found."
+msgstr "Pagina nu a fost gasita."
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:16
+msgid "Vvveb - Posts"
+msgstr "Vvveb - Postări"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:282
+#: config/custom-post-menu.php:27
+msgid "Posts"
+msgstr "Postări"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:302
+msgid "&nbsp; Add post"
+msgstr "&nbsp; Adaugă postare"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:409
+msgid "Edit selected"
+msgstr "Editați selectat"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:413
+msgid "Delete selected"
+msgstr "Sterge selectia"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:440
+msgid "&ensp;Name"
+msgstr "&ensp;Nume"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:443
+msgid "&ensp;Author"
+msgstr "&ensp;Autor"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:446
+msgid "&ensp;Comments"
+msgstr "&ensp;Comentarii"
+
+#: storage/compiled-templates/admin_www.vvveb.net_default_content_posts.html:449
+msgid "&ensp;Date"
+msgstr "&ensp;Data"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:9
+msgid "Canvas - Homepage"
+msgstr "Canvas - Pagina de pornire"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:108
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:356
+#: config/admin-menu.php:393
+msgid "Themes"
+msgstr "Teme"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:111
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:357
+#: config/admin-menu.php:368 config/admin-menu.php:386
+msgid "Plugins"
+msgstr "Pluginuri"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:114
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:362
+msgid "Resources"
+msgstr "Resurse"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:116
+msgid "User Documentation"
+msgstr "Documentația utilizatorului"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:117
+msgid "Developer Documentation"
+msgstr "Documentația pentru dezvoltatori"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:121
+msgid "Github"
+msgstr "Github"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:138
+msgid "Open Source CMS"
+msgstr "CMS cu sursă deschisă"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:139
+msgid "Reinvented"
+msgstr "Reinventat"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:142
+msgid "Powerful and easy to use drag and drop builder"
+msgstr "Generator puternic și ușor de utilizat prin glisare și plasare"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:143
+msgid "for blogs, websites or ecommerce stores."
+msgstr "pentru bloguri, site-uri web sau magazine de comerț electronic."
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:148
+msgid "&#9889;"
+msgstr "&#9889;"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:148
+msgid "Free download"
+msgstr "Descărcare gratuită"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:148
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:153
+msgid "&rsaquo;"
+msgstr "&rsaquo;"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:152
+msgid "Live demo"
+msgstr "Demo live"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:152
+msgid "&rarr;"
+msgstr "&rarr;"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:156
+msgid "Page builder"
+msgstr "Creator de pagini"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:157
+msgid "Frontend"
+msgstr "În față"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:163
+msgid "* Note: Early Alpha Preview"
+msgstr "* Notă: Previzualizare Alpha timpurie"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:188
+msgid "Drag and drop builder"
+msgstr "Trageți și plasați generatorul"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:189
+msgid "Unlimited design powers with an easy to use interface"
+msgstr "Puteri de proiectare nelimitate cu o interfață ușor de utilizat"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:190
+msgid "change anything on your website with a few clicks."
+msgstr "schimba orice pe site-ul tău cu câteva clicuri."
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:214
+#: config/admin-menu.php:718
+msgid "Security"
+msgstr "Securitate"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:215
+msgid "Vvveb is 100% safe against sql injections"
+msgstr "Vvveb este 100% sigur împotriva injecțiilor sql"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:216
+msgid "a vulerability that affects most CMSs."
+msgstr "o vulnerabilitate care afectează majoritatea CMS-urilor."
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:229
+msgid "Unlimited theme flexibility"
+msgstr "Flexibilitate nelimitată a temei"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:230
+msgid "Vvveb uses plain html for templating for maximum flexibility"
+msgstr "Vvveb folosește HTML simplu pentru șabloane pentru o flexibilitate maximă"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:231
+msgid "convert any html template to a theme in just a few minutes."
+msgstr "converti orice șablon html într-o temă în doar câteva minute."
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:254
+#: config/admin-menu.php:212 config/admin-menu.php:506
+msgid "Ecommerce"
+msgstr "Comerț electronic"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:255
+msgid "Vvveb is a full featured ecommerce platform"
+msgstr "Vvveb este o platformă completă de comerț electronic"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:256
+msgid "with advanced functionality."
+msgstr "cu funcționalitate avansată."
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:269
+msgid "Localization"
+msgstr "Localizare"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:270
+msgid "Publish content in multiple languages"
+msgstr "Publicați conținut în mai multe limbi"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:271
+msgid "or sell in different currencies."
+msgstr "sau vinde în diferite valute."
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:294
+msgid "Multisite"
+msgstr "Multisite"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:295
+msgid "Run multiple websites or subdomains"
+msgstr "Rulați mai multe site-uri web sau subdomenii"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:296
+msgid "from the same installation."
+msgstr "din aceeași instalație."
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:309
+msgid "Demo import"
+msgstr "Import demo"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:310
+msgid "Built in demo import functionality helps you get started faster"
+msgstr "Funcționalitatea de importare demo încorporată vă ajută să începeți mai repede"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:311
+msgid "by providing initial content and configuration."
+msgstr "prin furnizarea de conținut și configurație inițială."
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:334
+msgid "Open source and free"
+msgstr "Sursă deschisă și gratuită"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:335
+msgid "Open source code means"
+msgstr "Codul sursă deschis înseamnă"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:336
+msgid "transparency and collaboration."
+msgstr "transparență și colaborare."
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:364
+msgid "User documentation"
+msgstr "Documentația utilizatorului"
+
+#: storage/compiled-templates/app_www.vvveb.net_landing_index.html:365
+msgid "Developer documentation"
+msgstr "Documentația dezvoltatorului"
+
+#: system/validator.php:41 system/validator.php:112
+msgid "%s is empty"
+msgstr "%s este gol"
+
+#: system/validator.php:42
+msgid "%s is invalid, valid options are %s"
+msgstr "%s este nevalid, opțiunile valide sunt %s"
+
+#: system/validator.php:43
+msgid "%s is longer than %d"
+msgstr "%s este mai lung decât %d"
+
+#: system/validator.php:44
+msgid "%s is shorter than %d"
+msgstr "%s este mai scurt decât %d"
+
+#: system/validator.php:45
+msgid "%s does not match %s"
+msgstr "%s nu se potrivește cu %s"
+
+#: system/validator.php:46 system/validator.php:47
+msgid "%s is invalid"
+msgstr "%s este nevalid"
+
+#: system/validator.php:48
+msgid "%s invalid email"
+msgstr "%s e-mail nevalid"
+
+#: system/validator.php:49
+msgid "%s not complex enough, include uppercase letters and digits"
+msgstr "%s nu este suficient de complex, include litere mari și cifre"
+
+#: plugins/debug/plugin.php:43 plugins/markdown/plugin.php:43
+msgid "Markdown"
+msgstr "Markdown"
+
+#: plugins/seo/plugin.php:46
+msgid "Seo optimization"
+msgstr "Optimizare SEO"
+
+#: plugins/cookie-notice/plugin.php:43
+msgid "Cookie notice"
+msgstr "Notificare privind cookie-urile"
+
+#: plugins/insert-scripts/plugin.php:48
+msgid "Insert scripts"
+msgstr "Inserați scripturi"
+
+#: plugins/cdn/plugin.php:43
+msgid "CDN for static content"
+msgstr "CDN pentru conținut static"
+
+#: plugins/minify/plugin.php:43
+msgid "Minify"
+msgstr "Minimizează"
+
+#: plugins/contact-form/plugin.php:49
+msgid "Contact form"
+msgstr "Formular de contact"
+
+#: plugins/hide-ecommerce/plugin.php:43
+msgid "HideEcommerce"
+msgstr "Ascunde comerțul electronic"
+
+#: config/custom-post-menu.php:34
+msgid "List"
+msgstr "Listă"
+
+#: config/custom-post-menu.php:46 config/admin-menu.php:144
+msgid "Classification"
+msgstr "Clasificare"
+
+#: config/admin-menu.php:28
+msgid "Dashboard"
+msgstr "Bord"
+
+#: config/admin-menu.php:34
+msgid "Edit website"
+msgstr "Editați site-ul web"
+
+#: config/admin-menu.php:139
+msgid "Add new page"
+msgstr "Adăugați o pagină nouă"
+
+#: config/admin-menu.php:149 config/admin-menu.php:469
+msgid "Menus"
+msgstr "Meniuri"
+
+#: config/admin-menu.php:206
+msgid "Media library"
+msgstr "Biblioteca media"
+
+#: config/admin-menu.php:217
+msgid "Sales"
+msgstr "Vânzări"
+
+#: config/admin-menu.php:233
+msgid "Recurring"
+msgstr "Recurente"
+
+#: config/admin-menu.php:262
+msgid "Add new product"
+msgstr "Adăugați un produs nou"
+
+#: config/admin-menu.php:268
+msgid "Taxonomy"
+msgstr "Taxonomie"
+
+#: config/admin-menu.php:279
+msgid "Manufacturers"
+msgstr "Producătorii"
+
+#: config/admin-menu.php:285
+msgid "Vendors"
+msgstr "Furnizori"
+
+#: config/admin-menu.php:291 config/admin-menu.php:314
+#: config/admin-menu.php:363
+msgid "Configuration"
+msgstr "Configurare"
+
+#: config/admin-menu.php:296 config/admin-menu.php:475
+msgid "Custom fields"
+msgstr "Câmpuri customizate"
+
+#: config/admin-menu.php:308
+msgid "Digital content"
+msgstr "Conținut digital"
+
+#: config/admin-menu.php:319
+msgid "Reviews"
+msgstr "Recenzii"
+
+#: config/admin-menu.php:327
+msgid "Questions"
+msgstr "Întrebări"
+
+#: config/admin-menu.php:343 config/admin-menu.php:349
+#: config/admin-menu.php:432
+msgid "Users"
+msgstr "Utilizatori"
+
+#: config/admin-menu.php:355 config/admin-menu.php:438
+msgid "Add new user"
+msgstr "Adăugați un utilizator nou"
+
+#: config/admin-menu.php:374
+msgid "Installed Plugins"
+msgstr "Pluginuri instalate"
+
+#: config/admin-menu.php:380
+msgid "Add new plugin"
+msgstr "Adăugați un plugin nou"
+
+#: config/admin-menu.php:399
+msgid "Installed Themes"
+msgstr "Teme instalate"
+
+#: config/admin-menu.php:413
+msgid "Settings"
+msgstr "Setări"
+
+#: config/admin-menu.php:420
+msgid "General Settings"
+msgstr "setari generale"
+
+#: config/admin-menu.php:426
+msgid "Admin users"
+msgstr "Utilizatori admin"
+
+#: config/admin-menu.php:444 config/admin-menu.php:553
+msgid "Roles"
+msgstr "Roluri"
+
+#: config/admin-menu.php:449 config/admin-menu.php:558
+msgid "Manage Roles"
+msgstr "Gestionați rolurile"
+
+#: config/admin-menu.php:455 config/admin-menu.php:564
+msgid "Add Roles"
+msgstr "Adăugați roluri"
+
+#: config/admin-menu.php:463
+msgid "Content"
+msgstr "Conţinut"
+
+#: config/admin-menu.php:481
+msgid "Taxonomies"
+msgstr "Taxonomii"
+
+#: config/admin-menu.php:489
+msgid "(Hierarchical)"
+msgstr "(Ierarhic)"
+
+#: config/admin-menu.php:496
+msgid "(Flat)"
+msgstr "(Apartament)"
+
+#: config/admin-menu.php:513
+msgid "Checkout & payments"
+msgstr "Finalizare și plăți"
+
+#: config/admin-menu.php:519
+msgid "Shipping"
+msgstr "livrare"
+
+#: config/admin-menu.php:525
+msgid "Email notifications"
+msgstr "Notificări prin email"
+
+#: config/admin-menu.php:531
+msgid "Discount coupons"
+msgstr "Cupoane de reducere"
+
+#: config/admin-menu.php:536
+msgid "Taxes"
+msgstr "Impozite"
+
+#: config/admin-menu.php:541
+msgid "Tax classes"
+msgstr "Clasele de taxe"
+
+#: config/admin-menu.php:547
+msgid "Tax rates"
+msgstr "Cote de impozitare"
+
+#: config/admin-menu.php:576
+msgid "Statuses"
+msgstr "Statuturi"
+
+#: config/admin-menu.php:584
+msgid "Classes"
+msgstr "Clase"
+
+#: config/admin-menu.php:594
+msgid "Localisation"
+msgstr "Localizare"
+
+#: config/admin-menu.php:600
+msgid "Languages"
+msgstr "Limbi"
+
+#: config/admin-menu.php:606
+msgid "Currencies"
+msgstr "Monede"
+
+#: config/admin-menu.php:611
+msgid "Geo location"
+msgstr "Locație geografică"
+
+#: config/admin-menu.php:617
+msgid "Countries"
+msgstr "Țări"
+
+#: config/admin-menu.php:623
+msgid "Zones"
+msgstr "Zonele"
+
+#: config/admin-menu.php:628
+msgid "Geo Zones"
+msgstr "Zonele geografice"
+
+#: config/admin-menu.php:637 config/admin-menu.php:643
+msgid "Sites"
+msgstr "Site-uri"
+
+#: config/admin-menu.php:659
+msgid "Tools"
+msgstr "Instrumente"
+
+#: config/admin-menu.php:666
+msgid "Cache"
+msgstr "Cache"
+
+#: config/admin-menu.php:672
+msgid "Import/Export"
+msgstr "Import Export"
+
+#: config/admin-menu.php:678
+msgid "Import"
+msgstr "Import"
+
+#: config/admin-menu.php:684
+msgid "Export"
+msgstr "Export"
+
+#: config/admin-menu.php:692
+msgid "Backup"
+msgstr "Backup"
+
+#: config/admin-menu.php:698
+msgid "System info"
+msgstr "Informatie de sistem"
+
+#: config/admin-menu.php:704
+msgid "System Info"
+msgstr "Informatie de sistem"
+
+#: config/admin-menu.php:710
+msgid "Error log"
+msgstr "Jurnal de erori"
+
+#: app/component/checkout.php:64
+msgid "checkout created!"
+msgstr "checkout creat!"
+
+#: app/component/checkout.php:66 app/controller/user/signup.php:47
+msgid "This email has already been used!"
+msgstr "Acest e-mail a fost deja folosit!"
+
+#: app/component/checkout.php:69 app/controller/checkout/checkout.php:52
+msgid "Error creating checkout!"
+msgstr "Eroare la crearea comenzii!"
+
+#: app/controller/user/signup.php:45
+msgid "User created!"
+msgstr "Utilizator creat!"
+
+#: app/controller/user/signup.php:50
+msgid "Error creating user!"
+msgstr "Eroare la crearea utilizatorului!"
+
+#: app/controller/checkout/checkout.php:47
+msgid "Order placed!"
+msgstr "Comandă plasată!"
+

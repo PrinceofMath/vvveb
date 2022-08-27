@@ -1,0 +1,5 @@
+INSERT INTO `taxonomy` VALUES 
+(1,'Categories', 'post', 'categories'),
+(2,'Tags', 'post', 'tags'),
+(3,'Main Menu', 'page', 'menus'),
+(4,'Categories', 'product', 'categories');

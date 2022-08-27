@@ -1,0 +1,3026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Manrope:300,400,600,600" rel="stylesheet" type="text/css">
+
+  <base href="../">
+
+  <title>Vvveb - Edit product</title>
+
+
+
+  <link href="css/admin.css" rel="stylesheet">
+</head>
+
+
+<body class="product">
+
+  <div id="container">
+
+    <div class="sidebar">
+
+      <div class="logo">
+
+        <a href="/admin" class="img"></a>
+
+        <a id="color-theme-switch" title="Switch sidebar color theme"></a>
+
+        <a class="menu-toggle" title="Toggle sidebar width">
+          <i class="ion-navicon"></i>
+        </a>
+      </div>
+
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-sm">
+
+        <div class="logo">
+          <!-- h1 class="display-5"><a class="" href="#">M.</a></h1-->
+          <img src="img/logo.png">
+        </div>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon ion-navicon"></span>
+        </button>
+
+        <!--
+			<div class="collapse navbar-collapse">
+
+				<ul class="nav navbar-nav flex-column" data-v-menu>
+
+					<li class="nav-item" data-v-menu-item>
+						<a class="nav-link" href="/admin" data-target="#posts"
+						   data-v-menu-item-url>
+							<i class="ion-ios-pulse" data-v-menu-item-icon></i>
+							<img src="" class="icon-img" data-v-menu-item-icon-img></i>
+							<span class="title" data-v-menu-item-name>Dashboard</span>
+							<span class="text-muted" data-v-menu-item-subtitle>Subtitle</span>
+							<span class="badge badge-primary" data-v-menu-item-badge></span>
+						</a>
+
+
+						<ul class="collapse sub-menu fade" aria-labelledby="Preview" id="posts" data-v-submenu>
+
+							<li class="nav-item" data-v-submenu-item>
+								<a href="/adminindex.php?module=posts" class="nav-link"
+								   data-v-submenu-item-url>
+								   
+								   <i class="ion-ios-pulse" data-v-submenu-item-icon></i>
+								   <img src="" class="icon-img" data-v-submenu-item-icon-img></i>
+								   <span data-v-submenu-item-name>Submenu</span>
+								   <span class="text-muted" data-v-submenu-item-subtitle>Subtitle</span>
+								   <span class="badge badge-primary" data-v-submenu-item-badge></span>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+			
+			-->
+
+        <div class="collapse navbar-collapse">
+
+          <ul class="nav navbar-nav flex-column" data-v-menu="">
+
+            <li class="nav-item" data-v-menu-item>
+              <a class="nav-link" href="/admin" data-target="#posts" data-v-menu-item-url>
+                <i class="ion-ios-pulse" data-v-menu-item-icon></i>
+                <img src="#" class="icon-img" data-v-menu-item-icon-img>
+                <span class="title" data-v-menu-item-name>Dashboard</span>
+                <!-- span class="text-muted" data-v-menu-item-subtitle>Subtitle</span -->
+                <span class="badge badge-primary" data-v-menu-item-badge></span>
+              </a>
+
+
+              <ul class="collapse sub-menu fade" aria-labelledby="Preview" id="posts" data-v-submenu>
+
+                <li class="nav-item" data-v-submenu-item>
+                  <a href="/adminindex.php?module=posts" class="nav-link" data-v-submenu-item-url>
+
+                    <i class="ion-ios-pulse" data-v-submenu-item-icon></i>
+                    <img src="#" class="icon-img" data-v-submenu-item-icon-img>
+                    </i>
+                    <span data-v-submenu-item-name>Submenu</span>
+                    <span class="text-muted" data-v-submenu-item-subtitle>Subtitle</span>
+                    <span class="badge badge-primary" data-v-submenu-item-badge></span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item " data-v-menu-item="">
+              <a class="nav-link " href="/admin?module=/editor/editor&amp;type=post" data-target="#menu-edit" data-v-menu-item-url="" title="Edit website">
+                <i class="ion-ios-color-wand-outline" data-v-menu-item-icon=""></i>
+                <span class="title" data-v-menu-item-name="">Edit website</span>
+              </a>
+            </li>
+            <li class="nav-item " data-v-menu-item="">
+              <a class="nav-link items" href="/admin?module=content/posts&amp;type=post" data-target="#menu-post" data-v-menu-item-url="" title="Posts">
+                <i class="ion-ios-photos-outline" data-v-menu-item-icon=""></i>
+                <span class="title" data-v-menu-item-name="">Posts</span>
+              </a>
+              <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=content/posts&amp;type=post" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-file-alt" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Posts</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=content/post&amp;type=post" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-plus-circle" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Add new</span>
+                  </a>
+                </li>
+                <li class="nav-item  heading" data-v-submenu-item="">
+                  <a href="" class="nav-link " data-v-submenu-item-url="">
+                    <span data-v-submenu-item-name="">Classification</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=content/categories&amp;type=post" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-boxes" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Categories</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=content/categories&amp;type=post" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-tags" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Tags</span>
+                  </a>
+                </li>
+                <li class="nav-item  heading" data-v-submenu-item="">
+                  <a href="" class="nav-link " data-v-submenu-item-url="">
+                    <span data-v-submenu-item-name="">General</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=content/comments&amp;type=post" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-comments" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Comments</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item " data-v-menu-item="">
+              <a class="nav-link items" href="/admin?module=content/posts?type=page" data-target="#menu-pages" data-v-menu-item-url="" title="Pages">
+                <i class="ion-ios-list-outline" data-v-menu-item-icon=""></i>
+                <span class="title" data-v-menu-item-name="">Pages</span>
+              </a>
+              <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=content/posts" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-file-invoice" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Pages</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=content/post" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-plus-circle" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Add new page</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item " data-v-menu-item="">
+              <a class="nav-link " href="/admin?module=media/media" data-target="#menu-medialibrary" data-v-menu-item-url="" title="Media library">
+                <i class="ion-ios-albums-outline" data-v-menu-item-icon=""></i>
+                <span class="title" data-v-menu-item-name="">Media library</span>
+              </a>
+            </li>
+            <li class="nav-item  heading" data-v-menu-item="">
+              <a class="nav-link " href="" data-target="#menu-ecommerce" data-v-menu-item-url="" title="Ecommerce">
+                <span class="title" data-v-menu-item-name="">Ecommerce</span>
+              </a>
+            </li>
+            <li class="nav-item " data-v-menu-item="">
+              <a class="nav-link items" href="/admin?module=order/orders" data-target="#menu-sales" data-v-menu-item-url="" title="Sales">
+                <i class="ion-ios-cart-outline" data-v-menu-item-icon=""></i>
+                <span class="title" data-v-menu-item-name="">Sales</span>
+              </a>
+              <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=order/orders" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-file-invoice-dollar" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Orders</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=order/recurring" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-retweet" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Recurring</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=order/returns" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-undo" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Returns</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item " data-v-menu-item="">
+              <a class="nav-link items" href="/admin?module=product/products" data-target="#menu-products" data-v-menu-item-url="" title="Products">
+                <i class="ion-ios-pricetag-outline" data-v-menu-item-icon=""></i>
+                <span class="title" data-v-menu-item-name="">Products</span>
+              </a>
+              <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=product/products" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-box" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Products</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=product/product" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-plus-circle" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Add new product</span>
+                  </a>
+                </li>
+                <li class="nav-item  heading" data-v-submenu-item="">
+                  <a href="" class="nav-link " data-v-submenu-item-url="">
+                    <span data-v-submenu-item-name="">Taxonomy</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=product/categories" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-boxes" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Categories</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=product/manufacturers" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-industry" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Manufacturers</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=product/vendors" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-store" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Vendors</span>
+                  </a>
+                </li>
+                <li class="nav-item  heading" data-v-submenu-item="">
+                  <a href="" class="nav-link " data-v-submenu-item-url="">
+                    <span data-v-submenu-item-name="">Configuration</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=product/fields" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-stream" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Custom fields</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=product/options" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-filter" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Options</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=product/options" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-cloud-download-alt" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Digital content</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=product/reviews" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-comment" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Reviews</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=product/questions" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-question-circle" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Questions</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item " data-v-menu-item="">
+              <a class="nav-link items" href="/admin?module=user/users" data-target="#menu-users" data-v-menu-item-url="" title="Users">
+                <i class="ion-ios-person-outline" data-v-menu-item-icon=""></i>
+                <span class="title" data-v-menu-item-name="">Users</span>
+              </a>
+              <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=user/users" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-user" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Users</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=user/user" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-plus-circle" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Add new user</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item  heading" data-v-menu-item="">
+              <a class="nav-link " href="" data-target="#menu-configuration" data-v-menu-item-url="" title="Configuration">
+                <span class="title" data-v-menu-item-name="">Configuration</span>
+              </a>
+            </li>
+            <li class="nav-item " data-v-menu-item="">
+              <a class="nav-link items" href="/admin?module=plugin/plugins" data-target="#menu-plugins" data-v-menu-item-url="" title="Plugins">
+                <i class="ion-ios-gear-outline" data-v-menu-item-icon=""></i>
+                <span class="title" data-v-menu-item-name="">Plugins</span>
+              </a>
+              <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=plugin/plugins" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-plug" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Installed Plugins</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=plugin/market" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-plus-circle" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Add new plugin</span>
+                  </a>
+                </li>
+                <li class="nav-item  heading" data-v-submenu-item="">
+                  <a href="" class="nav-link " data-v-submenu-item-url="">
+                    <span data-v-submenu-item-name="">Plugins</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=plugins/cdn/settings" class="nav-link " data-v-submenu-item-url="">
+                    <img src="/plugins/cdn/cdn.svg" class="icon-img" data-v-submenu-item-icon-img="">
+                    <span data-v-submenu-item-name="">CDN for static content</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin" class="nav-link " data-v-submenu-item-url="">
+                    <img src="/plugins/contact-form/contact-form.svg" class="icon-img" data-v-submenu-item-icon-img="">
+                    <span data-v-submenu-item-name="">Contact form</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=plugins/insert-scripts/settings" class="nav-link " data-v-submenu-item-url="">
+                    <img src="/plugins/insert-scripts/insert-scripts.svg" class="icon-img" data-v-submenu-item-icon-img="">
+                    <span data-v-submenu-item-name="">Insert scripts</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=plugins/markdown/settings" class="nav-link " data-v-submenu-item-url="">
+                    <img src="/plugins/markdown/markdown.svg" class="icon-img" data-v-submenu-item-icon-img="">
+                    <span data-v-submenu-item-name="">Markdown</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item " data-v-menu-item="">
+              <a class="nav-link items" href="/admin?module=theme/themes" data-target="#menu-themes" data-v-menu-item-url="" title="Themes">
+                <i class="ion-ios-color-wand-outline" data-v-menu-item-icon=""></i>
+                <span class="title" data-v-menu-item-name="">Themes</span>
+              </a>
+              <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=theme/themes" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-brush" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Installed Themes</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=theme/market" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-plus-circle" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Add new</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item align-top" data-v-menu-item="">
+              <a class="nav-link items" href="settings" data-target="#menu-settings" data-v-menu-item-url="" title="Settings">
+                <i class="ion-ios-settings" data-v-menu-item-icon=""></i>
+                <span class="title" data-v-menu-item-name="">Settings</span>
+              </a>
+              <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=settings/settings" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-cog" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">General Settings</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=admin/users" class="nav-link items" data-v-submenu-item-url="">
+                    <i class="la la-user" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Admin users</span>
+                  </a>
+                  <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=admin/users" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-user" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Users</span>
+                      </a>
+                    </li>
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=admin/user" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-user-plus" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Add new user</span>
+                      </a>
+                    </li>
+                    <li class="nav-item  heading" data-v-submenu-item="">
+                      <a href="" class="nav-link " data-v-submenu-item-url="">
+                        <span data-v-submenu-item-name="">Roles</span>
+                      </a>
+                    </li>
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=admin/roles" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-user-cog" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Manage Roles</span>
+                      </a>
+                    </li>
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=admin/roles" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-users-cog" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Add Roles</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=admin/users" class="nav-link items" data-v-submenu-item-url="">
+                    <i class="la la-file-alt" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Content</span>
+                  </a>
+                  <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=content/fields" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-stream" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Custom fields</span>
+                      </a>
+                    </li>
+                    <li class="nav-item align-top" data-v-submenu-item="">
+                      <a href="/admin?module=content/categories" class="nav-link items" data-v-submenu-item-url="">
+                        <i class="la la-boxes" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Taxonomies</span>
+                      </a>
+                      <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                        <li class="nav-item " data-v-submenu-item="">
+                          <a href="/admin?module=content/categories" class="nav-link " data-v-submenu-item-url="">
+                            <i class="la la-boxes" data-v-submenu-item-icon=""></i>
+                            <span data-v-submenu-item-name="">Categories</span>
+                            <span class="text-muted" data-v-submenu-item-subtitle="">(Hierarchical)</span>
+                          </a>
+                        </li>
+                        <li class="nav-item " data-v-submenu-item="">
+                          <a href="/admin?module=content/tags" class="nav-link " data-v-submenu-item-url="">
+                            <i class="la la-tags" data-v-submenu-item-icon=""></i>
+                            <span data-v-submenu-item-name="">Tags</span>
+                            <span class="text-muted" data-v-submenu-item-subtitle="">(Flat)</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item align-top" data-v-submenu-item="">
+                  <a href="/admin?module=user/users" class="nav-link items" data-v-submenu-item-url="">
+                    <i class="la la-shopping-cart" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Ecommerce</span>
+                  </a>
+                  <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=settings/checkout" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-credit-card" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Checkout &amp; payments</span>
+                      </a>
+                    </li>
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=settings/shipping" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-shipping-fast" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Shipping</span>
+                      </a>
+                    </li>
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=settings/notifications" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-envelope" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Email notifications</span>
+                      </a>
+                    </li>
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=settings/discount" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-percentage" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Discount coupons</span>
+                      </a>
+                    </li>
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=settings/discount" class="nav-link items" data-v-submenu-item-url="">
+                        <i class="la la-file-invoice-dollar" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Taxes</span>
+                      </a>
+                      <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                        <li class="nav-item " data-v-submenu-item="">
+                          <a href="/admin?module=admin/users" class="nav-link " data-v-submenu-item-url="">
+                            <i class="la la-user" data-v-submenu-item-icon=""></i>
+                            <span data-v-submenu-item-name="">Tax classes</span>
+                          </a>
+                        </li>
+                        <li class="nav-item " data-v-submenu-item="">
+                          <a href="/admin?module=admin/user" class="nav-link " data-v-submenu-item-url="">
+                            <i class="la la-user-plus" data-v-submenu-item-icon=""></i>
+                            <span data-v-submenu-item-name="">Tax rates</span>
+                          </a>
+                        </li>
+                        <li class="nav-item  heading" data-v-submenu-item="">
+                          <a href="" class="nav-link " data-v-submenu-item-url="">
+                            <span data-v-submenu-item-name="">Roles</span>
+                          </a>
+                        </li>
+                        <li class="nav-item " data-v-submenu-item="">
+                          <a href="/admin?module=admin/roles" class="nav-link " data-v-submenu-item-url="">
+                            <i class="la la-user-cog" data-v-submenu-item-icon=""></i>
+                            <span data-v-submenu-item-name="">Manage Roles</span>
+                          </a>
+                        </li>
+                        <li class="nav-item " data-v-submenu-item="">
+                          <a href="/admin?module=admin/roles" class="nav-link " data-v-submenu-item-url="">
+                            <i class="la la-users-cog" data-v-submenu-item-icon=""></i>
+                            <span data-v-submenu-item-name="">Add Roles</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=settings/discount" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-undo" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Returns</span>
+                      </a>
+                    </li>
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=settings/discount" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-tags" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Statuses</span>
+                      </a>
+                    </li>
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=settings/discount" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-ruler" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Classes</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=user/users" class="nav-link items" data-v-submenu-item-url="">
+                    <i class="la la-flag" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Localisation</span>
+                  </a>
+                  <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=localisation/languages" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-flag" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Languages</span>
+                      </a>
+                    </li>
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=localisation/currencies" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-coins" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Currencies</span>
+                      </a>
+                    </li>
+                    <li class="nav-item align-top" data-v-submenu-item="">
+                      <a href="/admin?module=localisation/currencies" class="nav-link items" data-v-submenu-item-url="">
+                        <i class="la la-globe" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Geo location</span>
+                      </a>
+                      <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                        <li class="nav-item " data-v-submenu-item="">
+                          <a href="/admin?module=localisation/languages" class="nav-link " data-v-submenu-item-url="">
+                            <i class="la la-flag" data-v-submenu-item-icon=""></i>
+                            <span data-v-submenu-item-name="">Countries</span>
+                          </a>
+                        </li>
+                        <li class="nav-item " data-v-submenu-item="">
+                          <a href="/admin?module=localisation/currencies" class="nav-link " data-v-submenu-item-url="">
+                            <i class="la la-city" data-v-submenu-item-icon=""></i>
+                            <span data-v-submenu-item-name="">Zones</span>
+                          </a>
+                        </li>
+                        <li class="nav-item " data-v-submenu-item="">
+                          <a href="/admin?module=localisation/currencies" class="nav-link " data-v-submenu-item-url="">
+                            <i class="la la-atlas" data-v-submenu-item-icon=""></i>
+                            <span data-v-submenu-item-name="">Geo Zones</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=theme/themes" class="nav-link items" data-v-submenu-item-url="">
+                    <i class="la la-stop la-90" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Sites</span>
+                  </a>
+                  <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=settings/sites" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-stop" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Sites</span>
+                      </a>
+                    </li>
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=settings/sites" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-plus-circle" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Add new</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item align-top" data-v-menu-item="">
+              <a class="nav-link items" href="/admin?module=tools" data-target="#menu-tools" data-v-menu-item-url="" title="Tools">
+                <i class="ion-ios-world-outline" data-v-menu-item-icon=""></i>
+                <span class="title" data-v-menu-item-name="">Tools</span>
+              </a>
+              <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=tools/cache" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-circle-notch" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Cache</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=tools/import" class="nav-link items" data-v-submenu-item-url="">
+                    <i class="la la-upload" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Import/Export</span>
+                  </a>
+                  <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=tools/import" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-file-import" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Import</span>
+                      </a>
+                    </li>
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=tools/export" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-file-export" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Export</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=tools/backup" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-server" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Backup</span>
+                  </a>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=tools/system-info" class="nav-link items" data-v-submenu-item-url="">
+                    <i class="la la-info-circle" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">System info</span>
+                  </a>
+                  <ul class="collapse sub-menu fade " aria-labelledby="Preview" id="posts" data-v-submenu="">
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=tools/systeminfo" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-info" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">System Info</span>
+                      </a>
+                    </li>
+                    <li class="nav-item " data-v-submenu-item="">
+                      <a href="/admin?module=tools/errorlog" class="nav-link " data-v-submenu-item-url="">
+                        <i class="la la-bug" data-v-submenu-item-icon=""></i>
+                        <span data-v-submenu-item-name="">Error log</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item " data-v-submenu-item="">
+                  <a href="/admin?module=tools/security" class="nav-link " data-v-submenu-item-url="">
+                    <i class="la la-shield-alt" data-v-submenu-item-icon=""></i>
+                    <span data-v-submenu-item-name="">Security</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+
+      </nav> <!-- /navbar -->
+
+    </div>
+
+
+
+    <div class="main">
+
+      <div class="clearfix top-header">
+
+        <!--	
+	 <nav aria-label="breadcrumb">
+	  <ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="/" data-v-url-params='{"module":"index/index"}' >Home</a></li>
+		<li class="breadcrumb-item"><a href="#" data-v-url-params='{"module":"settings/sites"}' >Sites</a></li>
+		<li class="breadcrumb-item">Site</li>
+	  </ol>
+	</nav>
+	-->
+
+        <div class="btn-group float-end user-dropdown" data-v-component-admin>
+
+          <form action="/admin?module=user/login" method="post" enctype="multipart/form-data" data-v-url-params='{"module":"user/login"}'>
+
+            <input type="hidden" name="csrf" data-v-csrf>
+
+
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="la la-user"></i>
+              <span data-v-admin-display_name>Admin</span>
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="#" data-v-admin-edit-url>
+                <span>Edit Profile</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <div class="dropdown-item">
+
+                <input type="hidden" name="logout">
+
+                <button type="submit" value="logout" class="btn btn-primary w-100">
+
+                  <span class="loading d-none">
+                    <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                    </span>
+                    <span data-translate>Loading ...</span>...
+                  </span>
+
+                  <span class="button-text" data-translate>
+                    Logout
+                  </span>
+
+                </button>
+
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="btn-group user-dropdown" data-v-component-sites>
+          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+            <i class="la la-eye"></i>
+            <span>View live website</span>
+          </button>
+
+
+          <div class="dropdown-menu dropdown-menu-right">
+            <div data-v-site>
+              <a class="dropdown-item d-flex" href="#" data-v-site-href target="_blank">
+                <!-- i class="la la-circle la-lg me-2"></i -->
+                <span data-v-site-name class="flex-grow-1">Default website</span>
+                <i class="la la-external-link-alt"></i>
+              </a>
+            </div>
+
+            <div data-v-site>
+              <a class="dropdown-item" href="#" data-v-site target="_blank">
+                <i class="la la-eye la-lg me-2"></i>
+                <span data-v-site-name>Blog</span>
+              </a>
+            </div>
+
+            <div class="dropdown-divider"></div>
+
+            <a class="dropdown-item" href="#" data-v-url-params='{"module":"settings/sites"}'>
+              <span class="flex-grow-1">Manage sites</span>
+              <i class="la la-edit ms-2"></i>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="btn-group user-dropdown float-end" data-v-component-languages>
+          <form method="post">
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+              <i class="la la-flag me-1"></i>
+              <span data-v-language-info-name>English</span>
+            </button>
+
+
+            <div class="dropdown-menu dropdown-menu-right">
+
+              <div data-v-language>
+                <button class="dropdown-item" href="#" name="language" data-v-language-language_id>
+                  <i class="la la-flag la-lg me-2"></i>
+                  <span data-v-language-name>English</span>
+                </button>
+              </div>
+
+              <div data-v-language>
+                <button class="dropdown-item" href="#" name="language" data-v-language-language_id>
+                  <i class="la la-flag la-lg me-2"></i>
+                  <span data-v-language-name>Romanian</span>
+                </button>
+              </div>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#" data-v-url-params='{"module":"localisation/languages"}'>
+                <i class="la la-plus me-2"></i>
+                Add new
+              </a>
+            </div>
+          </form>
+        </div>
+
+        <div class="btn-group user-dropdown float-end" data-v-component-states>
+          <form method="post">
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+              <i class="la text-success me-1" data-v-state-info-active_icon></i>
+              <span data-v-state-info-active_name>Live</span>
+            </button>
+
+
+            <div class="dropdown-menu dropdown-menu-right">
+              <div data-v-state>
+                <button class="dropdown-item" href="#" onclick="return confirm('Are you sure you want to set your live website to ?' + dataset.state)" name="state" data-state="live">
+                  <i class="la la-broadcast-tower la-lg me-2" data-v-state-icon></i>
+                  <span data-v-state-name>
+                    Live
+                  </span>
+                </button>
+              </div>
+              <div data-v-state>
+                <button class="dropdown-item" href="#" onclick="return confirm('Are you sure you want to set your live website to maintenance?')" name="state" data-state="maintenance">
+                  <i class="la la-wrench la-lg me-2" data-v-state-icon></i>
+                  <span data-v-state-name>
+                    Maintenance
+                  </span>
+                </button>
+              </div>
+              <div data-v-state>
+                <button class="dropdown-item" href="#" onclick="return confirm('Are you sure you want to set your live website to coming soon mode?')" name="state" data-state="coming soon">
+                  <i class="la la-clock la-lg me-2" data-v-state-icon></i>
+                  <span data-v-state-name>
+                    Coming soon
+                  </span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="btn-group user-dropdown float-end" data-v-component-sites>
+          <form method="post">
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+              <i class="la la-sitemap me-1"></i>
+              <span data-v-site-info-name>Default site</span>
+            </button>
+
+
+            <div class="dropdown-menu dropdown-menu-right">
+              <div data-v-site>
+                <button class="dropdown-item" href="#" data-v-site-site_id name="site" value="default">
+                  <i class="la la-window-minimize la-lg me-2" data-v-site-icon></i>
+                  <span data-v-site-name>Default website</span>
+                </button>
+              </div>
+
+              <div data-v-site>
+                <a class="dropdown-item" href="#" data-v-site name="site" value="default">
+                  <i class="la la-window-minimize la-lg me-2" data-v-site-icon></i>
+                  <span data-v-site-name>Blog</span>
+                </a>
+              </div>
+
+              <div class="dropdown-divider"></div>
+
+              <a class="dropdown-item" href="#" data-v-url-params='{"module":"settings/site"}'>
+                <i class="la la-plus me-2"></i>
+                Add new
+              </a>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <div class="actions clearfix">
+
+        <div class="float-md-start">
+          <h4 class="text-muted mt-2">
+            <i class="ion-ios-pricetag-outline" data-v-menu-item-icon=""></i>&ensp;
+            <span>Product</span>
+          </h4>
+        </div>
+
+
+
+        <div class="float-end">
+          <!--
+                <button type="button" href="" data-bs-toggle="tooltip" title=""
+                        class="btn btn-outline-secondary btn-icon" data-v-original-title="Preview"
+                        onclick="document.getElementById('action').value ='preview';if (validator(validator_json)) document.getElementById('form').submit();">
+                    <i class="ion-eye"></i>&nbsp; Preview
+                </button>&nbsp;
+                <button type="button" href="" data-bs-toggle="tooltip" title=""
+                        class="btn btn-outline-secondary btn-icon" data-v-original-title="Save draft"
+                        onclick="document.getElementById('action').value ='draft';if (validator(validator_json)) document.getElementById('form').submit();">
+                    <i class="ion-document"></i>&nbsp; Save draft
+                </button>&nbsp;
+-->
+          <a href="/admin/?module=product/products" title="Product list" class="btn btn-outline-secondary pr-3">
+            <i class="la la-arrow-left"></i>
+            <span>Return to product list</span>
+          </a>
+
+          <button type="submit" href="" data-bs-toggle="tooltip" title="" class="btn btn-primary btn-icon ms-1" data-v-original-title="Save post" onclick="document.getElementById('action').value ='save';if (validator('#form')) document.getElementById('form').submit();">
+            <i class="ion-edit"></i>&nbsp; Save product
+          </button>
+        </div>
+      </div>
+
+      <div id="content">
+
+
+        <div class="content clearfix">
+
+          <div class="notifications" data-v-notifications>
+
+            <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error>
+
+              <div class="icon">
+                <i class="la la-exclamation-triangle fs-2"></i>
+              </div>
+
+              <div class="flex-grow-1 align-self-center" data-v-notification-text>
+                Vvveb 0.2 is now available! <a href="update">Update now</a>
+              </div>
+
+
+              <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">
+                  <i class="la la-times"></i>
+                </span>
+              </button>
+            </div>
+
+            <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success>
+
+              <div class="icon">
+                <i class="la la-info-circle fs-2"></i>
+              </div>
+
+              <div class="flex-grow-1 align-self-center" data-v-notification-text>
+                You successfully read this important alert message.
+              </div>
+
+              <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">
+                  <i class="la la-times"></i>
+                </span>
+              </button>
+            </div>
+
+            <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info>
+
+              <div class="icon">
+                <i class="la la-info-circle fs-2"></i>
+              </div>
+
+              <div class="flex-grow-1 align-self-center" data-v-notification-text>
+                You successfully read this important alert message.
+              </div>
+
+              <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">
+                  <i class="la la-times"></i>
+                </span>
+              </button>
+            </div>
+
+          </div>
+
+
+          <form id="form" action="" method="post" class="needs-validation" novalidate data-v-product>
+
+            <input type="hidden" name="action" id="action" value="save">
+
+            <div class="columns">
+              <div class="left-column">
+
+                <div class="validation-errors" data-v-validation-errors>
+
+                  <div class="alert alert-danger alert-dismissable" role="alert" data-v-validation-error>
+
+                    <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <div>
+                      <i class="ion-alert-circled"></i>
+                      <span data-v-validation-error-text>Validation error</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#tab-general" data-bs-toggle="tab">General</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tab-data" data-bs-toggle="tab">Data</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tab-links" data-bs-toggle="tab">Links</a>
+                  </li>
+                  <!-- li class="nav-item"><a class="nav-link" href="#tab-attribute" data-bs-toggle="tab">Attribute</a></li -->
+                  <!-- class="nav-item"><a class="nav-link" href="#tab-option" data-bs-toggle="tab">Option</a></li -->
+                  <!-- class="nav-item"><a class="nav-link" href="#tab-recurring" data-bs-toggle="tab">Recurring</a></li -->
+                  <!-- class="nav-item"><a class="nav-link" href="#tab-discount" data-bs-toggle="tab">Discount</a></li -->
+                  <!-- class="nav-item"><a class="nav-link" href="#tab-special" data-bs-toggle="tab">Special</a></li -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tab-image" data-bs-toggle="tab">Image</a>
+                  </li>
+                  <!-- class="nav-item"><a class="nav-link" href="#tab-reward" data-bs-toggle="tab">Reward Points</a></li -->
+                  <!-- li class="nav-item"><a class="nav-link" href="#tab-design" data-bs-toggle="tab">Design</a></li -->
+                </ul>
+
+
+                <div class="tab-content py-4 px-3">
+
+
+                  <div class="tab-pane active" id="tab-general">
+
+                    <ul class="nav nav-tabs" id="language-nav" data-v-languages="desc">
+                      <li class="nav-item" data-v-language>
+                        <a href="#language1" class="nav-link" data-bs-toggle="tab" aria-expanded="true" data-v-language-link>
+                          <!-- img src="language/en-gb/en-gb.png" title="English" data-v-language-img -->
+                          <span class="" data-v-language-name>English</span>
+                        </a>
+                      </li>
+                    </ul>
+
+
+
+                    <div class="tab-content" data-v-languages="desc" style="clear:both">
+                      <div class="tab-pane" id="language1" data-v-language data-v-language-id>
+                        <input name="product_description[1][language_id]" type="hidden" data-v-product-description-language_id>
+                        <div class="mb-3 required">
+                          <label class="form-label" for="input-name">Product Name</label>
+                          <div class="">
+                            <input name="product_description[1][name]" value="" placeholder="Product Name" id="input-name" class="form-control" type="text" data-v-product-description-name required />
+                          </div>
+                        </div>
+
+                        <div class="required float-end">
+                          <label class="form-label" for="input-name1">Product Url</label>
+                          <a href="" target="_blank" data-v-url>url</a>
+                        </div>
+
+
+                        <div class="mb-3 required">
+                          <label class="form-label" for="input-slug">Product Slug</label>
+                          <div class="">
+                            <input name="product_description[1][slug]" value="Slug" placeholder="Product Slug" id="input-slug" class="form-control" type="text" data-v-product-description-slug required />
+                          </div>
+                        </div>
+
+
+                        <div class="mb-3">
+                          <label class="form-label" for="input-description1">Description</label>
+                          <div class="">
+                            <a type="button" data-v-design_url href="" data-bs-toggle="tooltip" title="" class="btn btn-success mb-3 ms-1 btn-icon" data-v-original-title="Design content">
+                              <i class="ion-ios-color-wand"></i>&nbsp; Open in Page Editor
+                            </a>
+
+                            <div class="content-editor">
+                              <textarea name="product_description[1][description]" placeholder="Description" id="input-description1" class="form-control summernote" data-v-product-description-description required></textarea>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- 
+				<div class="mb-3 required">
+					<label class="form-label" for="input-name1">Product tags</label>
+					<div class="">
+						<input name="product_description[1][tag]" data-v-role="tagsinput"
+							   placeholder="Comma separated tags"
+							   value="" placeholder="Product tags"
+							   id="input-name1" class="form-control" type="text"
+							   data-v-product-description-tag required value=" "/>
+					</div>
+				</div>
+				-->
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane" id="tab-data">
+                    <div class="mb-3 row required">
+                      <label class="col-sm-2 form-label" for="input-model">Model</label>
+                      <div class="col-sm-4">
+                        <input name="model" value="" placeholder="Model" id="input-model" class="form-control" type="text" data-v-product-model>
+                      </div>
+                      <label class="col-sm-2 form-label" for="input-sku">
+                        <span data-bs-toggle="tooltip" title="" data-v-original-title="Stock Keeping Unit">SKU</span>
+                      </label>
+                      <div class="col-sm-4">
+                        <input name="sku" value="" placeholder="SKU" id="input-sku" class="form-control" type="text" data-v-product-sku>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label" for="input-upc">
+                        <span data-bs-toggle="tooltip" title="" data-v-original-title="Universal Product Code">UPC</span>
+                      </label>
+                      <div class="col-sm-4">
+                        <input name="upc" value="" placeholder="UPC" id="input-upc" class="form-control" type="text" data-v-product-upc>
+                      </div>
+                      <label class="col-sm-2 form-label" for="input-ean">
+                        <span data-bs-toggle="tooltip" title="" data-v-original-title="European Article Number">EAN</span>
+                      </label>
+                      <div class="col-sm-4">
+                        <input name="ean" value="" placeholder="EAN" id="input-ean" class="form-control" type="text" data-v-product-ean>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label" for="input-jan">
+                        <span data-bs-toggle="tooltip" title="" data-v-original-title="Japanese Article Number">JAN</span>
+                      </label>
+                      <div class="col-sm-4">
+                        <input name="jan" value="" placeholder="JAN" id="input-jan" class="form-control" type="text" data-v-product-jan>
+                      </div>
+                      <label class="col-sm-2 form-label" for="input-isbn">
+                        <span data-bs-toggle="tooltip" title="" data-v-original-title="International Standard Book Number">ISBN</span>
+                      </label>
+                      <div class="col-sm-4">
+                        <input name="isbn" value="" placeholder="ISBN" id="input-isbn" class="form-control" type="text" data-v-product-isbn>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label" for="input-mpn">
+                        <span data-bs-toggle="tooltip" title="" data-v-original-title="Manufacturer Part Number">MPN</span>
+                      </label>
+                      <div class="col-sm-4">
+                        <input name="mpn" value="" placeholder="MPN" id="input-mpn" class="form-control" type="text" data-v-product-mpn>
+                      </div>
+                      <label class="col-sm-2 form-label" for="input-location">Location</label>
+                      <div class="col-sm-4">
+                        <input name="location" value="" placeholder="Location" id="input-location" class="form-control" type="text" data-v-product-location>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label" for="input-price">Price</label>
+                      <div class="col-sm-4">
+                        <input name="price" value="1" placeholder="Price" id="input-price" class="form-control" type="text" data-v-product-price>
+                      </div>
+                      <label class="col-sm-2 form-label" for="input-tax-class">Tax Class</label>
+                      <div class="col-sm-4">
+                        <select name="tax_class_id" id="input-tax-class" class="form-select" data-v-product-tax_class_id>
+                          <option value="0"> --- None ---</option>
+                          <option value="9">Taxable Goods</option>
+                          <option value="10">Downloadable Products</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label" for="input-quantity">Quantity</label>
+                      <div class="col-sm-4">
+                        <input name="quantity" value="1" placeholder="Quantity" id="input-quantity" class="form-control" type="text" data-v-product-quantity>
+                      </div>
+                      <label class="col-sm-2 form-label" for="input-minimum">
+                        <span data-bs-toggle="tooltip" title="" data-v-original-title="Force a minimum ordered amount">Minimum Quantity</span>
+                      </label>
+                      <div class="col-sm-4">
+                        <input name="minimum" value="1" placeholder="Minimum Quantity" id="input-minimum" class="form-control" type="text" data-v-product-minimum>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label" for="input-subtract">Subtract
+                        Stock</label>
+                      <div class="col-sm-4">
+                        <select name="subtract" id="input-subtract" class="form-select">
+                          <option value="1" selected="selected">Yes</option>
+                          <option value="0">No</option>
+                        </select>
+                      </div>
+                      <label class="col-sm-2 form-label" for="input-stock-status">
+                        <span data-bs-toggle="tooltip" title="" data-v-original-title="Status shown when a product is out of stock">Out Of Stock Status</span>
+                      </label>
+                      <div class="col-sm-4">
+                        <select name="stock_status_id" id="input-stock-status" class="form-select" data-v-product-stock_status_id>
+                          <option value="1">2-3 Days</option>
+                          <option value="2">In Stock</option>
+                          <option value="3" selected="selected">Out Of Stock</option>
+                          <option value="4">Pre-Order</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label">Requires Shipping</label>
+                      <div class="col-sm-10">
+
+                        <label class="radio-inline custom-control custom-radio">
+                          <input name="shipping" value="1" checked="checked" type="radio" class="form-check-input">
+                          <span class="form-check-label"></span>
+                          <span class="custom-control-description">Yes</span>
+                        </label>
+                        <label class="radio-inline custom-control custom-radio">
+                          <input name="shipping" value="0" type="radio" class="form-check-input">
+                          <span class="form-check-label"></span>
+                          <span class="custom-control-description">No</span>
+
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label" for="input-keyword">
+                        <span data-bs-toggle="tooltip" title="" data-v-original-title="Do not use spaces, instead replace spaces with - and make sure the SEO URL is globally unique.">SEO URL</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <input name="keyword" value="test" placeholder="SEO URL" id="input-keyword" class="form-control" type="text">
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label" for="input-date-available">Date
+                        Available</label>
+                      <div class="col-sm-3">
+                        <div class="input-group date">
+                          <input name="date_available" value="2009-02-04" placeholder="Date Available" data-v-date-format="YYYY-MM-DD" id="input-date-available" class="form-control" type="text">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                              <i class="la la-calendar"></i>
+                            </button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label" for="input-length">Dimensions (L x W x
+                        H)</label>
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <input name="length" value="1.00000000" placeholder="Length" id="input-length" class="form-control" type="text">
+                          </div>
+                          <div class="col-sm-4">
+                            <input name="width" value="2.00000000" placeholder="Width" id="input-width" class="form-control" type="text">
+                          </div>
+                          <div class="col-sm-4">
+                            <input name="height" value="3.00000000" placeholder="Height" id="input-height" class="form-control" type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <label class="col-sm-1 form-label" for="input-length-class">Length
+                        Class</label>
+                      <div class="col-sm-3">
+                        <select name="length_class_id" id="input-length-class" class="form-select">
+                          <option value="1" selected="selected">Centimeter</option>
+                          <option value="2">Millimeter</option>
+                          <option value="3">Inch</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label" for="input-weight">Weight</label>
+                      <div class="col-sm-4">
+                        <input name="weight" value="12.50000000" placeholder="Weight" id="input-weight" class="form-control" type="text">
+                      </div>
+
+                      <label class="col-sm-2 form-label" for="input-weight-class">Weight
+                        Class</label>
+                      <div class="col-sm-4">
+                        <select name="weight_class_id" id="input-weight-class" class="form-select" data-v-product-weight_class_id>
+                          <option value="1">Kilogram</option>
+                          <option value="2">Gram</option>
+                          <option value="5">Pound</option>
+                          <option value="6">Ounce</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label" for="input-status">Status</label>
+                      <div class="col-sm-4">
+                        <select name="status" id="input-status" class="form-select">
+                          <option value="1" selected="selected">Enabled</option>
+                          <option value="0">Disabled</option>
+                        </select>
+                      </div>
+                      <label class="col-sm-2 form-label" for="input-sort-order">Sort Order</label>
+                      <div class="col-sm-4">
+                        <input name="sort_order" value="0" placeholder="Sort Order" id="input-sort-order" class="form-control" type="text">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane" id="tab-links">
+
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label" for="input-manufacturer">
+                        <span data-bs-toggle="tooltip" title="" data-v-original-title="(Autocomplete)">Manufacturer</span>
+                      </label>
+                      <div class="col-sm-10">
+
+                        <input name="manufacturer_id" value="1" data-v-url="/admin?module=editor/editor&action=productsAutocomplete" placeholder="Manufacturer" id="input-manufacturer" autocomplete="off" type="text" class="form-control autocomplete" />
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label" for="input-category">
+                        <span data-bs-toggle="tooltip" title="" data-v-original-title="(Autocomplete)">Categories</span>
+                      </label>
+                      <div class="col-sm-10">
+
+                        <input name="category" placeholder="Categories" data-v-url="/admin?module=product&action=categoriesAutocomplete" type="text" class="form-control autocomplete-list" />
+
+                      </div>
+                    </div>
+                    <!-- div class="mb-3 row">
+		<label class="col-sm-2 form-label" for="input-filter"><span data-bs-toggle="tooltip" title="" data-v-original-title="(Autocomplete)">Filters</span></label>
+		<div class="col-sm-10">
+			<input name="filter" value="" placeholder="Filters" id="input-filter" class="form-control" autocomplete="off" type="text">
+			<ul class="dropdown-menu"></ul>
+			<div id="product-filter" class="well well-sm" style="overflow: auto;">
+			</div>
+		</div>
+	</div -->
+                    <!-- div class="mb-3 row">
+		<label class="col-sm-2 form-label">Stores</label>
+		<div class="col-sm-10">
+			<div class="well well-sm" style="">
+				<div class="checkbox">
+					<label>
+						<input name="product_store[]" value="0" checked="checked" type="checkbox"> Default </label>
+				</div>
+			</div>
+		</div>
+	</div -->
+                    <!-- div class="mb-3 row">
+		<label class="col-sm-2 form-label" for="input-download"><span data-bs-toggle="tooltip" title="" data-v-original-title="(Autocomplete)">Downloads</span></label>
+		<div class="col-sm-10">
+
+			<div class="form-control tags-input" style="height:auto;">
+				<input name="product" type="text" class="tags-input" data-v-url="/admin?module=editor/editor&action=productsAutocomplete" style="border:none;min-width:60px;" />
+			</div>
+
+		</div>
+	</div -->
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label" for="input-related">
+                        <span data-bs-toggle="tooltip" title="" data-v-original-title="(Autocomplete)">Related Products</span>
+                      </label>
+                      <div class="col-sm-10">
+
+                        <div class="form-control tags-input" style="height:auto;">
+                          <input name="product" type="text" class="tags-input" data-v-url="/admin?module=editor/editor&action=productsAutocomplete" style="border:none;min-width:60px;" />
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane" id="tab-attribute">
+                    <div class="table-responsive">
+                      <table id="attribute" class="table table-striped table-bordered table-hover">
+                        <thead>
+                          <tr>
+                            <td class="text-left">Attribute</td>
+                            <td class="text-left">Text</td>
+                            <td></td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr id="attribute-row0">
+                            <td class="text-left" style="width: 40%;">
+                              <input name="product_attribute[0][name]" value="Clockspeed" placeholder="Attribute" class="form-control" autocomplete="off" type="text">
+                              <ul class="dropdown-menu"></ul>
+                              <input name="product_attribute[0][attribute_id]" value="3" type="hidden">
+                            </td>
+                            <td class="text-left">
+                              <div class="input-group">
+                                <span class="input-group-addon">
+                                  <img src="language/en-gb/en-gb.png" title="English">
+                                </span>
+                                <textarea name="product_attribute[0][product_attribute_description][1][text]" rows="5" placeholder="Text" class="form-control">100mhz</textarea>
+                              </div>
+                            </td>
+                            <td class="text-left">
+                              <button type="button" onclick="$('#attribute-row0').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                <i class="la la-minus-circle"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="2"></td>
+                            <td class="text-left">
+                              <button type="button" onclick="addAttribute();" data-bs-toggle="tooltip" title="" class="btn btn-primary" data-v-original-title="Add Attribute">
+                                <i class="la la-plus-circle"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane" id="tab-option">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <ul class="nav nav-pills nav-stacked" id="option">
+                          <li class="active">
+                            <a href="#tab-option0" data-bs-toggle="tab" aria-expanded="true">
+                              <i class="la la-minus-circle" onclick="$('a[href=\'#tab-option0\']').parent().remove(); $('#tab-option0').remove(); $('#option a:first').tab('show');"></i>
+                              Checkbox
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#tab-option1" data-bs-toggle="tab">
+                              <i class="la la-minus-circle" onclick="$('a[href=\'#tab-option1\']').parent().remove(); $('#tab-option1').remove(); $('#option a:first').tab('show');"></i>
+                              Select
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#tab-option2" data-bs-toggle="tab">
+                              <i class="la la-minus-circle" onclick="$('a[href=\'#tab-option2\']').parent().remove(); $('#tab-option2').remove(); $('#option a:first').tab('show');"></i>
+                              Textarea
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#tab-option3" data-bs-toggle="tab">
+                              <i class="la la-minus-circle" onclick="$('a[href=\'#tab-option3\']').parent().remove(); $('#tab-option3').remove(); $('#option a:first').tab('show');"></i>
+                              Radio
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#tab-option4" data-bs-toggle="tab">
+                              <i class="la la-minus-circle" onclick="$('a[href=\'#tab-option4\']').parent().remove(); $('#tab-option4').remove(); $('#option a:first').tab('show');"></i>
+                              Text
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#tab-option5" data-bs-toggle="tab">
+                              <i class="la la-minus-circle" onclick="$('a[href=\'#tab-option5\']').parent().remove(); $('#tab-option5').remove(); $('#option a:first').tab('show');"></i>
+                              Date
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#tab-option6" data-bs-toggle="tab">
+                              <i class="la la-minus-circle" onclick="$('a[href=\'#tab-option6\']').parent().remove(); $('#tab-option6').remove(); $('#option a:first').tab('show');"></i>
+                              File
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#tab-option7" data-bs-toggle="tab">
+                              <i class="la la-minus-circle" onclick="$('a[href=\'#tab-option7\']').parent().remove(); $('#tab-option7').remove(); $('#option a:first').tab('show');"></i>
+                              Time
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#tab-option8" data-bs-toggle="tab">
+                              <i class="la la-minus-circle" onclick="$('a[href=\'#tab-option8\']').parent().remove(); $('#tab-option8').remove(); $('#option a:first').tab('show');"></i>
+                              Date &amp; Time
+                            </a>
+                          </li>
+                          <li>
+                            <input name="option" value="" placeholder="Option" id="input-option" class="form-control" autocomplete="off" type="text">
+                            <ul class="dropdown-menu"></ul>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-10">
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="tab-option0">
+                            <input name="product_option[0][product_option_id]" value="223" type="hidden">
+                            <input name="product_option[0][name]" value="Checkbox" type="hidden">
+                            <input name="product_option[0][option_id]" value="2" type="hidden">
+                            <input name="product_option[0][type]" value="checkbox" type="hidden">
+                            <div class="mb-3 row">
+                              <label class="col-sm-2 form-label" for="input-required0">Required</label>
+                              <div class="col-sm-10">
+                                <select name="product_option[0][required]" id="input-required0" class="form-select">
+                                  <option value="1" selected="selected">Yes</option>
+                                  <option value="0">No</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="table-responsive">
+                              <table id="option-value0" class="table table-striped table-bordered table-hover">
+                                <thead>
+                                  <tr>
+                                    <td class="text-left">Option Value</td>
+                                    <td class="text-right">Quantity</td>
+                                    <td class="text-left">Subtract Stock</td>
+                                    <td class="text-right">Price</td>
+                                    <td class="text-right">Points</td>
+                                    <td class="text-right">Weight</td>
+                                    <td></td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr id="option-value-row0">
+                                    <td class="text-left">
+                                      <select name="product_option[0][product_option_value][0][option_value_id]" class="form-select">
+                                        <option value="23" selected="selected">Checkbox
+                                          1
+                                        </option>
+                                        <option value="24">Checkbox 2</option>
+                                        <option value="44">Checkbox 3</option>
+                                        <option value="45">Checkbox 4</option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][0][product_option_value_id]" value="8" type="hidden">
+                                    </td>
+                                    <td class="text-right">
+                                      <input name="product_option[0][product_option_value][0][quantity]" value="48" placeholder="Quantity" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <select name="product_option[0][product_option_value][0][subtract]" class="form-select">
+                                        <option value="1" selected="selected">Yes
+                                        </option>
+                                        <option value="0">No</option>
+                                      </select>
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[0][product_option_value][0][price_prefix]" class="form-select">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][0][price]" value="10.0000" placeholder="Price" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[0][product_option_value][0][points_prefix]" class="form-select">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][0][points]" value="0" placeholder="Points" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[0][product_option_value][0][weight_prefix]" class="form-select">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][0][weight]" value="10.00000000" placeholder="Weight" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <button type="button" onclick="$(this).tooltip('destroy');$('#option-value-row0').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                        <i class="la la-minus-circle"></i>
+                                      </button>
+                                    </td>
+                                  </tr>
+                                  <tr id="option-value-row1">
+                                    <td class="text-left">
+                                      <select name="product_option[0][product_option_value][1][option_value_id]" class="form-select">
+                                        <option value="23">Checkbox 1</option>
+                                        <option value="24" selected="selected">Checkbox
+                                          2
+                                        </option>
+                                        <option value="44">Checkbox 3</option>
+                                        <option value="45">Checkbox 4</option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][1][product_option_value_id]" value="9" type="hidden">
+                                    </td>
+                                    <td class="text-right">
+                                      <input name="product_option[0][product_option_value][1][quantity]" value="194" placeholder="Quantity" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <select name="product_option[0][product_option_value][1][subtract]" class="form-select">
+                                        <option value="1" selected="selected">Yes
+                                        </option>
+                                        <option value="0">No</option>
+                                      </select>
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[0][product_option_value][1][price_prefix]" class="form-select">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][1][price]" value="20.0000" placeholder="Price" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[0][product_option_value][1][points_prefix]" class="form-select">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][1][points]" value="0" placeholder="Points" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[0][product_option_value][1][weight_prefix]" class="form-select">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][1][weight]" value="20.00000000" placeholder="Weight" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <button type="button" onclick="$(this).tooltip('destroy');$('#option-value-row1').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                        <i class="la la-minus-circle"></i>
+                                      </button>
+                                    </td>
+                                  </tr>
+                                  <tr id="option-value-row2">
+                                    <td class="text-left">
+                                      <select name="product_option[0][product_option_value][2][option_value_id]" class="form-select">
+                                        <option value="23">Checkbox 1</option>
+                                        <option value="24">Checkbox 2</option>
+                                        <option value="44" selected="selected">Checkbox
+                                          3
+                                        </option>
+                                        <option value="45">Checkbox 4</option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][2][product_option_value_id]" value="10" type="hidden">
+                                    </td>
+                                    <td class="text-right">
+                                      <input name="product_option[0][product_option_value][2][quantity]" value="2696" placeholder="Quantity" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <select name="product_option[0][product_option_value][2][subtract]" class="form-select">
+                                        <option value="1" selected="selected">Yes
+                                        </option>
+                                        <option value="0">No</option>
+                                      </select>
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[0][product_option_value][2][price_prefix]" class="form-select">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][2][price]" value="30.0000" placeholder="Price" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[0][product_option_value][2][points_prefix]" class="form-select">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][2][points]" value="0" placeholder="Points" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[0][product_option_value][2][weight_prefix]" class="form-select">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][2][weight]" value="30.00000000" placeholder="Weight" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <button type="button" onclick="$(this).tooltip('destroy');$('#option-value-row2').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                        <i class="la la-minus-circle"></i>
+                                      </button>
+                                    </td>
+                                  </tr>
+                                  <tr id="option-value-row3">
+                                    <td class="text-left">
+                                      <select name="product_option[0][product_option_value][3][option_value_id]" class="form-select">
+                                        <option value="23">Checkbox 1</option>
+                                        <option value="24">Checkbox 2</option>
+                                        <option value="44">Checkbox 3</option>
+                                        <option value="45" selected="selected">Checkbox
+                                          4
+                                        </option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][3][product_option_value_id]" value="11" type="hidden">
+                                    </td>
+                                    <td class="text-right">
+                                      <input name="product_option[0][product_option_value][3][quantity]" value="3998" placeholder="Quantity" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <select name="product_option[0][product_option_value][3][subtract]" class="form-select">
+                                        <option value="1" selected="selected">Yes
+                                        </option>
+                                        <option value="0">No</option>
+                                      </select>
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[0][product_option_value][3][price_prefix]" class="form-select">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][3][price]" value="40.0000" placeholder="Price" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[0][product_option_value][3][points_prefix]" class="form-select">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][3][points]" value="0" placeholder="Points" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[0][product_option_value][3][weight_prefix]" class="form-select">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[0][product_option_value][3][weight]" value="40.00000000" placeholder="Weight" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <button type="button" onclick="$(this).tooltip('destroy');$('#option-value-row3').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                        <i class="la la-minus-circle"></i>
+                                      </button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                                <tfoot>
+                                  <tr>
+                                    <td colspan="6"></td>
+                                    <td class="text-left">
+                                      <button type="button" onclick="addOptionValue('0');" data-bs-toggle="tooltip" title="" class="btn btn-primary" data-v-original-title="Add Option Value">
+                                        <i class="la la-plus-circle"></i>
+                                      </button>
+                                    </td>
+                                  </tr>
+                                </tfoot>
+                              </table>
+                            </div>
+                            <select id="option-values0" style="display: none;">
+                              <option value="23">Checkbox 1</option>
+                              <option value="24">Checkbox 2</option>
+                              <option value="44">Checkbox 3</option>
+                              <option value="45">Checkbox 4</option>
+                            </select>
+                          </div>
+                          <div class="tab-pane" id="tab-option1">
+                            <input name="product_option[1][product_option_id]" value="217" type="hidden">
+                            <input name="product_option[1][name]" value="Select" type="hidden">
+                            <input name="product_option[1][option_id]" value="5" type="hidden">
+                            <input name="product_option[1][type]" value="select" type="hidden">
+                            <div class="mb-3 row">
+                              <label class="col-sm-2 form-label" for="input-required1">Required</label>
+                              <div class="col-sm-10">
+                                <select name="product_option[1][required]" id="input-required1" class="form-control">
+                                  <option value="1" selected="selected">Yes</option>
+                                  <option value="0">No</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="table-responsive">
+                              <table id="option-value1" class="table table-striped table-bordered table-hover">
+                                <thead>
+                                  <tr>
+                                    <td class="text-left">Option Value</td>
+                                    <td class="text-right">Quantity</td>
+                                    <td class="text-left">Subtract Stock</td>
+                                    <td class="text-right">Price</td>
+                                    <td class="text-right">Points</td>
+                                    <td class="text-right">Weight</td>
+                                    <td></td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr id="option-value-row4">
+                                    <td class="text-left">
+                                      <select name="product_option[1][product_option_value][4][option_value_id]" class="form-control">
+                                        <option value="39" selected="selected">Red
+                                        </option>
+                                        <option value="40">Blue</option>
+                                        <option value="41">Green</option>
+                                        <option value="42">Yellow</option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][4][product_option_value_id]" value="4" type="hidden">
+                                    </td>
+                                    <td class="text-right">
+                                      <input name="product_option[1][product_option_value][4][quantity]" value="92" placeholder="Quantity" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <select name="product_option[1][product_option_value][4][subtract]" class="form-control">
+                                        <option value="1" selected="selected">Yes
+                                        </option>
+                                        <option value="0">No</option>
+                                      </select>
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[1][product_option_value][4][price_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][4][price]" value="4.0000" placeholder="Price" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[1][product_option_value][4][points_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][4][points]" value="0" placeholder="Points" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[1][product_option_value][4][weight_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][4][weight]" value="4.00000000" placeholder="Weight" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <button type="button" onclick="$(this).tooltip('destroy');$('#option-value-row4').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                        <i class="la la-minus-circle"></i>
+                                      </button>
+                                    </td>
+                                  </tr>
+                                  <tr id="option-value-row5">
+                                    <td class="text-left">
+                                      <select name="product_option[1][product_option_value][5][option_value_id]" class="form-control">
+                                        <option value="39">Red</option>
+                                        <option value="40" selected="selected">Blue
+                                        </option>
+                                        <option value="41">Green</option>
+                                        <option value="42">Yellow</option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][5][product_option_value_id]" value="3" type="hidden">
+                                    </td>
+                                    <td class="text-right">
+                                      <input name="product_option[1][product_option_value][5][quantity]" value="300" placeholder="Quantity" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <select name="product_option[1][product_option_value][5][subtract]" class="form-control">
+                                        <option value="1">Yes</option>
+                                        <option value="0" selected="selected">No
+                                        </option>
+                                      </select>
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[1][product_option_value][5][price_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][5][price]" value="3.0000" placeholder="Price" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[1][product_option_value][5][points_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][5][points]" value="0" placeholder="Points" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[1][product_option_value][5][weight_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][5][weight]" value="3.00000000" placeholder="Weight" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <button type="button" onclick="$(this).tooltip('destroy');$('#option-value-row5').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                        <i class="la la-minus-circle"></i>
+                                      </button>
+                                    </td>
+                                  </tr>
+                                  <tr id="option-value-row6">
+                                    <td class="text-left">
+                                      <select name="product_option[1][product_option_value][6][option_value_id]" class="form-control">
+                                        <option value="39">Red</option>
+                                        <option value="40">Blue</option>
+                                        <option value="41" selected="selected">Green
+                                        </option>
+                                        <option value="42">Yellow</option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][6][product_option_value_id]" value="1" type="hidden">
+                                    </td>
+                                    <td class="text-right">
+                                      <input name="product_option[1][product_option_value][6][quantity]" value="100" placeholder="Quantity" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <select name="product_option[1][product_option_value][6][subtract]" class="form-control">
+                                        <option value="1">Yes</option>
+                                        <option value="0" selected="selected">No
+                                        </option>
+                                      </select>
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[1][product_option_value][6][price_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][6][price]" value="1.0000" placeholder="Price" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[1][product_option_value][6][points_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][6][points]" value="0" placeholder="Points" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[1][product_option_value][6][weight_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][6][weight]" value="1.00000000" placeholder="Weight" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <button type="button" onclick="$(this).tooltip('destroy');$('#option-value-row6').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                        <i class="la la-minus-circle"></i>
+                                      </button>
+                                    </td>
+                                  </tr>
+                                  <tr id="option-value-row7">
+                                    <td class="text-left">
+                                      <select name="product_option[1][product_option_value][7][option_value_id]" class="form-control">
+                                        <option value="39">Red</option>
+                                        <option value="40">Blue</option>
+                                        <option value="41">Green</option>
+                                        <option value="42" selected="selected">Yellow
+                                        </option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][7][product_option_value_id]" value="2" type="hidden">
+                                    </td>
+                                    <td class="text-right">
+                                      <input name="product_option[1][product_option_value][7][quantity]" value="200" placeholder="Quantity" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <select name="product_option[1][product_option_value][7][subtract]" class="form-control">
+                                        <option value="1" selected="selected">Yes
+                                        </option>
+                                        <option value="0">No</option>
+                                      </select>
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[1][product_option_value][7][price_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][7][price]" value="2.0000" placeholder="Price" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[1][product_option_value][7][points_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][7][points]" value="0" placeholder="Points" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[1][product_option_value][7][weight_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[1][product_option_value][7][weight]" value="2.00000000" placeholder="Weight" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <button type="button" onclick="$(this).tooltip('destroy');$('#option-value-row7').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                        <i class="la la-minus-circle"></i>
+                                      </button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                                <tfoot>
+                                  <tr>
+                                    <td colspan="6"></td>
+                                    <td class="text-left">
+                                      <button type="button" onclick="addOptionValue('1');" data-bs-toggle="tooltip" title="" class="btn btn-primary" data-v-original-title="Add Option Value">
+                                        <i class="la la-plus-circle"></i>
+                                      </button>
+                                    </td>
+                                  </tr>
+                                </tfoot>
+                              </table>
+                            </div>
+                            <select id="option-values1" style="display: none;">
+                              <option value="39">Red</option>
+                              <option value="40">Blue</option>
+                              <option value="41">Green</option>
+                              <option value="42">Yellow</option>
+                            </select>
+                          </div>
+                          <div class="tab-pane" id="tab-option2">
+                            <input name="product_option[2][product_option_id]" value="209" type="hidden">
+                            <input name="product_option[2][name]" value="Textarea" type="hidden">
+                            <input name="product_option[2][option_id]" value="6" type="hidden">
+                            <input name="product_option[2][type]" value="textarea" type="hidden">
+                            <div class="mb-3 row">
+                              <label class="col-sm-2 form-label" for="input-required2">Required</label>
+                              <div class="col-sm-10">
+                                <select name="product_option[2][required]" id="input-required2" class="form-control">
+                                  <option value="1" selected="selected">Yes</option>
+                                  <option value="0">No</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="mb-3 row">
+                              <label class="col-sm-2 form-label" for="input-value2">Option
+                                Value</label>
+                              <div class="col-sm-10">
+                                <textarea name="product_option[2][value]" rows="5" placeholder="Option Value" id="input-value2" class="form-control"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="tab-option3">
+                            <input name="product_option[3][product_option_id]" value="218" type="hidden">
+                            <input name="product_option[3][name]" value="Radio" type="hidden">
+                            <input name="product_option[3][option_id]" value="1" type="hidden">
+                            <input name="product_option[3][type]" value="radio" type="hidden">
+                            <div class="mb-3 row">
+                              <label class="col-sm-2 form-label" for="input-required3">Required</label>
+                              <div class="col-sm-10">
+                                <select name="product_option[3][required]" id="input-required3" class="form-control">
+                                  <option value="1" selected="selected">Yes</option>
+                                  <option value="0">No</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="table-responsive">
+                              <table id="option-value3" class="table table-striped table-bordered table-hover">
+                                <thead>
+                                  <tr>
+                                    <td class="text-left">Option Value</td>
+                                    <td class="text-right">Quantity</td>
+                                    <td class="text-left">Subtract Stock</td>
+                                    <td class="text-right">Price</td>
+                                    <td class="text-right">Points</td>
+                                    <td class="text-right">Weight</td>
+                                    <td></td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr id="option-value-row8">
+                                    <td class="text-left">
+                                      <select name="product_option[3][product_option_value][8][option_value_id]" class="form-control">
+                                        <option value="32" selected="selected">Small
+                                        </option>
+                                        <option value="31">Medium</option>
+                                        <option value="43">Large</option>
+                                      </select>
+                                      <input name="product_option[3][product_option_value][8][product_option_value_id]" value="5" type="hidden">
+                                    </td>
+                                    <td class="text-right">
+                                      <input name="product_option[3][product_option_value][8][quantity]" value="96" placeholder="Quantity" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <select name="product_option[3][product_option_value][8][subtract]" class="form-control">
+                                        <option value="1" selected="selected">Yes
+                                        </option>
+                                        <option value="0">No</option>
+                                      </select>
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[3][product_option_value][8][price_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[3][product_option_value][8][price]" value="10.0000" placeholder="Price" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[3][product_option_value][8][points_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[3][product_option_value][8][points]" value="1" placeholder="Points" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[3][product_option_value][8][weight_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[3][product_option_value][8][weight]" value="10.00000000" placeholder="Weight" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <button type="button" onclick="$(this).tooltip('destroy');$('#option-value-row8').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                        <i class="la la-minus-circle"></i>
+                                      </button>
+                                    </td>
+                                  </tr>
+                                  <tr id="option-value-row9">
+                                    <td class="text-left">
+                                      <select name="product_option[3][product_option_value][9][option_value_id]" class="form-control">
+                                        <option value="32">Small</option>
+                                        <option value="31" selected="selected">Medium
+                                        </option>
+                                        <option value="43">Large</option>
+                                      </select>
+                                      <input name="product_option[3][product_option_value][9][product_option_value_id]" value="6" type="hidden">
+                                    </td>
+                                    <td class="text-right">
+                                      <input name="product_option[3][product_option_value][9][quantity]" value="146" placeholder="Quantity" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <select name="product_option[3][product_option_value][9][subtract]" class="form-control">
+                                        <option value="1" selected="selected">Yes
+                                        </option>
+                                        <option value="0">No</option>
+                                      </select>
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[3][product_option_value][9][price_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[3][product_option_value][9][price]" value="20.0000" placeholder="Price" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[3][product_option_value][9][points_prefix]" class="form-control">
+                                        <option value="+">+</option>
+                                        <option value="-" selected="selected">-</option>
+                                      </select>
+                                      <input name="product_option[3][product_option_value][9][points]" value="2" placeholder="Points" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[3][product_option_value][9][weight_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[3][product_option_value][9][weight]" value="20.00000000" placeholder="Weight" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <button type="button" onclick="$(this).tooltip('destroy');$('#option-value-row9').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                        <i class="la la-minus-circle"></i>
+                                      </button>
+                                    </td>
+                                  </tr>
+                                  <tr id="option-value-row10">
+                                    <td class="text-left">
+                                      <select name="product_option[3][product_option_value][10][option_value_id]" class="form-control">
+                                        <option value="32">Small</option>
+                                        <option value="31">Medium</option>
+                                        <option value="43" selected="selected">Large
+                                        </option>
+                                      </select>
+                                      <input name="product_option[3][product_option_value][10][product_option_value_id]" value="7" type="hidden">
+                                    </td>
+                                    <td class="text-right">
+                                      <input name="product_option[3][product_option_value][10][quantity]" value="300" placeholder="Quantity" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <select name="product_option[3][product_option_value][10][subtract]" class="form-control">
+                                        <option value="1" selected="selected">Yes
+                                        </option>
+                                        <option value="0">No</option>
+                                      </select>
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[3][product_option_value][10][price_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[3][product_option_value][10][price]" value="30.0000" placeholder="Price" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[3][product_option_value][10][points_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[3][product_option_value][10][points]" value="3" placeholder="Points" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-right">
+                                      <select name="product_option[3][product_option_value][10][weight_prefix]" class="form-control">
+                                        <option value="+" selected="selected">+</option>
+                                        <option value="-">-</option>
+                                      </select>
+                                      <input name="product_option[3][product_option_value][10][weight]" value="30.00000000" placeholder="Weight" class="form-control" type="text">
+                                    </td>
+                                    <td class="text-left">
+                                      <button type="button" onclick="$(this).tooltip('destroy');$('#option-value-row10').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                        <i class="la la-minus-circle"></i>
+                                      </button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                                <tfoot>
+                                  <tr>
+                                    <td colspan="6"></td>
+                                    <td class="text-left">
+                                      <button type="button" onclick="addOptionValue('3');" data-bs-toggle="tooltip" title="" class="btn btn-primary" data-v-original-title="Add Option Value">
+                                        <i class="la la-plus-circle"></i>
+                                      </button>
+                                    </td>
+                                  </tr>
+                                </tfoot>
+                              </table>
+                            </div>
+                            <select id="option-values3" style="display: none;">
+                              <option value="32">Small</option>
+                              <option value="31">Medium</option>
+                              <option value="43">Large</option>
+                            </select>
+                          </div>
+                          <div class="tab-pane" id="tab-option4">
+                            <input name="product_option[4][product_option_id]" value="208" type="hidden">
+                            <input name="product_option[4][name]" value="Text" type="hidden">
+                            <input name="product_option[4][option_id]" value="4" type="hidden">
+                            <input name="product_option[4][type]" value="text" type="hidden">
+                            <div class="mb-3 row">
+                              <label class="col-sm-2 form-label" for="input-required4">Required</label>
+                              <div class="col-sm-10">
+                                <select name="product_option[4][required]" id="input-required4" class="form-control">
+                                  <option value="1" selected="selected">Yes</option>
+                                  <option value="0">No</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="mb-3 row">
+                              <label class="col-sm-2 form-label" for="input-value4">Option
+                                Value</label>
+                              <div class="col-sm-10">
+                                <input name="product_option[4][value]" value="test" placeholder="Option Value" id="input-value4" class="form-control" type="text">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="tab-option5">
+                            <input name="product_option[5][product_option_id]" value="219" type="hidden">
+                            <input name="product_option[5][name]" value="Date" type="hidden">
+                            <input name="product_option[5][option_id]" value="8" type="hidden">
+                            <input name="product_option[5][type]" value="date" type="hidden">
+                            <div class="mb-3 row">
+                              <label class="col-sm-2 form-label" for="input-required5">Required</label>
+                              <div class="col-sm-10">
+                                <select name="product_option[5][required]" id="input-required5" class="form-control">
+                                  <option value="1" selected="selected">Yes</option>
+                                  <option value="0">No</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="mb-3 row">
+                              <label class="col-sm-2 form-label" for="input-value5">Option
+                                Value</label>
+                              <div class="col-sm-3">
+                                <div class="input-group date">
+                                  <input name="product_option[5][value]" value="2011-02-20" placeholder="Option Value" data-v-date-format="YYYY-MM-DD" id="input-value5" class="form-control" type="text">
+                                  <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                      <i class="la la-calendar"></i>
+                                    </button>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="tab-option6">
+                            <input name="product_option[6][product_option_id]" value="222" type="hidden">
+                            <input name="product_option[6][name]" value="File" type="hidden">
+                            <input name="product_option[6][option_id]" value="7" type="hidden">
+                            <input name="product_option[6][type]" value="file" type="hidden">
+                            <div class="mb-3 row">
+                              <label class="col-sm-2 form-label" for="input-required6">Required</label>
+                              <div class="col-sm-10">
+                                <select name="product_option[6][required]" id="input-required6" class="form-control">
+                                  <option value="1" selected="selected">Yes</option>
+                                  <option value="0">No</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="mb-3 row" style="display: none;">
+                              <label class="col-sm-2 form-label" for="input-value6">Option
+                                Value</label>
+                              <div class="col-sm-10">
+                                <input name="product_option[6][value]" value="" placeholder="Option Value" id="input-value6" class="form-control" type="text">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="tab-option7">
+                            <input name="product_option[7][product_option_id]" value="221" type="hidden">
+                            <input name="product_option[7][name]" value="Time" type="hidden">
+                            <input name="product_option[7][option_id]" value="9" type="hidden">
+                            <input name="product_option[7][type]" value="time" type="hidden">
+                            <div class="mb-3 row">
+                              <label class="col-sm-2 form-label" for="input-required7">Required</label>
+                              <div class="col-sm-10">
+                                <select name="product_option[7][required]" id="input-required7" class="form-control">
+                                  <option value="1" selected="selected">Yes</option>
+                                  <option value="0">No</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="mb-3 row">
+                              <label class="col-sm-2 form-label" for="input-value7">Option
+                                Value</label>
+                              <div class="col-sm-10">
+                                <div class="input-group time">
+                                  <input name="product_option[7][value]" value="22:25" placeholder="Option Value" data-v-date-format="HH:mm" id="input-value7" class="form-control" type="text">
+                                  <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default">
+                                      <i class="la la-calendar"></i>
+                                    </button>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="tab-option8">
+                            <input name="product_option[8][product_option_id]" value="220" type="hidden">
+                            <input name="product_option[8][name]" value="Date &amp; Time" type="hidden">
+                            <input name="product_option[8][option_id]" value="10" type="hidden">
+                            <input name="product_option[8][type]" value="datetime" type="hidden">
+                            <div class="mb-3 row">
+                              <label class="col-sm-2 form-label" for="input-required8">Required</label>
+                              <div class="col-sm-10">
+                                <select name="product_option[8][required]" id="input-required8" class="form-control">
+                                  <option value="1" selected="selected">Yes</option>
+                                  <option value="0">No</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="mb-3 row">
+                              <label class="col-sm-2 form-label" for="input-value8">Option
+                                Value</label>
+                              <div class="col-sm-10">
+                                <div class="input-group datetime">
+                                  <input name="product_option[8][value]" value="2011-02-20 22:25" placeholder="Option Value" data-v-date-format="YYYY-MM-DD HH:mm" id="input-value8" class="form-control" type="text">
+                                  <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default">
+                                      <i class="la la-calendar"></i>
+                                    </button>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane" id="tab-recurring">
+                    <div class="table-responsive">
+                      <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                          <tr>
+                            <td class="text-left">Recurring Profile</td>
+                            <td class="text-left">Customer Group</td>
+                            <td class="text-left"></td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="2"></td>
+                            <td class="text-left">
+                              <button type="button" onclick="addRecurring()" data-bs-toggle="tooltip" title="" class="btn btn-primary" data-v-original-title="Add Recurring">
+                                <i class="la la-plus-circle"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+
+
+                  <div class="tab-pane" id="tab-discount">
+                    <div class="table-responsive">
+                      <table id="discount" class="table table-striped table-bordered table-hover">
+                        <thead>
+                          <tr>
+                            <td class="text-left">Customer Group</td>
+                            <td class="text-right">Quantity</td>
+                            <td class="text-right">Priority</td>
+                            <td class="text-right">Price</td>
+                            <td class="text-left">Date Start</td>
+                            <td class="text-left">Date End</td>
+                            <td></td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr id="discount-row0">
+                            <td class="text-left">
+                              <select name="product_discount[0][user_group_id]" class="form-control">
+                                <option value="1" selected="selected">Default</option>
+                              </select>
+                            </td>
+                            <td class="text-right">
+                              <input name="product_discount[0][quantity]" value="10" placeholder="Quantity" class="form-control" type="text">
+                            </td>
+                            <td class="text-right">
+                              <input name="product_discount[0][priority]" value="1" placeholder="Priority" class="form-control" type="text">
+                            </td>
+                            <td class="text-right">
+                              <input name="product_discount[0][price]" value="88.0000" placeholder="Price" class="form-control" type="text">
+                            </td>
+                            <td class="text-left" style="width: 20%;">
+                              <div class="input-group date">
+                                <input name="product_discount[0][date_start]" value="" placeholder="Date Start" data-v-date-format="YYYY-MM-DD" class="form-control" type="text">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-default" type="button">
+                                    <i class="la la-calendar"></i>
+                                  </button>
+                                </span>
+                              </div>
+                            </td>
+                            <td class="text-left" style="width: 20%;">
+                              <div class="input-group date">
+                                <input name="product_discount[0][date_end]" value="" placeholder="Date End" data-v-date-format="YYYY-MM-DD" class="form-control" type="text">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-default" type="button">
+                                    <i class="la la-calendar"></i>
+                                  </button>
+                                </span>
+                              </div>
+                            </td>
+                            <td class="text-left">
+                              <button type="button" onclick="$('#discount-row0').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                <i class="la la-minus-circle"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr id="discount-row1">
+                            <td class="text-left">
+                              <select name="product_discount[1][user_group_id]" class="form-control">
+                                <option value="1" selected="selected">Default</option>
+                              </select>
+                            </td>
+                            <td class="text-right">
+                              <input name="product_discount[1][quantity]" value="20" placeholder="Quantity" class="form-control" type="text">
+                            </td>
+                            <td class="text-right">
+                              <input name="product_discount[1][priority]" value="1" placeholder="Priority" class="form-control" type="text">
+                            </td>
+                            <td class="text-right">
+                              <input name="product_discount[1][price]" value="77.0000" placeholder="Price" class="form-control" type="text">
+                            </td>
+                            <td class="text-left" style="width: 20%;">
+                              <div class="input-group date">
+                                <input name="product_discount[1][date_start]" value="" placeholder="Date Start" data-v-date-format="YYYY-MM-DD" class="form-control" type="text">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-default" type="button">
+                                    <i class="la la-calendar"></i>
+                                  </button>
+                                </span>
+                              </div>
+                            </td>
+                            <td class="text-left" style="width: 20%;">
+                              <div class="input-group date">
+                                <input name="product_discount[1][date_end]" value="" placeholder="Date End" data-v-date-format="YYYY-MM-DD" class="form-control" type="text">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-default" type="button">
+                                    <i class="la la-calendar"></i>
+                                  </button>
+                                </span>
+                              </div>
+                            </td>
+                            <td class="text-left">
+                              <button type="button" onclick="$('#discount-row1').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                <i class="la la-minus-circle"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr id="discount-row2">
+                            <td class="text-left">
+                              <select name="product_discount[2][user_group_id]" class="form-control">
+                                <option value="1" selected="selected">Default</option>
+                              </select>
+                            </td>
+                            <td class="text-right">
+                              <input name="product_discount[2][quantity]" value="30" placeholder="Quantity" class="form-control" type="text">
+                            </td>
+                            <td class="text-right">
+                              <input name="product_discount[2][priority]" value="1" placeholder="Priority" class="form-control" type="text">
+                            </td>
+                            <td class="text-right">
+                              <input name="product_discount[2][price]" value="66.0000" placeholder="Price" class="form-control" type="text">
+                            </td>
+                            <td class="text-left" style="width: 20%;">
+                              <div class="input-group date">
+                                <input name="product_discount[2][date_start]" value="" placeholder="Date Start" data-v-date-format="YYYY-MM-DD" class="form-control" type="text">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-default" type="button">
+                                    <i class="la la-calendar"></i>
+                                  </button>
+                                </span>
+                              </div>
+                            </td>
+                            <td class="text-left" style="width: 20%;">
+                              <div class="input-group date">
+                                <input name="product_discount[2][date_end]" value="" placeholder="Date End" data-v-date-format="YYYY-MM-DD" class="form-control" type="text">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-default" type="button">
+                                    <i class="la la-calendar"></i>
+                                  </button>
+                                </span>
+                              </div>
+                            </td>
+                            <td class="text-left">
+                              <button type="button" onclick="$('#discount-row2').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                <i class="la la-minus-circle"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="6"></td>
+                            <td class="text-left">
+                              <button type="button" onclick="addDiscount();" data-bs-toggle="tooltip" title="" class="btn btn-primary" data-v-original-title="Add Discount">
+                                <i class="la la-plus-circle"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+
+
+                  <div class="tab-pane" id="tab-special">
+                    <div class="table-responsive">
+                      <table id="special" class="table table-striped table-bordered table-hover">
+                        <thead>
+                          <tr>
+                            <td class="text-left">Customer Group</td>
+                            <td class="text-right">Priority</td>
+                            <td class="text-right">Price</td>
+                            <td class="text-left">Date Start</td>
+                            <td class="text-left">Date End</td>
+                            <td></td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr id="special-row0">
+                            <td class="text-left">
+                              <select name="product_special[0][user_group_id]" class="form-control">
+                                <option value="1" selected="selected">Default</option>
+                              </select>
+                            </td>
+                            <td class="text-right">
+                              <input name="product_special[0][priority]" value="1" placeholder="Priority" class="form-control" type="text">
+                            </td>
+                            <td class="text-right">
+                              <input name="product_special[0][price]" value="90.0000" placeholder="Price" class="form-control" type="text">
+                            </td>
+                            <td class="text-left" style="width: 20%;">
+                              <div class="input-group date">
+                                <input name="product_special[0][date_start]" value="" placeholder="Date Start" data-v-date-format="YYYY-MM-DD" class="form-control" type="text">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-default" type="button">
+                                    <i class="la la-calendar"></i>
+                                  </button>
+                                </span>
+                              </div>
+                            </td>
+                            <td class="text-left" style="width: 20%;">
+                              <div class="input-group date">
+                                <input name="product_special[0][date_end]" value="" placeholder="Date End" data-v-date-format="YYYY-MM-DD" class="form-control" type="text">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-default" type="button">
+                                    <i class="la la-calendar"></i>
+                                  </button>
+                                </span>
+                              </div>
+                            </td>
+                            <td class="text-left">
+                              <button type="button" onclick="$('#special-row0').remove();" data-bs-toggle="tooltip" title="" class="btn btn-danger" data-v-original-title="Remove">
+                                <i class="la la-minus-circle"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="5"></td>
+                            <td class="text-left">
+                              <button type="button" onclick="addSpecial();" data-bs-toggle="tooltip" title="" class="btn btn-primary" data-v-original-title="Add Special">
+                                <i class="la la-plus-circle"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane" id="tab-image">
+
+                    <div class="">
+                      <div class="row" data-v-images>
+
+                        <div class="col-md-3 mb-3" data-v-image>
+                          <div class="card border-0 shadow">
+                            <img data-v-image-src src="https://source.unsplash.com/TMgQMXoglsM/500x350" alt="" title="" id="thumb-image" data-v-placeholder="//vvveb.netimage/cache/no_image-100x100.png" class="card-img-top">
+                            <input type="hidden" name="image" value="/product_images/12.jpg" id="input-image">
+                            <div class="card-footer text-center">
+                              <div class="btn-group btn-group-sm">
+                                <button type="button" data-bs-toggle="image" data-target="input-image" data-v-thumb="thumb-image" class="btn btn-outline-primary btn-sm">
+                                  <i class="la la-pencil"></i> Edit
+                                </button>
+                                <button type="button" data-bs-toggle="clear" data-target="input-image" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm">
+                                  <i class="la la-trash-o"></i> Clear
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3" data-v-image>
+                          <div class="card border-0 shadow">
+                            <img data-v-image-src src="https://source.unsplash.com/9UVmlIb0wJU/500x350" alt="" title="" id="thumb-image0" data-v-placeholder="//vvveb.netimage/cache/no_image-100x100.png" class="card-img-top">
+                            <input type="hidden" name="product_image[0][image]" value="" id="input-image0">
+                            <div class="card-body">
+                              <div class="mb-3">
+                                <input type="text" name="product_image[0][sort_order]" value="0" placeholder="Sort Order" class="form-control form-control-sm">
+                              </div>
+                            </div>
+                            <div class="card-footer text-center">
+                              <div class="btn-group btn-group-sm">
+                                <button type="button" data-v-event="image" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Edit" data-v-thumb="thumb-image" class="btn btn-outline-primary btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-pencil"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Clear" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-trash-o"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Remove" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-minus-circle"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3" data-v-image>
+                          <div class="card border-0 shadow">
+                            <img data-v-image-src src="https://source.unsplash.com/sNut2MqSmds/500x350" alt="" title="" id="thumb-image1" data-v-placeholder="//vvveb.netimage/cache/no_image-100x100.png" class="card-img-top">
+                            <input type="hidden" name="product_image[1][image]" value="/product_images2/083.jpg" id="input-image1">
+                            <div class="card-body">
+                              <div class="mb-3">
+                                <input type="text" name="product_image[1][sort_order]" value="0" placeholder="Sort Order" class="form-control form-control-sm">
+                              </div>
+                            </div>
+                            <div class="card-footer text-center">
+                              <div class="btn-group btn-group-sm">
+                                <button type="button" data-v-event="image" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Edit" data-v-thumb="thumb-image" class="btn btn-outline-primary btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-pencil"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Clear" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-trash-o"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Remove" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-minus-circle"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3" data-v-image>
+                          <div class="card border-0 shadow">
+                            <img data-v-image-src src="https://source.unsplash.com/TMgQMXoglsM/500x350" alt="" title="" id="thumb-image2" data-v-placeholder="//vvveb.netimage/cache/no_image-100x100.png" class="card-img-top">
+                            <input type="hidden" name="product_image[2][image]" value="/product_images2/060.jpg" id="input-image2">
+                            <div class="card-body">
+                              <div class="mb-3">
+                                <input type="text" name="product_image[2][sort_order]" value="0" placeholder="Sort Order" class="form-control form-control-sm">
+                              </div>
+                            </div>
+                            <div class="card-footer text-center">
+                              <div class="btn-group btn-group-sm">
+                                <button type="button" data-v-event="image" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Edit" data-v-thumb="thumb-image" class="btn btn-outline-primary btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-pencil"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Clear" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-trash-o"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Remove" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-minus-circle"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3" data-v-image>
+                          <div class="card border-0 shadow">
+                            <img data-v-image-src src="https://source.unsplash.com/TMgQMXoglsM/500x350" alt="" title="" id="thumb-image2" data-v-placeholder="//vvveb.netimage/cache/no_image-100x100.png" class="card-img-top">
+                            <input type="hidden" name="product_image[2][image]" value="/product_images2/060.jpg" id="input-image2">
+                            <div class="card-body">
+                              <div class="mb-3">
+                                <input type="text" name="product_image[2][sort_order]" value="0" placeholder="Sort Order" class="form-control form-control-sm">
+                              </div>
+                            </div>
+                            <div class="card-footer text-center">
+                              <div class="btn-group btn-group-sm">
+                                <button type="button" data-v-event="image" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Edit" data-v-thumb="thumb-image" class="btn btn-outline-primary btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-pencil"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Clear" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-trash-o"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Remove" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-minus-circle"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3" data-v-image>
+                          <div class="card border-0 shadow">
+                            <img data-v-image-src src="https://source.unsplash.com/TMgQMXoglsM/500x350" alt="" title="" id="thumb-image2" data-v-placeholder="//vvveb.netimage/cache/no_image-100x100.png" class="card-img-top">
+                            <input type="hidden" name="product_image[2][image]" value="/product_images2/060.jpg" id="input-image2">
+                            <div class="card-body">
+                              <div class="mb-3">
+                                <input type="text" name="product_image[2][sort_order]" value="0" placeholder="Sort Order" class="form-control form-control-sm">
+                              </div>
+                            </div>
+                            <div class="card-footer text-center">
+                              <div class="btn-group btn-group-sm">
+                                <button type="button" data-v-event="image" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Edit" data-v-thumb="thumb-image" class="btn btn-outline-primary btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-pencil"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Clear" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-trash-o"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Remove" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-minus-circle"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3" data-v-image>
+                          <div class="card border-0 shadow">
+                            <img data-v-image-src src="https://source.unsplash.com/TMgQMXoglsM/500x350" alt="" title="" id="thumb-image2" data-v-placeholder="//vvveb.netimage/cache/no_image-100x100.png" class="card-img-top">
+                            <input type="hidden" name="product_image[2][image]" value="/product_images2/060.jpg" id="input-image2">
+                            <div class="card-body">
+                              <div class="mb-3">
+                                <input type="text" name="product_image[2][sort_order]" value="0" placeholder="Sort Order" class="form-control form-control-sm">
+                              </div>
+                            </div>
+                            <div class="card-footer text-center">
+                              <div class="btn-group btn-group-sm">
+                                <button type="button" data-v-event="image" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Edit" data-v-thumb="thumb-image" class="btn btn-outline-primary btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-pencil"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Clear" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-trash-o"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Remove" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-minus-circle"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3" data-v-image>
+                          <div class="card border-0 shadow">
+                            <img data-v-image-src src="https://source.unsplash.com/TMgQMXoglsM/500x350" alt="" title="" id="thumb-image2" data-v-placeholder="//vvveb.netimage/cache/no_image-100x100.png" class="card-img-top">
+                            <input type="hidden" name="product_image[2][image]" value="/product_images2/060.jpg" id="input-image2">
+                            <div class="card-body">
+                              <div class="mb-3">
+                                <input type="text" name="product_image[2][sort_order]" value="0" placeholder="Sort Order" class="form-control form-control-sm">
+                              </div>
+                            </div>
+                            <div class="card-footer text-center">
+                              <div class="btn-group btn-group-sm">
+                                <button type="button" data-v-event="image" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Edit" data-v-thumb="thumb-image" class="btn btn-outline-primary btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-pencil"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Clear" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-trash-o"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Remove" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-minus-circle"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 mb-3" data-v-image>
+                          <div class="card border-0 shadow">
+                            <img data-v-image-src src="https://source.unsplash.com/TMgQMXoglsM/500x350" alt="" title="" id="thumb-image2" data-v-placeholder="//vvveb.netimage/cache/no_image-100x100.png" class="card-img-top">
+                            <input type="hidden" name="product_image[2][image]" value="/product_images2/060.jpg" id="input-image2">
+                            <div class="card-body">
+                              <div class="mb-3">
+                                <input type="text" name="product_image[2][sort_order]" value="0" placeholder="Sort Order" class="form-control form-control-sm">
+                              </div>
+                            </div>
+                            <div class="card-footer text-center">
+                              <div class="btn-group btn-group-sm">
+                                <button type="button" data-v-event="image" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Edit" data-v-thumb="thumb-image" class="btn btn-outline-primary btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-pencil"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Clear" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-trash-o"></i>
+                                </button>
+                                <button type="button" data-v-event="clear" data-target="input-image" data-bs-toggle="tooltip" data-v-title="Remove" data-v-thumb="thumb-image" class="btn btn-outline-danger btn-sm" data-v-original-title="" title="">
+                                  <i class="la la-minus-circle"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane" id="tab-reward">
+                    <div class="mb-3 row">
+                      <label class="col-sm-2 form-label" for="input-points">
+                        <span data-bs-toggle="tooltip" title="" data-v-original-title="Number of points needed to buy this item. If you don't want this product to be purchased with points leave as 0.">Points</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <input name="points" value="400" placeholder="Points" id="input-points" class="form-control" type="text">
+                      </div>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-hover">
+                        <thead>
+                          <tr>
+                            <td class="text-left">Customer Group</td>
+                            <td class="text-right">Reward Points</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-left">Default</td>
+                            <td class="text-right">
+                              <input name="product_reward[1][points]" value="100" class="form-control" type="text">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+
+
+                </div>
+          </form>
+        </div>
+        <div class="right-column flat">
+
+          <label class="header" data-v-header="element_header" for="header_featured_image">
+            <span>Featured Media</span>
+            <div class="header-arrow"></div>
+          </label>
+          <input class="header_check" type="checkbox" checked="true" id="header_featured_image">
+          <div class="section" data-v-section="element_header">
+
+            <input type="hidden" data-v-image name="image" id="featured-image-input" value="">
+
+            <img data-v-image src="" alt="" title="" id="featured-image-thumb" data-v-placeholder="" data-media-gallery data-target-input="#featured-image-input" data-target-thumb="#featured-image-thumb" data-type="single" class="img-thumbnail border-0 p-0 bg-light">
+
+
+            <div class="py-3 text-center">
+              <button type="button" title="" class="btn btn-outline-secondary btn-icon btn-sm w-100" data-media-gallery data-target-input="#featured-image-input" data-target-thumb="#featured-image-thumb" data-type="single">
+                <i class="la la-image la-lg"></i> Set featured media
+              </button>
+            </div>
+
+
+          </div>
+
+          <div class="taxonomies" data-v-taxonomies>
+            <div class="taxonomy" data-v-taxonomy>
+
+              <label class="header" data-v-header="element_header" for="header_categories" data-v-taxonomy-label>
+                <span data-v-taxonomy-name>Categories</span>
+                <div class="header-arrow"></div>
+              </label>
+              <input class="header_check" type="checkbox" checked="true" id="header_categories" data-v-taxonomy-input>
+              <div class="section" data-v-section="element_header">
+
+
+                <div class="categories-list" data-v-categories>
+                  <div data-v-cats>
+
+                    <div class="tags-input" data-v-if="taxonomy.type = 'tags'">
+
+                      <div class="badge border m-1" data-v-cat>
+                        <a href="#" class="btn-link remove-btn">
+                          <i class="la la-times"></i>
+                        </a>
+                        <span data-v-taxonomy-name>Product 10</span>
+                        <input type="hidden" value="4" name="taxonomy[]" data-v-post-taxonomy-taxonomy_id>
+                      </div>
+
+                      <input type="text" name="text" class="tags-input form-control" data-taxonomy_type_id>
+                    </div>
+
+
+                    <ul class="dd-list" data-v-if="taxonomy.type = 'categories'">
+
+                      <li class="dd-item dd3-item dd-collapsed" data-v-id data-v-cat>
+                        <div class="dd3-content">
+
+                          <label class="form-check">
+                            <input type="checkbox" class="form-check-input" value="4" name="taxonomy[]" data-v-post-taxonomy-taxonomy_id>
+                            <span class="form-check-label" data-v-taxonomy-name>Item 135</span>
+                          </label>
+
+                        </div>
+
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <label class="header" data-v-header="default" for="header_template">Template
+            <div class="header-arrow"></div>
+          </label>
+          <input class="header_check" type="checkbox" checked="true" id="header_template">
+          <div class="section" data-v-section="default">
+
+            <div class="mb-3">
+
+              <div class="input-group">
+                <!-- div class="input-group-addon"><i class="ion-eye"></i></div-->
+                <select class="form-select" placeholder="Visibility" name="template" data-v-product-templates>
+                  <option value="" title="Default template used for this page">-- Default template --</option>
+                  <option value="published" data-v-option>Published</option>
+                  <option value="pending" data-v-option>Pending</option>
+                  <option value="draft" data-v-option>Draft</option>
+                  <option value="private" data-v-option>Private</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    </form>
+  </div>
+  </div>
+
+  </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="module" src="../../../js/admin.js"></script>
+
+
+  <script data-v-validator-json=""></script>
+  <script src="js/validator.js"></script>
+
+  <script>
+let mediaPath = '{ $this->mediaPath }';
+let mediaScanUrl =  '{ $this->scanUrl }';
+let uploadUrl = '{ $this->uploadUrl }';
+</script>
+  <script src="libs/media/openverse.js"></script>
+  <script src="libs/media/media.js"></script>
+  <script type="module" src="libs/vvveb/index.js"></script>
+  <link href="libs/media/media.css" rel="stylesheet">
+
+  <script src="libs/autocomplete/jquery.autocomplete.js"></script>
+  <script>
+</script>
+
+
+  <script>
+	$(function () {
+        jQuery("input[name=custom-date]").change(function () {
+            jQuery(".publish-date").css("display", (this.value == "true") ? "block" : "none");
+        });
+
+        $('input.autocomplete').autocomplete();
+        $('input.autocomplete-list').autocompleteList();
+
+        $('input.tags-input').each(function (i,element) {
+			/*
+			let params = "";
+			
+			for (name in element.dataset) { 
+				if (name) {
+					params += name + "=" + element.dataset[name];
+				}
+			}*/
+			
+			$(element).tagsInput({
+				url: "/admin/?module=editor/autocomplete&action=tags",
+				parameters:element.dataset,
+				allowFreeText:true
+			});
+		});
+        
+	//$.trumbowyg.svgAbsoluteUseHref = true;
+       // $('textarea').trumbowyg({});
+
+    });
+</script>
+
+  <script src="@@_CONSTANT_PUBLIC_PATH_@@js/libs/tinymce-options.js"></script>
+  <!-- script type="module" src="/js/libs/tinymce-dist/jquery.tinymce.min.js"></script -->
+  <script src="@@_CONSTANT_PUBLIC_PATH_@@js/libs/tinymce-dist/tinymce.min.js"></script>
+
+  <script>
+jQuery(document).ready(function () { 
+	tinymce.init(tinyMceOptions);
+});
+</script>
+
+</body>
+
+</html>

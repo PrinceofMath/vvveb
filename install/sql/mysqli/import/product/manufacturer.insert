@@ -1,0 +1,7 @@
+INSERT INTO `manufacturer` VALUES 
+(1,'HTC','/demo/htc_logo.jpg',0),
+(2,'Palm','/demo/palm_logo.jpg',0),
+(3,'Hewlett-Packard','/demo/hp_logo.jpg',0),
+(4,'Apple','/demo/apple_logo.jpg',0),
+(5,'Canon','/demo/canon_logo.jpg',0),
+(6,'Sony','/demo/sony_logo.jpg',0);

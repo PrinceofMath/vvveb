@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS `user_role`;
+
+CREATE TABLE `user_role` (
+  `user_id` int(11) UNSIGNED NOT NULL,
+  `role_id`int(11) UNSIGNED NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
+
+

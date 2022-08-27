@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <style>
+
+
+/*
+Based on Minimal CSS (minimalcss.com) under the MIT license.
+*/
+
+/* Reset */
+* { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* Layout */
+body { background-color: #fff; color: #333;	font: 14px/20px -apple-system, "HelveticaNeue", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+header { width: 100%; margin: 0 auto; position: relative; padding: 20px 0; margin-bottom: 20px; }
+
+nav ul { margin: 0; }
+nav ul li { display: inline; margin-right: 20px; font-size: 16px; line-height: 28px; color: #333; }
+nav ul li a { color: #333; }
+
+.container { position: relative; max-width: 90%; margin: 0 auto; }
+
+footer { border-top:1px solid #ccc; font-size:11px; line-height:26px; color:#999; }
+footer a { color:#999999; }
+footer a:hover { color:#105CB6; }
+footer ul li { display:inline; list-style:none; padding-left:20px; }
+
+/* Typography */
+a { color: #105CB6; text-decoration: none; }
+a:hover, a:focus { color: #105CB6; text-decoration: underline; }
+a:active { color: #105CB6; }
+
+h1 { font-size: 24px; line-height: 20px; margin: 10px 0; }
+h2 { font-size: 20px; line-height: 20px; margin: 10px 0; }
+h3 { font-size: 16px; line-height: 20px; margin: 10px 0; }
+h4 { font-size: 14px; line-height: 20px; margin: 10px 0; }
+h5 { font-size: 12px; line-height: 20px; margin: 10px 0; }
+h5 { font-size: 10px; line-height: 20px; margin: 10px 0; }
+h1,h2,h3,h4,h5,h6 { color: #333; }
+
+p { margin-bottom: 10px; }
+
+.float-left     { float: left; }
+.float-right    { float: right; }
+img.float-left  { float: left; margin: 0 20px 20px 0; }
+img.float-right { float: right; margin: 0 0 20px 20px; }
+img.center      { margin: 0 auto; display: block; }
+
+.text-left    { text-align: left; }
+.text-center  { text-align: center; }
+.text-right   { text-align: right; }
+.text-justify { text-align: justify; }
+
+/* Misc */
+hr { background-color: #ccc; border: 0px; color: #ccc; height: 1px; margin: 8px 0 20px 0; }
+pre, code { background:#E0ECF6; display:block; margin-bottom: 20px; padding:10px; }
+
+blockquote { margin: 10px 10px 20px; padding: 9px; background-color: #f8f8f8; color: #666; border-left: 5px solid #ddd; font: 14px/20px Georgia, Times, serif; quotes: "\201C" "\201D"; }
+blockquote p { margin: 0; }
+blockquote:before { content: open-quote; font-weight: bold; }
+blockquote:after  { content: close-quote; font-weight: bold; }
+
+/* List */
+ul { list-style-position:inside; }
+ol { list-style-position:inside; }
+
+/* Table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th { font-weight: bold; }
+tfoot { font-style: italic; }
+
+/* Metadata part */
+
+.metadata {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 90%;
+}
+table.metadata td {
+  padding-right: 20px;
+}
+
+.stats {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.graph {
+  width: 100%;
+}
+.graph div { float: left; }
+.graph div:first-child { border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
+.graph div:last-child { border-top-right-radius: 3px; border-bottom-right-radius: 3px; }
+.percent-done    { background-color: rgb(90, 228, 140); height: 10px; }
+.percent-fuzzy   { background-color: rgb(255, 167, 52); height: 10px; }
+.percent-untrans { background-color: #F1F1F1; height: 10px; }
+.legend {
+  font-size: smaller;
+  color: #aaa;
+  padding-top: 12px;
+  text-align: center;
+}
+
+/* Translations */
+table.translations {
+  width: 100%;
+  table-layout: fixed;
+}
+table.translations th, table.translations td {
+  padding: 5px 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #E1E1E1;
+}
+table.translations th {
+  text-align: left;
+}
+table.translations th:first-child, table.translations td:first-child { padding-left: 0; }
+table.translations th:last-child, table.translations td:last-child { padding-right: 0; }
+
+.with-comments td {
+  border-bottom: none !important;
+}
+tr.comments div {
+  float: left;
+  max-width: 90%;
+  font-size: smaller;
+  color: #aaa;
+}
+tr.comments div p:last-child { margin-bottom: 0; }
+tr.comments td { padding-top: 0; }
+
+.fuzzy .tra {
+  color: rgb(218, 123, 0);
+}
+
+.msgctxt {
+  color: rgb(70, 109, 137);
+  font-size: smaller;
+  background-color: rgb(217, 232, 242);
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin-right: 4px;
+}
+
+
+  </style>
+</head>
+<body>
+<div class='container'>
+<table class='metadata'>
+</table>
+<div class='stats'>
+  <div class='graph'>
+    <div class='percent-untrans' style='width: 100%'>&nbsp;</div>
+  </div>
+  <div class='legend'>444 entries  </div>
+</div>
+<table class='translations'>
+  <thead>
+    <tr>
+      <th>Source text — English</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Test plugin</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+%s must not be greater than 100</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product saved!</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Login successful!</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Authentication failed, wrong email or password!</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+empty file</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+PHP error log not readable, make sure that your log is properly configured and that is readable.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Vvveb - Edit product</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Edit Profile</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Loading ...</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+...</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Logout</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+View live website</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Add new</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Live</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Maintenance</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Coming soon</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;ensp;
+<br> Product</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;nbsp; Preview</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;nbsp;</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;nbsp; Save draft</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;nbsp; Save product</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;times;</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+General</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Data</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Links</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Image</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product Name</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product Url</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product Slug</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Description</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;nbsp; Design content</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product tags</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Model</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+SKU</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+UPC</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+EAN</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+JAN</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+ISBN</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+MPN</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Location</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Price</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Tax Class</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Quantity</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Minimum Quantity</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Subtract
+<br> Stock</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Yes</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+No</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Out Of Stock Status</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Requires Shipping</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+SEO URL</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Date
+<br> Available</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Dimensions (L x W x
+<br> H)</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Length
+<br> Class</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Centimeter</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Millimeter</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Inch</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Weight</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Weight
+<br> Class</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Status</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Enabled</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Disabled</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Sort Order</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Manufacturer</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Categories</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Related Products</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Attribute</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Text</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+100mhz</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Checkbox</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Select</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Textarea</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Radio</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Date</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+File</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Time</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Date &amp; Time</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Required</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Option Value</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Subtract Stock</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Points</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Checkbox
+<br> 1</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Checkbox 2</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Checkbox 3</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Checkbox 4</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
++</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+-</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Checkbox 1</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Checkbox
+<br> 2</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Checkbox
+<br> 3</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Checkbox
+<br> 4</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Red</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Blue</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Green</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Yellow</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Option
+<br> Value</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Small</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Medium</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Large</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Recurring Profile</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Customer Group</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Priority</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Date Start</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Date End</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Default</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Edit</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Clear</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Reward Points</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Featured Media</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Set featured image</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;ensp;Categories</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Fashion</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+News</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Uncategorized</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product options</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Vvveb - Dasboard</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Total new orders</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+0</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Refunds</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+1</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Returns</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Total customers</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+this month</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+this year</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Total Comments</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+total</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+spam</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Total reviews</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+5</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+unapproved</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+approved</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Bar chart</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Line chart</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Latest orders</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+#</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Customer</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Date added</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Total</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Action</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+No posts to display!</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Top products sales</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Thumb</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Trend</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+31/05/2018</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+New customers</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Date joined</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+New comments</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Comment</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Widgets</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Published</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Draft</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Pending preview</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Close</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Add widget</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Vvveb - Edit post</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;ensp;
+<br> Post</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;nbsp; Save post</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Title</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Post Url</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Slug</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Set featured media</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Post options</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Publish date</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Pending</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Private</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Visibillity</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Public</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Tags</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Attributes</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Template</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Vvveb - Login</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;#10006;</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Username or email</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Password</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;#128274;</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Sign In &amp;nbsp;</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Remember me</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Forgot your password?</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Blog Home - Vvveb Default Blog Template</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Vvveb Blog</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+minimal blog template</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Our Solution</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+How We Help</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Blog</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Contact</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Post author</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+By</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+admin</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Post date</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+December 31, 2020</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+on Hello world!</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+#winter</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+#tag</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Newer Posts</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Older Posts</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Archives</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+January 2021</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+December 2020</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+November 2018</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+October 2018</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+About</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Copyright &amp;copy; Your Website 2022</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Powered by</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Vvveb</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Essence - Homepage</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Popular</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Newest</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Bestsellers</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Shop</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Pages</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Guides</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Order status</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Shipping &amp; Delivery</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Payment options</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+E-Mail Address</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Authenticating</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Login</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Forgotten Password</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+New Customer</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Register Account</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Welcome</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+John Doe</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Comments</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Orders</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Downloads</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Profile</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Mango</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Size: S</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Color: Red</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Summary</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+subtotal:</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+$274.00</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+delivery:</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Free</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+discount:</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+-15%</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+total:</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+VIEW CART</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+check out</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Enter text to search!</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+No posts found!</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+No products found!</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Add to cart</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+asoss</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+New Collection</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+view collection</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Clothing</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Shoes</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Accessories</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+-60%</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Global Sale</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Buy Now</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Popular Products</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Latest Posts</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Continue reading</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Term of use</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Privacy Policy</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Subscribe</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Copyright &amp;copy;</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+All rights reserved | This template is made with</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+by</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Colorlib</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product was added to cart.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Vvveb - Server Under Load</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Internal server error, please try again later.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Refresh page</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Error</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Code</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Trace</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Vvveb - Products</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;ensp;</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Products</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;nbsp; Add product</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product 1 23</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product 2</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product 3</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product 4</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product 5</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product 15</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product 3</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product 21</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product 1</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Product 14</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Filter</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Check this custom checkbox</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Toggle this custom radio</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Or toggle this other custom radio</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;ensp;Thumbnail</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;ensp;Product</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;ensp;Price</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;ensp;Stock</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;ensp;Actions</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Design</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+View</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+10</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;ensp;Edit</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Toggle primary</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Options</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Delete</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+items, page</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+of</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+First</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Previous</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Next</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Last</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Vvveb - Page not found</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Page not found.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Vvveb - Posts</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Posts</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;nbsp; Add post</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Edit selected</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Delete selected</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;ensp;Name</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;ensp;Author</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;ensp;Comments</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;ensp;Date</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Canvas - Homepage</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Themes</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Plugins</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Resources</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+User Documentation</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Developer Documentation</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Github</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Open Source CMS</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Reinvented</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Powerful and easy to use drag and drop builder</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+for blogs, websites or ecommerce stores.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;#9889;</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Free download</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;rsaquo;</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Live demo</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+&amp;rarr;</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Page builder</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Frontend</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+* Note: Early Alpha Preview</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Drag and drop builder</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Unlimited design powers with an easy to use interface</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+change anything on your website with a few clicks.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Security</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Vvveb is 100% safe against sql injections</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+a vulerability that affects most CMSs.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Unlimited theme flexibility</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Vvveb uses plain html for templating for maximum flexibility</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+convert any html template to a theme in just a few minutes.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Ecommerce</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Vvveb is a full featured ecommerce platform</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+with advanced functionality.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Localization</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Publish content in multiple languages</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+or sell in different currencies.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Multisite</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Run multiple websites or subdomains</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+from the same installation.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Demo import</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Built in demo import functionality helps you get started faster</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+by providing initial content and configuration.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Open source and free</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Open source code means</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+transparency and collaboration.</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+User documentation</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Developer documentation</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+%s is empty</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+%s is invalid, valid options are %s</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+%s is longer than %d</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+%s is shorter than %d</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+%s does not match %s</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+%s is invalid</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+%s invalid email</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+%s not complex enough, include uppercase letters and digits</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Markdown</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Seo optimization</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Cookie notice</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Insert scripts</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+CDN for static content</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Minify</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Contact form</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+HideEcommerce</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+List</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Classification</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Dashboard</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Edit website</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Add new page</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Menus</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Media library</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Sales</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Recurring</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Add new product</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Taxonomy</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Manufacturers</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Vendors</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Configuration</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Custom fields</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Digital content</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Reviews</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Questions</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Users</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Add new user</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Installed Plugins</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Add new plugin</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Installed Themes</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Settings</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+General Settings</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Admin users</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Roles</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Manage Roles</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Add Roles</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Content</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Taxonomies</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+(Hierarchical)</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+(Flat)</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Checkout &amp; payments</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Shipping</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Email notifications</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Discount coupons</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Taxes</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Tax classes</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Tax rates</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Statuses</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Classes</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Localisation</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Languages</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Currencies</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Geo location</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Countries</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Zones</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Geo Zones</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Sites</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Tools</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Cache</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Import/Export</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Import</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Export</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Backup</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+System info</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+System Info</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Error log</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+checkout created!</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+This email has already been used!</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Error creating checkout!</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+User created!</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Error creating user!</td>
+</tr>
+<tr class='i untrans'>
+<td class='src'  lang='en'>
+Order placed!</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

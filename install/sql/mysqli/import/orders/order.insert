@@ -1,0 +1,331 @@
+INSERT INTO `order` VALUES (1,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'test','test juga','adadadadada@gmail.com','12123654','1236547','s:0:\"\";','test','test juga','sfsf','sfsfs sdfsfsf','sfsfs sffsfs','nmasdmn','12345','Indonesia',100,'Kalimantan Tengah',1520,'','b:0;','Cash On Delivery','cod','','','','','','','','',222,'',0,'','','Flat Shipping Rate','flat.flat','',1005.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'114.79.12.70','','Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0','id,en-us;q=0.7,en;q=0.3','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(2,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'Test','Test','boom@mail-one.ch','00000000','00000','s:0:\"\";','Test','Test','Test','Test 1','','Test','5555','United Kingdom',222,'Cardiff',3526,'','b:0;','Cash On Delivery','cod','','','','','','','','',222,'',0,'','','Flat Shipping Rate','flat.flat','',100.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'82.136.116.172','','Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60','de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(3,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',1,1,'test','test','test@mailinator.com','123','','a:0:{}','test','test','','test','','asdsa','2432','United Kingdom',222,'Aberdeenshire',3514,'','b:0;','Cash On Delivery','cod','','','','','','','','',0,'',0,'','','Flat Shipping Rate','flat.flat','',205.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:34.0) Gecko/20100101 Firefox/34.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(4,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',3,1,'Kiana','Oliving','dude@dudetteggggs.com','1231231234','1231231234','b:0;','Kiana','Oliving','Person','1234 stret street','apt 89844333','Redondo Beach','90277','United States',223,'California',3624,'{first_name} {last_name}\r\n{company}\r\n{address_1}\r\n{address_2}\r\n{city}, {zone} {postcode}\r\n{country}','b:0;','Cash On Delivery','cod','','','','','','','','',222,'',0,'','','Flat Shipping Rate','flat.flat','This is the most lovely robot',12028.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'98.112.107.197','','Mozilla/5.0 (Windows NT 6.3; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(5,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'test','test','test1@mailinator.com','121223','','s:0:\"\";','test','test','','asdsad','','sadasd','324324','United Kingdom',222,'Aberdeenshire',3514,'','b:0;','Cash On Delivery','cod','','','','','','','','',222,'',3514,'','','Flat Shipping Rate','flat.flat','',105.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(6,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'test1','test1','test1@mailinator.com','2414','','s:0:\"\";','test1','test1','','sadsad','asd','asdsad','324324','United Kingdom',222,'Aberdeenshire',3514,'','b:0;','Cash On Delivery','cod','','','','','','','','',222,'',3514,'','','Flat Shipping Rate','flat.flat','',105.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(7,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'test1','test1','test1@mailinator.com','2414','','s:0:\"\";','test1','test1','','sadsad','asd','asdsad','324324','United Kingdom',222,'Aberdeenshire',3514,'','b:0;','Cash On Delivery','cod','','','','','','','','',222,'',3514,'','','Flat Shipping Rate','flat.flat','',105.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(8,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'sa','sa','aldhi.albadri@gmail.com','32323232','','s:0:\"\";','sa','sa','','dsdsdd dssdds','ds','sd','21221','Indonesia',100,'Jakarta Raya',1513,'','b:0;','Cash On Delivery','cod','','','','','','','','',222,'',0,'','','Flat Shipping Rate','flat.flat','',205.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'103.19.210.26','10.131.29.34','Mozilla/5.0 (Windows NT 6.1; rv:34.0) Gecko/20100101 Firefox/34.0','en-GB,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(9,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'jose','chen','abc@abc.com','12345','','s:0:\"\";','jose','chen','','asb 123213','','asdfsaf','12321','United Kingdom',222,'Cambridgeshire',3525,'','b:0;','Cash On Delivery','cod','','','','','','','','',222,'',0,'','','Flat Shipping Rate','flat.flat','',105.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'180.251.36.132','','Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(10,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'dsfds','fsdf','sdfsdfsd@asd.com','+905320521007','','s:0:\"\";','dsfds','fsdf','','asdasdasdas','dasdas','123123','123123','Turkey',215,'Ağrı',3318,'','b:0;','Cash On Delivery','cod','','','','','','','','',222,'',0,'','','Flat Shipping Rate','flat.flat','12312',500.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'212.154.79.216','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/600.3.14 (KHTML, like Gecko) Version/8.0.3 Safari/600.3.14','en-us','2015-01-18 18:09:48','2015-01-18 18:09:49'),
+
+
+(11,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'rener','ferreira','geasy@uol.com.br','111','','s:0:\"\";','rener','ferreira','','rua sao apulo','','sao apulo','04691060','United Kingdom',222,'Clackmannanshire',3530,'','b:0;','Cash On Delivery','cod','','','','','','','','',222,'',0,'','','Flat Shipping Rate','flat.flat','',205.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'187.92.246.74','','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36','pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(12,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'tst','test','test@yahoo.com','423423','','s:0:\"\";','tst','test','','test','test','test','53453','United Kingdom',222,'Angus',3516,'','b:0;','Cash On Delivery','cod','','','','','','','','',222,'',0,'','','Flat Shipping Rate','flat.flat','',105.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'180.191.104.5','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36','en-US,en;q=0.8,es;q=0.6,de;q=0.4','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(13,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'test2','test2','test2@mailinator.com','23424','','s:0:\"\";','test2','test2','','asdasd','','adsad','324234','United Kingdom',222,'Carmarthenshire',3527,'','b:0;','Cash On Delivery','cod','','','','','','','','',222,'',0,'','','Flat Shipping Rate','flat.flat','',105.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(14,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'etyjetyj','hmnedh','hgjnedtyh@yahoo.com','56746747','','s:0:\"\";','etyjetyj','hmnedh','','ghnsdghndh','','gnsdgsgth','456456456','Romania',175,'Constanta',2693,'','b:0;','Cash On Delivery','cod','','','','','','','','',222,'',0,'','','Flat Shipping Rate','flat.flat','',305.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'92.81.97.43','','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36','ro-RO,ro;q=0.8,en-US;q=0.6,en;q=0.4','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(15,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'csasf','dv\\v\\','test@hotmail.com','zxv\\cvc\\','','s:0:\"\";','csasf','dv\\v\\','','zxvscvs','cxvavaxc','xcvadfbadbdf','vcbbdBSf','United Kingdom',222,'Cardiff',3526,'','b:0;','Cash On Delivery','cod','','','','','','','','',222,'',0,'','','Flat Shipping Rate','flat.flat','',105.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'5.67.44.188','','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36','en-GB,en-US;q=0.8,en;q=0.6','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(16,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',1,1,'test','test','test@mailinator.com','123','','a:0:{}','test','test','','test','','asdsa','2432','United Kingdom',222,'Aberdeenshire',3514,'','b:0;','Cash On Delivery','cod','test','test','','test','','asdsa','2432','United Kingdom',222,'Aberdeenshire',3514,'','b:0;','Flat Shipping Rate','flat.flat','',496.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(17,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'test','test','test@mailinator.com','325325345214124','','a:0:{}','test','test','','asdasd','','asdasd','34234234','United Kingdom',222,'Aberdeenshire',3514,'','a:0:{}','Cash On Delivery','cod','test','test','','asdasd','','asdasd','34234234','United Kingdom',222,'Aberdeenshire',3514,'','a:0:{}','Flat Shipping Rate','flat.flat','',105.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(18,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'test','test','test@mailinator.com','325325345214124','','a:0:{}','test','test','','asdasd','','asdasd','34234234','United Kingdom',222,'Oxfordshire',3581,'','a:0:{}','Cash On Delivery','cod','test','test','','asdasd','','asdasd','34234234','United Kingdom',222,'Oxfordshire',3581,'','a:0:{}','Flat Shipping Rate','flat.flat','',105.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(19,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'test','test','test@mailinator.com','325325345214124','','a:0:{}','test','test','','asdasd','','asdasd','34234234','United Kingdom',222,'Oxfordshire',3581,'','a:0:{}','Cash On Delivery','cod','test','test','','asdasd','','asdasd','34234234','United Kingdom',222,'Oxfordshire',3581,'','a:0:{}','Flat Shipping Rate','flat.flat','',105.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(20,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'test','test','test@mailinator.com','325325345214124','','a:0:{}','test','test','','asdasd','','asdasd','34234234','United Kingdom',222,'Aberdeenshire',3514,'','a:0:{}','Cash On Delivery','cod','test','test','','asdasd','','asdasd','34234234','United Kingdom',222,'Aberdeenshire',3514,'','a:0:{}','Flat Shipping Rate','flat.flat','',105.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(21,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'test','test','test@mailinator.com','325325345214124','','a:0:{}','test','test','','asdasd','','asdasd','34234234','United Kingdom',222,'Aberdeenshire',3514,'','a:0:{}','Cash On Delivery','cod','test','test','','asdasd','','asdasd','34234234','United Kingdom',222,'Aberdeenshire',3514,'','a:0:{}','Flat Shipping Rate','flat.flat','',105.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(22,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'test','test','test@mailinator.com','325325345214124','','a:0:{}','test','test','','asdasd','','asdasd','34234234','United Kingdom',222,'Aberdeenshire',3514,'','a:0:{}','Cash On Delivery','cod','test','test','','asdasd','','asdasd','34234234','United Kingdom',222,'Aberdeenshire',3514,'','a:0:{}','Flat Shipping Rate','flat.flat','',105.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(23,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'test','test','test@mailinator.com','325325345214124','','a:0:{}','test','test','','asdasd','','asdasd','34234234','United Kingdom',222,'Argyll and Bute',3517,'','a:0:{}','Cash On Delivery','cod','test','test','','asdasd','','asdasd','34234234','United Kingdom',222,'Argyll and Bute',3517,'','a:0:{}','Flat Shipping Rate','flat.flat','',105.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(24,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'','','','','','','','','','','','','','',0,'',0,'','a:0:{}','','','','','','','','','','',0,'',0,'','a:0:{}','','','',122.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(25,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'','','','','','','','','','','','','','',0,'',0,'','','','','','','','','','','','',0,'',0,'','a:0:{}','Flat Shipping Rate','flat.flat','',130.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(26,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'','','','','','','','','','','','','','',0,'',0,'','','','','','','','','','','','',0,'',0,'','a:0:{}','Flat Shipping Rate','flat.flat','',130.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(27,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'','','','','','s:0:\"\";','','','','','','','','',0,'',0,'','','','','','','','','','','','',0,'',0,'','a:0:{}','Flat Shipping Rate','flat.flat','',130.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(28,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'','','','','','s:0:\"\";','','','','','','','','',0,'',0,'','','','','','','','','','','','',0,'',0,'','a:0:{}','Flat Shipping Rate','flat.flat','',130.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(29,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'','','','','','s:0:\"\";','','','','','','','','',0,'',0,'','','','','','','','','','','','',0,'',0,'','s:0:\"\";','Flat Shipping Rate','flat.flat','',130.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(30,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'test','test','test@mailinator.com','34234','','a:0:{}','','','','','','','','',0,'',0,'','','Cash On Delivery','cod','','','','','','','234324','',96,'',0,'','','Flat Shipping Rate','flat.flat','',130.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(31,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'test','test1','vasile@bobmail.info','213123','','a:0:{}','','','','','','','','',0,'',0,'','','Cash On Delivery','cod','','','','','','','','',0,'',0,'','a:0:{}','','','',602.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(32,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'test','test1','vasile@bobmail.info','213123','','a:0:{}','','','','','','','','',0,'',0,'','','Cash On Delivery','cod','','','','','','','','',0,'',0,'','a:0:{}','','','',602.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(33,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'test','test1','vasile@bobmail.info','213123','','a:0:{}','','','','','','','','',0,'',0,'','','Cash On Delivery','cod','','','','','','','','',0,'',0,'','a:0:{}','','','',602.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(34,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'test','test1','vasile@bobmail.info','213123','','a:0:{}','','','','','','','','',0,'',0,'','','Cash On Delivery','cod','','','','','','','','',0,'',0,'','a:0:{}','','','',602.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(35,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'test','test1','vasile@bobmail.info','213123','','a:0:{}','test','test1','','asdsd','','sadsad','234324','Ghana',82,'Eastern Region',1273,'','b:0;','Cash On Delivery','cod','','','','','','','','',0,'',0,'','a:0:{}','','','',602.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(36,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,0,'Dimitris','Sereleas','dimitris@webflow.gr','+306947688390','','a:0:{}','Dimitris','Sereleas','','Prigipos Petrou','','Glyfada','16674','United Kingdom',222,'Aberdeenshire',3514,'','b:0;','Cash On Delivery','cod','Dimitris','Sereleas','','Prigipos Petrou','','Glyfada','16674','United Kingdom',222,'Aberdeenshire',3514,'','a:0:{}','Flat Shipping Rate','flat.flat','',105.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'85.72.173.47','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36','en-US,en;q=0.8,el;q=0.6','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(37,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',5,0,'abd','yzd','abdyzd@gmail.com','0897654435673','','b:0;','abd','yzd','','Mexico','','london','121212','United Kingdom',222,'Anglesey',3515,'','b:0;','Cash On Delivery','cod','abd','yzd','','Mexico','','london','121212','United Kingdom',222,'Anglesey',3515,'','b:0;','Flat Shipping Rate','flat.flat','thx',1105.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'114.121.160.35','','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36','en-US,en;q=0.8,id;q=0.6,ms;q=0.4,af;q=0.2','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(38,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'Test','Naber','test@test.com','5173537','','a:0:{}','Test','Naber','','yok','','konyaaltı','07100','Turkey',215,'Antalya',3322,'','b:0;','Cash On Delivery','cod','Test','Naber','','yok','','konyaaltı','07100','Turkey',215,'Antalya',3322,'','a:0:{}','Flat Shipping Rate','flat.flat','',1005.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'176.40.14.41','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36','tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4','2015-02-19 08:54:40','2015-02-19 08:54:45'),
+
+
+(39,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'joo','oıoı','huuhu@ıjuh.com','222232312','','a:0:{}','joo','oıoı','','regret','','ank','32467','Turkey',215,'Bilecik',3330,'','b:0;','Cash On Delivery','cod','','','','','','','','',0,'',0,'','a:0:{}','','','',500.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'88.238.241.206','','Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0','tr-TR,tr;q=0.8,en-US;q=0.5,en;q=0.3','2015-02-19 20:01:54','2015-02-19 20:02:06'),
+
+
+(40,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',6,1,'me','time','makmur@me.com','89393030','','b:0;','me','time','','jalan','jalan','Pekalongan','121212','Indonesia',100,'Jawa Tengah',1516,'','b:0;','Cash On Delivery','cod','me','time','','jalan','jalan','Pekalongan','121212','Indonesia',100,'Jawa Tengah',1516,'','b:0;','Flat Shipping Rate','flat.flat','',205.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'36.73.15.135','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/600.3.18 (KHTML, like Gecko) Version/8.0.3 Safari/600.3.18','en-us','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(41,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'test4','test4','test@mailinator.com','234324','','a:0:{}','test4','test4','','test4','test4','a234','324324','Tonga',212,'Tongatapu',3274,'','b:0;','Cash On Delivery','cod','test4','test4','','test4','test4','a234','324324','Tonga',212,'Tongatapu',3274,'','a:0:{}','Flat Shipping Rate','flat.flat','',105.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:34.0) Gecko/20100101 Firefox/34.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(42,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'test3','test3','test@mailinator.com','213213','','a:0:{}','test3','test3','','te2134','234','324234','234234','Tanzania, United Republic of',208,'Dodoma',3165,'','b:0;','Cash On Delivery','cod','test3','test3','','te2134','234','324234','234234','Tanzania, United Republic of',208,'Dodoma',3165,'','a:0:{}','Flat Shipping Rate','flat.flat','',105.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:34.0) Gecko/20100101 Firefox/34.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(43,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'test','test','test@mailinator.com','324234','','a:0:{}','test','test','','asdsad','','asdasd','34324','United Kingdom',222,'Aberdeen',3513,'','a:0:{}','Cash On Delivery','cod','test','test','','asdsad','','asdasd','34324','United Kingdom',222,'Aberdeen',3513,'','a:0:{}','Flat Shipping Rate','flat.flat','',106.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(44,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',1,1,'Kurocan','Bibeh','johaniip@gmail.com','087881146327','','b:0;','Kurocan','Bibeh','','Jl. jend Gatot Subroto Kav 71','','Jakarta Selatan','42314','Indonesia',100,'Jakarta Raya',1513,'','b:0;','Cash On Delivery','cod','','','','','','','','United Kingdom',222,'Lancashire',3563,'','a:0:{}','Flat Shipping Rate','flat.flat','kirim secepatnya',3614.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'202.152.49.227','10.1.26.209','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:36.0) Gecko/20100101 Firefox/36.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(45,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'zz','aa','as@sa.com','342','','a:0:{}','zz','aa','','dasda','dasd','da','342','United Kingdom',222,'Aberdeenshire',3514,'','b:0;','Cash On Delivery','cod','zz','aa','','dasda','dasd','da','342','United Kingdom',222,'Aberdeenshire',3514,'','a:0:{}','Flat Shipping Rate','flat.flat','',130.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'5.43.212.249','','Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36','en-US,en;q=0.8,en-GB;q=0.6,ar;q=0.4,ms;q=0.2','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(46,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'Bader','Al-mazmumi','shop7377@gmail.com','1234','','a:0:{}','Bader','Al-mazmumi','','232432','','jeddah','123','Saudi Arabia',184,'Makkah',2884,'','b:0;','Cash On Delivery','cod','Bader','Al-mazmumi','','232432','','jeddah','123','Saudi Arabia',184,'Makkah',2884,'','a:0:{}','Flat Shipping Rate','flat.flat','',205.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'128.234.221.60','','Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36','ar,en-US;q=0.8,en;q=0.6','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(47,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'test1','test1','test1@mailinator.com','234324','','a:0:{}','test1','test1','','asdasd','','','','',0,'',0,'','b:0;','Cash On Delivery','cod','test1','test1','','asdasd','','','','',0,'',0,'','a:0:{}','Flat Shipping Rate','flat.flat','',105.0000,1,0,0.0000,0,'',1,1,'USD',62.52899933,'109.99.105.126','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(48,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',1,1,'Test','Tester','test@tester.com','1769990000','','b:0;','Test','Tester','','Shanghai','','','','',0,'',0,'','b:0;','Cash On Delivery','cod','','','','','','','','United Kingdom',222,'Lancashire',3563,'','a:0:{}','','','',242.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'180.235.132.69','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.104 Safari/537.36','en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(49,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'qwdqwd','asasdas','asdasd@asdasdas.com','098098908098','','a:0:{}','qwdqwd','asasdas','','asdasdasd','','','','',0,'',0,'','b:0;','Cash On Delivery','cod','qwdqwd','asasdas','','asdasdasd','','','','',0,'',0,'','a:0:{}','Free Shipping','free.free','',1000.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'46.237.108.105','','Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0','bg,en-US;q=0.7,en;q=0.3','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(50,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'qwdqwd','asasdas','asdasd@asdasdas.com','098098908098','','a:0:{}','qwdqwd','asasdas','','dasdasdasdasd','','','','',0,'',0,'','b:0;','Cash On Delivery','cod','qwdqwd','asasdas','','dasdasdasdasd','','','','',0,'',0,'','a:0:{}','Free Shipping','free.free','',1000.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'46.237.108.105','','Mozilla/5.0 (Windows NT 6.1; WOW64; rv:36.0) Gecko/20100101 Firefox/36.0','bg,en-US;q=0.7,en;q=0.3','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(51,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'sad','asd','sadaadsdad@gmail.com','094567997','','a:0:{}','sad','asd','','sadsad','','','','',0,'',0,'','b:0;','Cash On Delivery','cod','sad','asd','','sadsad','','','','',0,'',0,'','a:0:{}','Flat Shipping Rate','flat.flat','',404.9800,0,0,0.0000,0,'',1,2,'USD',1.00000000,'128.199.94.193','','Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(52,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',1,1,'kjhkjhk','fdgdf','fgfdg@fgh.gf','32312312','','b:0;','kjhkjhk','fdgdf','','sadsadsa231`sdcs','','','','',0,'',0,'','b:0;','Cash On Delivery','cod','','','','','','','','United Kingdom',222,'Lancashire',3563,'','a:0:{}','','','',846.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'118.169.160.118','','Mozilla/5.0 (Windows NT 6.1; rv:37.0) Gecko/20100101 Firefox/37.0','zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(53,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'sdsdsd','sfsdsds','des_si_o22ne@abv.bg','08844259522','','a:0:{}','sdsdsd','sfsdsds','','12 dfgffdfdfd','','','','',0,'',0,'','b:0;','Cash On Delivery','cod','sdsdsd','sfsdsds','','12 dfgffdfdfd','','','','',0,'',0,'','a:0:{}','Free Shipping','free.free','',200.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'90.154.196.176','','Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36','en-US,en;q=0.8,bg;q=0.6','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(54,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'adad','sadas','asd@ss.com','1213232','','a:0:{}','adad','sadas','','adsdsdad','','','','',0,'',0,'','b:0;','Cash On Delivery','cod','adad','sadas','','adsdsdad','','','','',0,'',0,'','a:0:{}','Free Shipping','free.free','',100.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'220.160.157.207','','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(55,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',1,1,'Hello ','Hello ','Hello @Hello .com','3242323','','b:0;','Hello ','Hello ','','4324242','','','','',0,'',0,'','b:0;','Cash On Delivery','cod','','','','','','','','United Kingdom',222,'Lancashire',3563,'','a:0:{}','','','',122.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'220.136.108.247','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36','zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(56,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'azmi','hayaza','hayaza@gmail.com','399393','','a:0:{}','azmi','hayaza','','asdasdsad','','','','',0,'',0,'','b:0;','Cash On Delivery','cod','azmi','hayaza','','asdasdsad','','','','',0,'',0,'','a:0:{}','Free Shipping','free.free','',199.9900,1,0,0.0000,0,'',1,2,'USD',1.00000000,'139.228.239.30','','Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(57,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'asd','asdasd','dasd@cacat.com','adads','','a:0:{}','asd','asdasd','','asdsad','','asdsad','34234','United Kingdom',222,'Aberdeenshire',3514,'','a:0:{}','Cash On Delivery','cod','','','','','','','','',0,'',0,'','a:0:{}','','','',500.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'109.100.176.121','','Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:38.0) Gecko/20100101 Firefox/38.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(58,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'asd','asdasd','test@mailinator.com','234234','','a:0:{}','asd','asdasd','','32asd','','324324','3434','United Kingdom',222,'Ceredigion',3528,'','b:0;','Cash On Delivery','cod','','','','','','','','',0,'',0,'','a:0:{}','','','',602.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'109.100.176.121','','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76 Chrome/41.0.2272.76 Safari/537.36','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(59,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'tes','Test','dan@52zesso.ro','0432441222','','a:0:{}','tes','Test','','Strajerului 1 d','','Bos','321231','Austria',14,'Burgenland',199,'','b:0;','Cash On Delivery','cod','','','','','','','','',0,'',0,'','a:0:{}','','','',500.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'78.97.224.145','','Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(60,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'david','edri','edri.dudu@gmail.com','3545264654','','a:0:{}','david','edri','','israel','','israel','70600','Israel',104,'Tel Aviv (Gosh Dan)',1622,'','b:0;','Cash On Delivery','cod','david','edri','','israel','','israel','70600','Israel',104,'Tel Aviv (Gosh Dan)',1622,'','a:0:{}','Free Shipping','free.free','',100.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'31.154.91.35','','Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36','he,en-US;q=0.8,en;q=0.6','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(61,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'dfdf','dsfsdf','dsffds@gmail.com','5414545414','','a:0:{}','dfdf','dsfsdf','','dfdfdf','','dfdfdf','34343','Algeria',3,'Bechar',75,'','b:0;','Cash On Delivery','cod','dfdf','dsfsdf','','dfdfdf','','dfdfdf','34343','Algeria',3,'Bechar',75,'','a:0:{}','Free Shipping','free.free','',100.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'37.6.11.171','','Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.107 Safari/537.36','el,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(62,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'krishna','sarma','drkrishnasarma@gmail.com','09864089678','','a:0:{}','krishna','sarma','LAXYAS INFOTECH PRIVATE LIMITED','PHG Path,Near Sharma Gas Agency','Opposite Govt High School','Golaghat','785621','India',99,'Assam',1478,'','b:0;','Cash On Delivery','cod','','','','','','','','',0,'',0,'','a:0:{}','','','',500.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'112.79.38.191','','Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(63,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',0,1,'krishna','sarma','drkrishnasarma@gmail.com','09864089678','','a:0:{}','krishna','sarma','LAXYAS INFOTECH PRIVATE LIMITED','PHG Path,Near Sharma Gas Agency','Opposite Govt High School','Golaghat','785621','India',99,'Assam',1478,'','b:0;','Cash On Delivery','cod','','','','','','','','',0,'',0,'','a:0:{}','','','',500.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'112.79.38.191','','Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(64,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',1,1,'hj','jnbj','jsabhjh@asdsad.com','54675765','','b:0;','hj','jnbj','','hgshjgjdsgf','','sdsdsa','87877','Bahamas',16,'Mayaguana',302,'','b:0;','Cash On Delivery','cod','hj','jnbj','','hgshjgjdsgf','','sdsdsa','87877','Bahamas',16,'Mayaguana',302,'','a:0:{}','Free Shipping','free.free','',800.0000,1,0,0.0000,0,'',1,1,'USD',65.89499664,'122.178.120.57','','Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(65,0,'INV-2013-00',1,'Vvveb Store','//vvveb.net',1,1,'hj','jnbj','jsabhjh@asdsad.com','54675765','','b:0;','hj','jnbj','','hgshjgjdsgf','','sdsdsa','87877','Bahamas',16,'Mayaguana',302,'','b:0;','Cash On Delivery','cod','hj','jnbj','','hgshjgjdsgf','','sdsdsa','87877','Bahamas',16,'Mayaguana',302,'','b:0;','Free Shipping','free.free','',122.0000,1,0,0.0000,0,'',1,1,'USD',65.89499664,'122.178.120.57','','Mozilla/5.0 (Windows NT 6.1; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(66,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'Sarabi','Akbarov','raffone@ya.ru','0504030888','','a:0:{}','Sarabi','Akbarov','','Gasan Aliyev str','55','Baku','11100','Azerbaijan',15,'Baki',216,'','b:0;','Cash On Delivery','cod','Sarabi','Akbarov','','Gasan Aliyev str','55','Baku','11100','Azerbaijan',15,'Baki',216,'','a:0:{}','Free Shipping','free.free','',100.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'37.114.164.157','','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36','ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4,az;q=0.2','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(67,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'fsfsf','adsdsdad','kekeriansyah2@gmail.com','34423434','','b:0;','fsfsf','adsdsdad','','gdfggg','','Bogor','16320','Indonesia',100,'BoDeTaBek',1511,'','b:0;','Cash On Delivery','cod','fsfsf','adsdsdad','','gdfggg','','Bogor','16320','Indonesia',100,'BoDeTaBek',1511,'','a:0:{}','Free Shipping','free.free','',180.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'180.252.81.157','','Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.904.0 Safari/535.7','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(68,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'jay','lee','jlee0321@gmail.com','123-456-7890','','b:0;','jay','lee','','11 northern','','great neck','11021','United States',223,'New York',3655,'{first_name} {last_name}\r\n{company}\r\n{address_1}\r\n{address_2}\r\n{city}, {zone} {postcode}\r\n{country}','b:0;','Cash On Delivery','cod','jay','lee','','11 northern','','great neck','11021','United States',223,'New York',3655,'{first_name} {last_name}\r\n{company}\r\n{address_1}\r\n{address_2}\r\n{city}, {zone} {postcode}\r\n{country}','a:0:{}','Free Shipping','free.free','',299.9900,1,0,0.0000,0,'',1,2,'USD',1.00000000,'67.80.118.154','','Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko','en-US,en;q=0.7,ko;q=0.3','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(69,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'MATT','WHITEHEAD','HELLO@MATTWHITEHEAD.CO.UK','07951226227','','a:0:{}','MATT','WHITEHEAD','','93 GOODSHAW AVENUE NORTH','','ROSSENDALE','BB4 8RH','United Kingdom',222,'Lancashire',3563,'','b:0;','Cash On Delivery','cod','MATT','WHITEHEAD','','93 GOODSHAW AVENUE NORTH','','ROSSENDALE','BB4 8RH','United Kingdom',222,'Lancashire',3563,'','a:0:{}','Free Shipping','free.free','',244.0000,1,0,0.0000,0,'',1,1,'GBP',0.65719998,'2.96.49.192','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(70,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'dsds','dsds','demo@demo.com','434343','','a:0:{}','dsds','dsds','','fdfdfd','','dsds','32332','Austria',14,'Salzburg',203,'','b:0;','Cash On Delivery','cod','dsds','dsds','','fdfdfd','','dsds','32332','Austria',14,'Salzburg',203,'','a:0:{}','Free Shipping','free.free','',100.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'188.230.203.141','','Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(71,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'fdhafd','ahfaifgjf','zczbhc@cdsfb.com','07919595720','','a:0:{}','fdhafd','ahfaifgjf','','yafyfywfyw','hukughk','london','SW18 4UQ','United Kingdom',222,'Greater London',3553,'','b:0;','Cash On Delivery','cod','fdhafd','ahfaifgjf','','yafyfywfyw','hukughk','london','SW18 4UQ','United Kingdom',222,'Greater London',3553,'','a:0:{}','Free Shipping','free.free','',244.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'84.13.233.209','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/600.7.12 (KHTML, like Gecko) Version/7.1.7 Safari/537.85.16','en-us','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(72,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'ceco','meco','siscotrade@abv.bg','0899999999','','b:0;','ceco','meco','','sofia','','sofia','1000','Bulgaria',33,'Sofia - town',498,'','b:0;','Cash On Delivery','cod','ceco','meco','','sofia','','sofia','1000','Bulgaria',33,'Sofia - town',498,'','a:0:{}','Free Shipping','free.free','',180.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'77.85.241.250','','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36','bg,en;q=0.8,en-US;q=0.6','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(73,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'vishwas','dhanani','dhanani.vishwas@gmail.com','8238515151','','a:0:{}','vishwas','dhanani','','asd','asd','amreli','365601','India',99,'Gujarat',1485,'','b:0;','Cash On Delivery','cod','vishwas','dhanani','','asd','asd','amreli','365601','India',99,'Gujarat',1485,'','a:0:{}','Free Shipping','free.free','',399.9800,1,0,0.0000,0,'',1,1,'USD',67.16400146,'150.129.55.254','','Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(74,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'aea','jhgh','sele-02@outlook.com','6875876587','','a:0:{}','aea','jhgh','','giugiuy','igoygo','khgou','8767kjkl','Niger',155,'Dosso',2382,'','b:0;','Cash On Delivery','cod','aea','jhgh','','giugiuy','igoygo','khgou','8767kjkl','Niger',155,'Dosso',2382,'','a:0:{}','Free Shipping','free.free','hello',100.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'79.67.182.241','','Mozilla/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0','en-GB,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(75,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'Muhammad Syafiq','Baharin','syafiqbaharin@yahoo.com.my','+601116502290','','a:0:{}','Muhammad Syafiq','Baharin','','No 910, Jalan BPJ 2/21, Bandar Puteri Jaya','','Sungai Petani','08000','Malaysia',129,'',0,'','b:0;','Cash On Delivery','cod','Muhammad Syafiq','Baharin','','No 910, Jalan BPJ 2/21, Bandar Puteri Jaya','','Sungai Petani','08000','Malaysia',129,'',0,'','a:0:{}','Free Shipping','free.free','',199.9900,1,0,0.0000,0,'',1,2,'USD',1.00000000,'115.164.209.200','','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2716.0 Safari/537.36','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(76,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'Kinjal','Khokhani','kinji.rockers@gmail.com','1234567891','','','Kinjal','Khokhani','','test','test','ahmedabad','','India',99,'Gujarat',1485,'','b:0;','Cash On Delivery','cod','Kinjal','Khokhani','','test','test','ahmedabad','','India',99,'Gujarat',1485,'','b:0;','Free Shipping','free.free','test',1000.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'202.131.102.54','','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(77,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'Marcus','Fisher','ffff@fevefv.vb','076584471','','','Marcus','Fisher','','Waldhofweg 32','','Basel','4150','Switzerland',204,'Aargau',3095,'','b:0;','Cash On Delivery','cod','Marcus','Fisher','','Waldhofweg 32','','Basel','4150','Switzerland',204,'Aargau',3095,'','b:0;','','','',200.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'95.136.97.247','','Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0','pt-PT,pt;q=0.8,en;q=0.5,en-US;q=0.3','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(78,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'Marcus','Fisher','ffff@fevefv.vb','076584471','','','Marcus','Fisher','','Waldhofweg 32','','Basel','4150','Switzerland',204,'Aargau',3095,'','b:0;','Cash On Delivery','cod','Marcus','Fisher','','Waldhofweg 32','','Basel','4150','Switzerland',204,'Aargau',3095,'','b:0;','','','',100.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'95.136.97.247','','Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0','pt-PT,pt;q=0.8,en;q=0.5,en-US;q=0.3','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(79,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'deneme','deneme','deneme@sada.com','deneme','','a:0:{}','deneme','deneme','','denem','','deneme','1000','Barbados',19,'Saint James',329,'','b:0;','Cash On Delivery','cod','deneme','deneme','','denem','','deneme','1000','Barbados',19,'Saint James',329,'','a:0:{}','Free Shipping','free.free','',399.9800,1,0,0.0000,0,'',1,2,'USD',1.00000000,'90.154.239.228','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Safari/602.1.50','tr-tr','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(80,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'Naciye','Giritli','naciyegiritli@hotmail.com','','','','Naciye','Giritli','','','','','','',0,'Blagoevgrad',479,'','b:0;','Cash On Delivery','cod','Naciye','Giritli','','','','','','',0,'Blagoevgrad',479,'','b:0;','Free Shipping','free.free','',180.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'78.169.220.2','','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36','tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(81,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'adsf','asdf','adsf@asdasd.asd','324234','','a:0:{}','adsf','asdf','','asfasdf','','asdfadsf','324','Azerbaijan',15,'Daskasan',225,'','b:0;','Cash On Delivery','cod','adsf','asdf','','asfasdf','','asdfadsf','324','Azerbaijan',15,'Daskasan',225,'','a:0:{}','Free Shipping','free.free','dsf',100.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'103.236.135.210','','Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(82,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'sss','sss','ss@ss.com','8766544','','a:0:{}','sss','sss','','sssss','ss','sss','989840356','Brazil',30,'Amazonas',443,'','b:0;','Cash On Delivery','cod','sss','sss','','sssss','ss','sss','989840356','Brazil',30,'Amazonas',443,'','a:0:{}','Free Shipping','free.free','',180.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'91.126.89.73','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36','pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(83,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'SSSS','SSSS','S@S.COM','4444','','','SSSS','SSSS','','WWWWWW','WWWWW','WWWWW','989840356','Brazil',30,'Amazonas',443,'','b:0;','Cash On Delivery','cod','','','','','','','','',0,'',0,'','a:0:{}','','','',602.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'91.126.89.73','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36','pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(84,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'test11','test11','test25@mailinator.com','324234324','','','test11','test11','','324234','','asdsad','234234','Afghanistan',1,'Badakhshan',1,'','b:0;','Cash On Delivery','cod','test11','test11','','324234','','asdsad','234234','Afghanistan',1,'Badakhshan',1,'','b:0;','Free Shipping','free.free','',100.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'93.113.173.108','','Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20120101 Firefox/33.0','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(85,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'test26','test','test26@mailinator.com','asdasd','','a:0:{}','test26','test','','asdsad','','asdsad','234234','Algeria',3,'Ain Defla',70,'','a:0:{}','','','test26','test','','asdsad','','asdsad','234234','Algeria',3,'Ain Defla',70,'','a:0:{}','Free Shipping','free.free','',100.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'93.113.173.108','','Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20120101 Firefox/33.0','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(86,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'test27','test','test27@mailinator.com','asdasd','','','test27','test','','asdasd','','asdasd','234234','Algeria',3,'Ain Defla',70,'','b:0;','Cash On Delivery','cod','test27','test','','asdasd','','asdasd','234234','Algeria',3,'Ain Defla',70,'','b:0;','Free Shipping','free.free','',100.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'93.113.173.108','','Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20120101 Firefox/33.0','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(87,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'test28','test28','test28@mailinator.com','32423','','','test28','test28','','4324324','','324234','234234','Algeria',3,'Alger',72,'','b:0;','Cash On Delivery','cod','','','','','','324234','234234','Algeria',3,'Alger',72,'','a:0:{}','Free Shipping','free.free','',100.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'93.113.173.108','','Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20120101 Firefox/33.0','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(88,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'test29','test29','test29@mailinator.com','234234','','a:0:{}','test29','test29','','32423423','','asdasd','234234','Albania',2,'Devoll',36,'','a:0:{}','','','test29','test29','','32423423','','asdasd','234234','Albania',2,'Devoll',36,'','a:0:{}','Free Shipping','free.free','',600.0000,0,0,0.0000,0,'',1,2,'USD',1.00000000,'93.113.173.108','','Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20120101 Firefox/33.0','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(89,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'test29','test29','test29@mailinator.com','234234','','','test29','test29','','adasd','','324234234','234234','Albania',2,'Devoll',36,'','b:0;','Cash On Delivery','cod','test29','test29','','adasd','','324234234','234234','Albania',2,'Devoll',36,'','a:0:{}','Free Shipping','free.free','',600.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'93.113.173.108','','Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20120101 Firefox/33.0','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(90,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'sdcfc','sfdf','dsds@dsd.com','53265326532652','','a:0:{}','sdcfc','sfdf','','csdfcdfcd','','tyhth','5822582','Australia',13,'Northern Territory',193,'','a:0:{}','Cash On Delivery','cod','sdcfc','sfdf','','csdfcdfcd','','tyhth','5822582','Australia',13,'Northern Territory',193,'','a:0:{}','Free Shipping','free.free','scxcdcvdcvd',199.9900,1,0,0.0000,0,'',1,2,'USD',1.00000000,'95.13.246.171','','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36','tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(91,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'asdfasdf','asdfasdf','asdfasdf@adfasdf.cm','asdf','','a:0:{}','asdfasdf','asdfasdf','','adsfasdf','','asdfa','sdfasdf','Albania',2,'Delvine',35,'','a:0:{}','Cash On Delivery','cod','asdfasdf','asdfasdf','','adsfasdf','','asdfa','sdfasdf','Albania',2,'Delvine',35,'','a:0:{}','Flat Shipping Rate','flat.flat','',4505.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'119.70.70.247','','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.98 Safari/537.36 Vivaldi/1.6.689.40','ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(92,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'Tammy','Brown','web@philosophywebdesign.com','3868475839','','a:0:{}','Tammy','Brown','','9404 Crescent Loop Circle Apt 108','','Tampa','33619','United States',223,'Alaska',3614,'{first_name} {last_name}\r\n{company}\r\n{address_1}\r\n{address_2}\r\n{city}, {zone} {postcode}\r\n{country}','a:0:{}','Cash On Delivery','cod','Tammy','Brown','','9404 Crescent Loop Circle Apt 108','','Tampa','33619','United States',223,'Alaska',3614,'{first_name} {last_name}\r\n{company}\r\n{address_1}\r\n{address_2}\r\n{city}, {zone} {postcode}\r\n{country}','a:0:{}','Free Shipping','free.free','test',199.9900,1,0,0.0000,0,'',1,2,'USD',1.00000000,'104.136.194.190','','Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(93,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'Дмитрий','Брылев','fuzytsfcrew@gmail.com','380991004088','','','Дмитрий','Брылев','','Zapfvrever','','Odessa','65113','Ukraine',220,'Odes\'ka Oblast\'',3495,'','b:0;','Cash On Delivery','cod','','','','','','','','',0,'',0,'','a:0:{}','','','',602.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'195.138.78.203','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:48.0) Gecko/20100101 Firefox/48.0','ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3','2017-03-13 10:21:51','2017-03-13 10:21:52'),
+
+
+(94,0,'INV-2013-00',0,'luiza motti','//vvveb.net',7,1,'12345','12345','abg@anb.com','12345','','','12345','12345','','1234','123','123','123','United Kingdom',222,'Clackmannanshire',3530,'','b:0;','Cash On Delivery','cod','','','','','','','','',0,'',0,'','a:0:{}','','','',122.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'31.134.137.110','','Mozilla/5.0 (Windows NT 6.3; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0','ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(95,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'J','C','cs.joel@gmail.com','12345678','','a:0:{}','J','C','','123','','123','','Guatemala',89,'Guatemala',1312,'','a:0:{}','Cash On Delivery','cod','J','C','','123','','123','','Guatemala',89,'Guatemala',1312,'','a:0:{}','Free Shipping','free.free','',199.9900,1,0,0.0000,0,'',1,2,'USD',1.00000000,'190.14.142.245','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36','en','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(96,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'Michael','Keethin','mkdntpro@gmail.com','','','','Michael','Keethin','','','','','','',0,'Blagoevgrad',479,'','b:0;','Cash On Delivery','cod','Michael','Keethin','','','','','','',0,'Blagoevgrad',479,'','b:0;','Free Shipping','free.free','',499.9900,1,0,0.0000,0,'',1,2,'USD',1.00000000,'107.77.92.130','','Mozilla/5.0 (Linux; Android 7.0; SAMSUNG-SM-N920A Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(97,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'adsasd','asdad','asdasd@asdasd.dsf','22323','','a:0:{}','adsasd','asdad','','asdads','','asdasdsad','21121212','Romania',175,'Galati',2697,'','a:0:{}','Cash On Delivery','cod','adsasd','asdad','','asdads','','asdasdsad','21121212','Romania',175,'Galati',2697,'','a:0:{}','Free Shipping','free.free','',699.9900,1,0,0.0000,0,'',1,2,'USD',1.00000000,'188.25.240.130','','Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(98,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'Amarnath','Anneparthi','amar191821@gmail.com','08686887711','','','Amarnath','Anneparthi','','Miyapur','','Hyderabad','500049','India',99,'Andhra Pradesh',1476,'','b:0;','Cash On Delivery','cod','Amarnath','Anneparthi','','Miyapur','','Hyderabad','500049','India',99,'Andhra Pradesh',1476,'','a:0:{}','Free Shipping','free.free','',122.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'103.214.60.47','','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 UBrowser/7.0.6.1618 Safari/537.36','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(99,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,1,'Amarnath','Anneparthi','amar191821@gmail.com','08686887711','','','Amarnath','Anneparthi','','Miyapur','','Hyderabad','500049','India',99,'Andhra Pradesh',1476,'','b:0;','Cash On Delivery','cod','Amarnath','Anneparthi','','Miyapur','','Hyderabad','500049','India',99,'Andhra Pradesh',1476,'','b:0;','Free Shipping','free.free','',199.9900,1,0,0.0000,0,'',1,2,'USD',1.00000000,'103.214.61.129','','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 UBrowser/7.0.6.1618 Safari/537.36','en-US,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(100,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'ali','raza','71000','4243234','','a:0:{}','ali','raza','','adsdasasddas','asdsda','hyderabad','71000','Pakistan',162,'Sindh',2462,'','a:0:{}','Cash On Delivery','cod','ali','raza','','adsdasasddas','asdsda','hyderabad','71000','Pakistan',162,'Sindh',2462,'','a:0:{}','Flat Shipping Rate','flat.flat','',1405.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'42.201.189.218','','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36','en-US,en;q=0.9,nl;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(101,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'ram','kumar','767675','67676767','','a:0:{}','ram','kumar','','chennai','','chennai','767675','India',99,'Andhra Pradesh',1476,'','a:0:{}','Cash On Delivery','cod','ram','kumar','','chennai','','chennai','767675','India',99,'Andhra Pradesh',1476,'','a:0:{}','Free Shipping','free.free','',199.9900,1,0,0.0000,0,'',1,2,'USD',1.00000000,'182.74.243.48','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36','en-GB,en-US;q=0.9,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(102,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'ram','kumar','767675','67676767','','a:0:{}','ram','kumar','','chennai','','chennai','767675','India',99,'Andhra Pradesh',1476,'','a:0:{}','Cash On Delivery','cod','ram','kumar','','chennai','','chennai','767675','India',99,'Andhra Pradesh',1476,'','a:0:{}','Free Shipping','free.free','',100.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'182.74.243.48','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36','en-GB,en-US;q=0.9,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(103,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'zxczxc','zczxcxz','909876','045645654','','a:0:{}','zxczxc','zczxcxz','','dfsdfdsfds','','dsfsdfds','909876','Australia',13,'Australian Capital Territory',191,'','a:0:{}','Cash On Delivery','cod','zxczxc','zczxcxz','','dfsdfdsfds','','dsfsdfds','909876','Australia',13,'Australian Capital Territory',191,'','a:0:{}','Free Shipping','free.free','',199.9900,1,0,0.0000,0,'',1,2,'USD',1.00000000,'90.154.210.131','','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(104,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'aaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaaaa','1111111111111111111111111','+441111111111','','a:0:{}','aaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaaaa','','11111111111111111111111','dssssssss','1111111111111111111111111','1111111111','Austria',14,'Ober sterreich',202,'','a:0:{}','Cash On Delivery','cod','aaaaaaaaaaaaaaaa','aaaaaaaaaaaaaaaaaaaaaaaaa','','11111111111111111111111','dssssssss','1111111111111111111111111','1111111111','Austria',14,'Ober&ouml;sterreich',202,'','a:0:{}','Free Shipping','free.free','',100.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'139.167.84.227','','Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36','en-US,en;q=0.9,hi;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(105,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'charcoal ','online','540000','06564649','','a:0:{}','charcoal ','online','','lshor','','lajore','540000','Bahamas',16,'Mangrove Cay',301,'','a:0:{}','Cash On Delivery','cod','charcoal ','online','','lshor','','lajore','540000','Bahamas',16,'Mangrove Cay',301,'','a:0:{}','Free Shipping','free.free','',199.9900,1,0,0.0000,0,'',1,2,'USD',1.00000000,'110.36.223.30','','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36','en-US,en;q=0.9','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(106,0,'INV-2013-00',0,'luiza motti','//vvveb.net',1,0,'Jason','Albright','jason@albright.com','123-123-1234','','','Jason','Albright','','12 Oak St','','Oakdale','45678','United States',223,'Oregon',3661,'{first_name} {last_name}\r\n{company}\r\n{address_1}\r\n{address_2}\r\n{city}, {zone} {postcode}\r\n{country}','b:0;','Cash On Delivery','cod','Jason','Albright','','12 Oak St','','Oakdale','45678','United States',223,'Oregon',3661,'{first_name} {last_name}\r\n{company}\r\n{address_1}\r\n{address_2}\r\n{city}, {zone} {postcode}\r\n{country}','b:0;','Free Shipping','free.free','very lovely text and graphics',1199.9900,1,0,0.0000,0,'',1,2,'USD',1.00000000,'67.169.216.183','','Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:66.0) Gecko/20100101 Firefox/66.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(107,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'Marcus','Matthews','30303','16194852098','','a:0:{}','Marcus','Matthews','','2235 Despard Street','','Atlanta','30303','United States',223,'Georgia',3631,'{first_name} {last_name}\r\n{company}\r\n{address_1}\r\n{address_2}\r\n{city}, {zone} {postcode}\r\n{country}','a:0:{}','Cash On Delivery','cod','','','','','','','','',0,'',0,'','a:0:{}','','','fvzfvvcxvcxv ',500.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'194.59.251.58','','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36','en-GB,en-US;q=0.9,en;q=0.8','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(108,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'sad','df','456','4563','','a:0:{}','sad','df','','fgh','','hjbk','456','Australia',13,'Northern Territory',193,'','a:0:{}','Cash On Delivery','cod','sad','df','','fgh','','hjbk','456','Australia',13,'Northern Territory',193,'','a:0:{}','Flat Shipping Rate','flat.flat','dg',105.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'78.62.195.66','','Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(109,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'just','just','45','123','','a:0:{}','just','just','','fghfgh','','sdfs','45','Lithuania',123,'Kaunas',1912,'','a:0:{}','Cash On Delivery','cod','just','just','','fghfgh','','sdfs','45','Lithuania',123,'Kaunas',1912,'','a:0:{}','Free Shipping','free.free','',400.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'78.62.195.66','','Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0','en-US,en;q=0.5','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(110,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'Francisco J','Guevara','46214','3177370202','','a:0:{}','Francisco J','Guevara','','3640 Idlewood Pkwy','','Indianapolis','46214','United States',223,'Indiana',3636,'{first_name} {last_name}\r\n{company}\r\n{address_1}\r\n{address_2}\r\n{city}, {zone} {postcode}\r\n{country}','a:0:{}','Cash On Delivery','cod','Francisco J','Guevara','','3640 Idlewood Pkwy','','Indianapolis','46214','United States',223,'Indiana',3636,'{first_name} {last_name}\r\n{company}\r\n{address_1}\r\n{address_2}\r\n{city}, {zone} {postcode}\r\n{country}','a:0:{}','Free Shipping','free.free','',300.0000,1,0,0.0000,0,'',1,2,'USD',1.00000000,'73.146.170.181','','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36','en-US,en;q=0.9','2022-05-01 00:00:00','2022-05-01 00:00:00'),
+
+
+(111,0,'INV-2013-00',0,'luiza motti','//vvveb.net',0,1,'walter','west','24564','5343543543','','a:0:{}','walter','west','','23 sest view','','new york','24564','American Samoa',4,'Rose Island',119,'','a:0:{}','Cash On Delivery','cod','walter','west','','23 sest view','','new york','24564','American Samoa',4,'Rose Island',119,'','a:0:{}','Free Shipping','free.free','',199.9900,1,0,0.0000,0,'',1,2,'USD',1.00000000,'91.132.136.43','','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3237.0 Safari/537.36','en-US,en;q=0.9','2022-05-01 00:00:00','2022-05-01 00:00:00');

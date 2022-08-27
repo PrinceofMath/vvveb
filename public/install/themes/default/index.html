@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,600,700|Open+Sans:300,400,600,700|Roboto:300,400,600|Poppins:300,400,600" rel="stylesheet" type="text/css">
+    
+    <link rel="icon" href="../../favicon.ico">
+    <base href="">
+    <title>Vvveb install</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/install.css" rel="stylesheet">
+    <style>
+    
+    </style>
+  </head>
+
+
+  <body class="h-100">
+
+		<div class="header">
+			
+			<form method="get" class="float-end">
+				 <select name="language" class="form-select border-0" onchange="this.form.submit()" style="width:300px;" data-v-language-list>
+					<option value="en">English</option>
+					<option value="ro">Romanian</option>
+				  </select>
+			  </div>
+			</form>
+			
+		</div>						  
+
+
+    <div id="container" class="container h-100">
+
+							
+			<div class="row align-items-center h-100">
+				<div class="col-12 mx-auto">
+		
+
+
+					
+					
+					<div class="card border-danger mb-3" id="minimum_requirements" data-v-requirements>
+						<h5 class="card-header bg-danger text-white">Minimum requirements not met</h5>
+					
+					  <div class="card-body">
+						  
+							<div data-v-requirement><span class="text-danger"> &#10006; </span> <span data-v-requirement-text>Recommended PHP version at least 7.0 (You have 5.4)</span></div>
+
+					  </div>
+					</div>
+					
+					<div class="card border-danger mb-3" id="errors" data-v-errors>
+						<h5 class="card-header bg-danger text-white">Errors</h5>
+					
+					  <div class="card-body">
+
+							<div data-v-error><span class="text-danger"> &#10006; </span> <span data-v-error-text>Can't connect to database</span></div>
+
+					  </div>
+					</div>
+
+					<img id="logo" src="../../../admin/themes/default/img/logom.png">
+										
+					<div class="card">
+					
+					  <!-- 		
+					  <div class="card-header">	
+					  </div>
+					  -->
+
+					
+					  <div class="card-body">
+					
+
+							<p class="card-text text-muted">Please fill the form, contact your hosting provider for details</p>
+
+						
+						
+							<form method="post">
+							 <!--div class="mb-3 row">
+								<label for="engine" class="col-sm-3 col-form-label">Database engine</label>
+								<div class="col-sm-9">
+								  <select id="engine" name="engine" class="custom-select">
+									  <option value="Mysqli" selected>Mysql</option>
+									  <option value="postgresql">Postgresl</option>
+									</select>
+								</div>
+							  </div-->
+							 <!-- div class="mb-3 row">
+								<label for="inputEmail3" class="col-sm-3 col-form-label">Database engine</label>
+								<div class="col-sm-9">
+								  <select class="custom-select" id="engine" placeholder="Database engine" name="engine" required>
+									  <option value="mysqli">Mysql</option>
+									  <option value="pgsql">Postgresql</option>
+								  </select>
+								</div>
+							</div -->
+							 <input type="hidden" id="engine" name="engine" value="mysqli">
+							 <div class="mb-3 row">
+								<label for="inputEmail3" class="col-sm-3 col-form-label">Database name</label>
+								<div class="col-sm-9">
+								  <input type="text" class="form-control" id="name" placeholder="Database name" name="database" value="vvveb" required>
+								</div>
+							  </div>
+							  <div class="mb-3 row">
+								<label for="inputPassword3" class="col-sm-3 col-form-label">Database username</label>
+								<div class="col-sm-9">
+								  <input type="text" class="form-control" id="username" placeholder="Database username" name="user" value="root" required>
+								</div>
+							  </div>
+							  <div class="mb-3 row">
+								<label for="inputPassword3" class="col-sm-3 col-form-label">Database host</label>
+								<div class="col-sm-9">
+								  <input type="text" class="form-control" id="host" placeholder="Database host"  placeholder="localhost" name="host" value="127.0.0.1" required>
+								</div>
+							  </div>
+							  <div class="mb-3 row">
+								<label for="inputPassword3" class="col-sm-3 col-form-label">Database password</label>
+								<div class="col-sm-9">
+
+
+									<div class="input-group mb-3">
+									  <input type="password" class="form-control"  id="password" placeholder="Database password" name="password" value="" aria-label="Database password">
+  									  <button class="btn btn-light btn-sm px-3 btn-toggle" type="button" onclick="togglePasswordInput(this)">&#x1F512;</button>
+									</div>
+
+								</div>
+							  </div>
+							  <div class="mb-3 row">
+								<label for="inputPassword3" class="col-sm-3 col-form-label">Table prefix <br/></label>
+								<div class="col-sm-9">
+								  <input type="text" class="form-control" id="prefix" placeholder="vv_" name="prefix" value="">
+								</div>
+							  </div>
+							  
+							  <div class="row align-items-center">
+								  <div class="col-md-8">
+									  <div class="form-check float-start">
+										<input type="checkbox" class="form-check-input" id="license" required>
+										<label class="form-check-label" for="license">
+											I agree to <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">AGPL 3 license</a> terms
+										</label>
+									  </div>
+								  </div>
+
+								<div class="col-md-4">												  
+									  <button type="submit" class="btn btn-primary mt-2 float-end">Continue install &rarr;<!-- &#10140; --></button>
+									  </div>
+								  </div>
+							  </div>
+							</form>
+						
+					  </div>
+					</div>
+				</div>
+			</div>
+    </div>
+    
+   <script>
+	function togglePasswordInput(element)
+	{
+		var password = document.getElementById("password");
+		if (password.type == "password") {
+			password.type = "text"; 
+			element.innerHTML = "&#x1F513;";
+		} else {
+			password.type = "password";
+			element.innerHTML = "&#x1F512;";
+		}
+	}
+  </script>   					
+  </body>
+</html>

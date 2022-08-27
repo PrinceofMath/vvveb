@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Manrope:300,400,600,600" rel="stylesheet" type="text/css">
+
+  <base href="/admin/themes/default/">
+
+  <title>Vvveb - Login</title>
+
+
+
+  <link href="css/admin.css" rel="stylesheet">
+</head>
+
+
+<body class="login">
+
+  <div class="d-flex align-items-center justify-content-center h-100">
+    <div class="login-container">
+
+
+
+
+      <form method="post" role="form" id="login" class="login-form fade-in-effect" enctype="multipart/form-data" action="/admin//?module=user/login">
+
+        <input type="hidden" name="csrf" data-v-csrf value="JLtyUPKP2fQlNwAG">
+        <input type="hidden" name="redirect" id="redirect" value="">
+
+        <div class="logo-content">
+          <a href="//www.vvveb.com" target="blank">
+            <img src="img/logom.png">
+          </a>
+        </div>
+
+
+        <div class="login-form-content">
+
+
+          <div class="notifications" data-v-notifications>
+
+            
+            
+            
+          </div>
+
+
+
+          
+
+          <div class="mb-4">
+            <label>Username or email</label>
+            <input type="text" class="form-control" name="user" id="username" autocomplete="off" required value="">
+          </div>
+
+          <div class="mb-4">
+            <label>Password</label>
+
+            <div class="input-group">
+              <input type="password" class="form-control" id="password" name="password" autocomplete="off" value="" aria-label="Password" required>
+              <div class="input-group-append">
+                <button class="btn btn-light text-dark btn-sm py-0 px-3 btn-toggle" type="button" onclick="togglePasswordInput(this)">&#128274;</button>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <div class="mb-4 mt-4 row">
+
+
+            <div class="">
+
+              <button type="submit" class="btn btn-primary btn-icon w-100">
+ Sign In &nbsp;<i class="ion-ios-arrow-right float-end"></i>
+              </button>
+
+            </div>
+
+
+            <div class="mt-3">
+
+              <div class="form-check float-start">
+                <input class="form-check-input" type="checkbox" value="" id="rememberme">
+                <label class="form-check-label" for="rememberme">
+ Remember me </label>
+              </div>
+
+              <a href="/admin?module=user/reset" class="text-muted float-end">Forgot your password?</a>
+            </div>
+
+          </div>
+
+          <div class="login-footer ">
+            
+
+          </div>
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+
+
+  <script>
+	function togglePasswordInput(element) {
+		var password = document.getElementById("password");
+		if (password.type == "password") {
+			password.type = "text"; 
+			element.innerHTML = "&#x1F513;";
+		} else {
+			password.type = "password";
+			element.innerHTML = "&#x1F512;";
+		}
+	}
+	</script>
+
+</body>
+
+</html>

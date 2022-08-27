@@ -1,0 +1,43 @@
+{
+    "pages": [
+        {
+            "title": "Product",
+            "name": "product",
+            "file": "product.html"
+        },
+        {
+            "title": "Category",
+            "name": "category",
+            "file": "category.html"
+        }
+    ],
+    "components": [
+        {
+            "title": "Content",
+            "name": "content"
+        },
+        {
+            "title": "Ecommerce",
+            "name": "ecommerce"
+        },
+        {
+            "title": "Bootstrap 4",
+            "name": "bootstrap4"
+        },
+        {
+            "title": "Essence components",
+            "name": "essence",
+            "file": "essence-components.js"
+        }
+    ],
+    "inputs": [
+        {
+            "title": "Slider inputs",
+            "name": "slider",
+            "file": "slider-inputs.js"
+        }
+    ],
+    "ignoreFolders": [
+        "backup"
+    ]
+}

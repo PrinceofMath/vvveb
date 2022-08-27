@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <base href="@@base">
+
+  <title>Blog Post Page - Vvveb Default Blog Template</title>
+
+  <meta name="description" content="Powerful and easy to use software to build professional websites, blogs or ecommerce stores.">
+  <meta name="keywords" content="cms, page builder, drag and drop, ecommerce, ecommerce platform, designer, developer, php, bootstrap 4">
+  <meta name="author" content="Vvveb">
+  <link rel="canonical" href="https://www.vvveb.com/">
+
+
+  <meta itemprop="name" content="Vvveb">
+  <meta itemprop="description" content="Powerful and easy to use software to build professional websites, blogs or ecommerce stores.">
+  <meta itemprop="url" content="https://www.vvveb.com/">
+  <meta itemprop="keywords" content="cms, page builder, drag and drop, ecommerce, ecommerce platform, designer, developer, php, bootstrap 4">
+  <meta itemprop="image" content="/img/favicon/228x228.png">
+  <meta itemprop="sourceOrganization" content="Vvveb">
+  <meta itemprop="inLanguage" content="en-US">
+
+  <script type="application/ld+json" id="ldJsonScript">
+       {
+		  "@context": "http://schema.org",
+		  "@graph": [
+			{
+			  "@type": "Organization",
+			  "@id": "https://www.vvveb.com/#organization",
+			  "url": "https://www.vvveb.com",
+			  "logo": "https://www.vvveb.com/img/favicon/256x256.png",
+			  "sameAs": [
+				"https://twitter.com/vvveb",
+				"https://www.facebook.com/vvveb.com",
+				"https://youtube.com/vvveb",
+				"https://www.linkedin.com/company/vvveb-com",
+				"https://plus.google.com/+VvvebCom"
+			  ]
+			},
+			{
+			  "@type": "WebSite",
+			  "@id": "https://www.vvveb.com/#website",
+			  "url": "https://www.vvveb.com",
+			  "name": "Vvveb"
+			},
+			{
+			  "@type": "WebPage",
+			  "@id": "https://www.vvveb.com/#webpage",
+			  "url": "https://www.vvveb.com/",
+			  "name": "Vvveb"
+			}
+		  ]
+		}
+    </script>
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@vvveb">
+
+  <meta name="twitter:label1" content="Platform">
+  <meta name="twitter:data1" content="Vvveb">
+  <meta name="twitter:label2" content="Software">
+  <meta name="twitter:data2" content="CMS">
+
+
+  <meta property="og:title" content="Vvveb">
+  <meta property="og:site_name" content="Vvveb">
+  <meta property="og:url" content="https://www.vvveb.com/">
+  <meta property="og:description" content="Powerful and easy to use software to build professional websites, blogs or ecommerce stores">
+  <meta property="fb:app_id" content="720988801282810">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://www.vvveb.com/img/favicon/228x228.png">
+
+  <link href="css/style.bundle.css" rel="stylesheet">
+
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=@@google-fonts&display=swap" rel="stylesheet">
+</head>
+
+
+<body data-v-component-post="post" class="post-page">
+
+  <nav class="navigation-1 clearfix">
+
+    <div class="navbar navbar-expand-md navbar-light container">
+      <a class="navbar-brand" href="/" data-v-url-params='{"host":"www.*.*"}'>
+        <img src="img/logo.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-menu_id="3">
+        <ul class="navbar-nav ms-auto" data-v-cats>
+          <li class="nav-item" data-v-cat data-v-class-if-dropdown="category.children > 0">
+
+            <a class="nav-link dropdown-toggle" href="#" data-v-if="category.children > 0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-cat-url data-v-cat-name>Resources</a>
+
+            <a class="nav-link" href="https://themes.vvveb.com" data-v-if="category.children <= 0" data-v-cat-url data-v-cat-name>Themes</a>
+
+            <div class="dropdown-menu" data-v-cat-recursive>
+              <div data-v-cat class="nav-item" data-v-cat data-v-class-if-dropdown="category.children > 0">
+                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-cat-url data-v-cat-name>User Documentation</a>
+              </div>
+              <div data-v-cat class="nav-item" data-v-cat data-v-class-if-dropdown="category.children > 0">
+                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-cat-url data-v-cat-name>Developer Documentation</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item" data-v-cat>
+            <a class="nav-link" href="https://themes.vvveb.com" data-v-cat-url data-v-cat-name>Themes</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--
+		  <div class="collapse navbar-collapse" id="navbar">
+			<ul class="navbar-nav ms-auto">
+			  <li class="nav-item">
+				<a class="nav-link" href="#features">Features <span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="https://themes.vvveb.com">Themes</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="https://plugins.vvveb.com">Plugins</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+				<div class="dropdown-menu" aria-labelledby="dropdown01">
+				  <a class="dropdown-item" target="_blank"  href="https://github.com/givanz/VvvebJs/wiki">User Documentation</a>
+				  <a class="dropdown-item" target="_blank"  href="https://github.com/givanz/VvvebJs/wiki">Developer Documentation</a>
+				</div>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" target="_blank" href="https://github.com/givanz/VvvebJs">Github</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="contact.html">Contact</a>
+			  </li>
+			  <li class="nav-item active">
+				<a class="nav-link" href="//vvveb.com/download.php">Download for free</a>
+			  </li>			  
+			</ul>
+		  </div>
+		  -->
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="single-blog-post-thumb post">
+      <div class="title-container">
+        <div class="container">
+          <h1 class="display-3" data-v-post-name>Post title</h1>
+
+
+          <ul class="post-meta">
+
+            <li class="post-author meta-wrapper">
+              <span class="meta-icon">
+                <span class="screen-reader-text">Post author</span>
+                <i class="la la-user"></i>
+              </span>
+              <span class="meta-text">
+                By <a href="#">admin</a>
+              </span>
+            </li>
+
+            <li class="post-date meta-wrapper">
+              <span class="meta-icon">
+                <span class="screen-reader-text">Post date</span>
+
+                <i class="la la-calendar"></i>
+              </span>
+              <span class="meta-text">
+                <a href="/2020/12/31/hello-world/">December 31, 2020</a>
+              </span>
+            </li>
+            <li class="post-comment-link meta-wrapper">
+              <span class="meta-icon">
+                <i class="la la-comment"></i>
+              </span>
+              <span class="meta-text">
+                <a href="/2020/12/31/hello-world/#comments">1 Comment<span class="screen-reader-text"> on Hello world!</span>
+                </a>
+              </span>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+
+
+      <!-- img data-v-post-image src="img/bg-img/bg-7.jpg" alt="" -->
+    </div>
+  </section>
+
+
+
+  <main id="site-content" role="main">
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <img class="img-fluid w-100" src="http://placehold.it/750x300" alt="Card image cap" data-v-post-image data-v-if="post.image">
+
+
+
+
+      <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8 col-lg-9">
+
+          <!-- Blog Post -->
+          <div class="card mb-4  post-archive-item post" data-v-post>
+            <div class="card-header">
+
+
+              <div class="post-meta-wrapper post-meta-single post-meta-single-top">
+
+                <!-- ul class="post-meta">
+
+					<li class="post-author meta-wrapper">
+							<span class="meta-icon">
+								<span class="screen-reader-text">Post author</span>
+									<i class="la la-user"></i>
+								</span>
+							<span class="meta-text">
+								By <a href="#">admin</a>						
+							</span>
+						</li>
+						
+						<li class="post-date meta-wrapper">
+							<span class="meta-icon">
+								<span class="screen-reader-text">Post date</span>
+
+									<i class="la la-calendar"></i>
+								</span>
+							<span class="meta-text">
+								<a href="/2020/12/31/hello-world/">December 31, 2020</a>
+							</span>
+						</li>
+							<li class="post-comment-link meta-wrapper">
+							<span class="meta-icon">
+								<i class="la la-comment"></i>
+							</span>
+							<span class="meta-text">
+								<a href="/2020/12/31/hello-world/#comments">1 Comment<span class="screen-reader-text"> on Hello world!</span></a>						</span>
+						</li>
+						
+				</ul -->
+                <!-- .post-meta -->
+
+              </div>
+
+
+            </div>
+            <div class="card-body">
+
+              <div class="card-text  post-content" data-v-post-content>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!
+              </div>
+
+              <ul class="tags">
+                <li>
+                  <a href="#tag">#tag 1</a>
+                </li>
+                <li>
+                  <a href="#tag">#tag 2</a>
+                </li>
+              </ul>
+
+              <div class="post-comments" data-v-component-comments>
+                <h3 class="comments-title">Comments</h3>
+
+                <ol class="comment-list list-unstyled">
+                  <li class="comment" data-v-comment>
+
+                    <div class="comment-wrap d-flex ">
+
+                      <figure class="comment-author-avatar me-2">
+                        <img src="img/user-1.jpg" alt="user" data-v-comment-avatar>
+                      </figure><!-- .comment-author-avatar -->
+
+                      <div class="comment-author">
+
+                        <div class="comment-author">
+                          <a href="#" data-v-comment-author>Maria Williams</a>
+                        </div>
+
+                        <div class="comment-meta">
+                          <span data-v-comment-date_gmt>Jan 29, 2018</span>
+                        </div><!-- .comment-meta -->
+
+                        <div class="reply">
+                          <a href="#">Reply</a>
+                        </div><!-- .reply -->
+                      </div><!-- .comment-author -->
+
+                    </div><!-- .comment-wrap -->
+
+                    <div>
+                      <p data-v-comment-content>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
+                    </div>
+
+                  </li><!-- .comment -->
+
+                  <li class="comment" data-v-comment>
+                    <div class="comment-body flex justify-content-between">
+                      <figure class="comment-author-avatar">
+                        <img src="img/user-2.jpg" alt="user">
+                      </figure><!-- .comment-author-avatar -->
+
+                      <div class="comment-wrap">
+                        <div class="comment-author flex flex-wrap align-items-center">
+                          <span class="fn">
+                            <a href="#" data-v-comment-author>Maria Williams</a>
+                          </span><!-- .fn -->
+
+                          <span class="comment-meta">
+                            <a href="#" data-v-comment-date_gmt>Jan 29, 2018</a>
+                          </span><!-- .comment-meta -->
+
+                          <div class="reply">
+                            <a href="#">Reply</a>
+                          </div><!-- .reply -->
+                        </div><!-- .comment-author -->
+
+                        <p data-v-comment-content>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
+
+                      </div><!-- .comment-wrap -->
+                    </div><!-- .comment-body -->
+                  </li><!-- .comment -->
+                </ol><!-- .comment-list -->
+              </div>
+
+              <div class="comments-form">
+                <div class="comment-respond">
+                  <h3 class="comment-reply-title">Leave a reply</h3>
+
+                  <form class="comment-form" method="post" action="/module=post&action=postComment" data-v-vvveb-action="addComment" data-v-vvveb-on="submit">
+
+                    <input type="hidden" name="post_id" data-v-post-post_id>
+                    <input type="hidden" name="parent_id" value="0">
+
+
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Name</label>
+                      <input type="text" placeholder="Name" name="author" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Email address</label>
+                      <input type="email" placeholder="Email" name="email" class="form-control" required>
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <textarea name="content" rows="5" cols="4" placeholder="Comment" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+
+                  </form><!-- .comment-form -->
+                </div><!-- .comment-respond -->
+              </div><!-- .comments-form -->
+
+            </div>
+
+            <div class="card-footer text-muted">
+
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <aside class="col-md-4 col-lg-3 mt-4" role="sidebar">
+
+          <div class="sidebar-sticky">
+            <!-- Search Widget -->
+            <div class="card">
+              <!-- h6 class="card-header">Search</h6 -->
+              <div class="card-body">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-append">
+                    <button class="btn btn-secondary la-flip-horizontal" type="button">
+                      <i class="la la-search"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Categories Widget -->
+            <div class="card categories-widget" data-v-component-content-categories="sidebar">
+              <h6 class="card-header">Categories</h6>
+              <div class="card-body">
+                <ul data-v-cats>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>Web Design</a>
+                  </li>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>HTML</a>
+                  </li>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>Freebies</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+            <!-- Categories Widget -->
+            <div class="card archives-widget" data-v-component-content-archives="sidebar">
+              <h6 class="card-header">Archives</h6>
+              <div class="card-body">
+                <ul data-v-cats>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>January 2021</a>
+                  </li>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>December 2020</a>
+                  </li>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>November 2018</a>
+                  </li>
+                  <li data-v-cat>
+                    <a href="#" data-v-cat-url data-v-cat-name>October 2018</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- About Widget -->
+            <div class="card">
+              <h6 class="card-header">About</h6>
+              <div class="card-body">
+                Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit.
+              </div>
+            </div>
+          </div>
+
+        </aside>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+  </main>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3">
+          <img class="logo" src="img/logo.png">
+        </div>
+
+        <div class="col-md-3">
+          <h6>Vvveb</h6>
+          <nav>
+            <a href="https://themes.vvveb.com/">Themes</a>
+            <a href="https://plugins.vvveb.com/">Plugins</a>
+          </nav>
+        </div>
+
+        <div class="col-md-3">
+          <h6>Resources</h6>
+          <nav>
+            <a href="https://github.com/givanz/VvvebJs/wiki" target="_blank">User documentation</a>
+            <a href="https://github.com/givanz/VvvebJs/wiki" target="_blank">Developer documentation</a>
+          </nav>
+        </div>
+        <div class="col-md-3">
+          <h6>Contact</h6>
+          <nav>
+            <a href="" target="contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
